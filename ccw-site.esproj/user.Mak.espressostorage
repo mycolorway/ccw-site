@@ -34,55 +34,7 @@
 	</dict>
 	<key>com.macrabbit.Espresso.Publisher.DisclosureCollapsed</key>
 	<false/>
-	<key>com.macrabbit.Espresso.Workspace.Tabs</key>
-	<dict>
-		<key>Tabs</key>
-		<array>
-			<dict>
-				<key>DocumentURL</key>
-				<string>file://localhost/Users/Mak/Sites/ccw-site/apps.html</string>
-				<key>StateType</key>
-				<string>DefaultTab</string>
-			</dict>
-			<dict>
-				<key>DocumentURL</key>
-				<string>file://localhost/Users/Mak/Sites/ccw-site/blog-post.html</string>
-				<key>StateType</key>
-				<string>DefaultTab</string>
-			</dict>
-			<dict>
-				<key>DocumentURL</key>
-				<string>file://localhost/Users/Mak/Sites/ccw-site/blog.html</string>
-				<key>StateType</key>
-				<string>DefaultTab</string>
-			</dict>
-			<dict>
-				<key>DocumentURL</key>
-				<string>file://localhost/Users/Mak/Sites/ccw-site/contact.html</string>
-				<key>StateType</key>
-				<string>DefaultTab</string>
-			</dict>
-			<dict>
-				<key>DocumentURL</key>
-				<string>file://localhost/Users/Mak/Sites/ccw-site/team.html</string>
-				<key>StateType</key>
-				<string>DefaultTab</string>
-			</dict>
-			<dict>
-				<key>DocumentURL</key>
-				<string>file://localhost/Users/Mak/Sites/ccw-site/assets/css/default.css</string>
-				<key>StateType</key>
-				<string>DefaultTab</string>
-			</dict>
-			<dict>
-				<key>DocumentURL</key>
-				<string>file://localhost/Users/Mak/Sites/ccw-site/index.html</string>
-				<key>StateType</key>
-				<string>DefaultTab</string>
-			</dict>
-		</array>
-	</dict>
 	<key>com.macrabbit.Espresso.WorkspaceTabs.DisclosureCollapsed</key>
-	<true/>
+	<false/>
 </dict>
 </plist>
