@@ -94,11 +94,11 @@ h2 {
 	.slide .ctrl span {
 		display: inline-block;
 		width: 10px; height: 10px; margin: 0 5px;
-		color: #eee; font-size: 20px; text-shadow: 0 -1px 0 #fff;
+		color: #ccc; font-size: 20px; text-shadow: 0 -1px 0 #999;
 		
 	}
 	.slide .ctrl span.cur {
-		color: #999; text-shadow: 0 -1px 0 #fff;
+		color: #5399df; text-shadow: 0 -1px 0 #666;
 	}
 
 /* index : mymag-box */
@@ -225,7 +225,7 @@ h2 {
 		margin: 10px 0 0;
 	}
 
-/* index : contact-box */
+/* contact-box */
 .contact-box {
 	margin: 0 0 30px;
 }
@@ -264,6 +264,11 @@ h2 {
 		display:inline-block;
 		margin: 20px 0 0;
 	}
+	
+	.contact-box.page-contact {
+		margin: 20px 0 30px; padding: 0 0 32px;
+		background: url(../img/hr.png) center bottom no-repeat;
+	}
 
 .contact-box .follow {
 	padding: 8px 20px; margin-top: -4px; border: 1px solid #ddd; 
@@ -294,14 +299,55 @@ h2 {
 		background: url(../img/follow-tw.png) no-repeat left center;
 	}
 
+/* contact : map */
+.map {
+	margin: 0 0 50px;
+}
+	.gmap {
+		float: left;
+		padding:4px 4px 0;
+		background: #fff;
+		-moz-box-shadow: 0 4px 4px #ddd; -khtml-box-shadow: 0 4px 4px #ddd; -webkit-box-shadow: 0 4px 4px #ddd; box-shadow: 0 4px 4px #ddd;
+	}
+	.gmap iframe {
+		border: 1px solid #ddd;
+	}
+
+.contacts {
+	float: left;
+	margin: 0 0 0 20px;
+}
+	.contacts h3 {
+		margin: 0 0 20px;
+		font-size: 16px;
+	}
+	.contacts span,
+	.contacts span a {
+		color: #666;
+	}
+
 /* apps : app */
 .app h2 {
-	font-size: 16px;
+	padding-left: 26px;
+	font-size: 16px; background: url(../img/apps-num.png) no-repeat left 32px;
 }
 	.app h2 em {
 		padding-left: 20px;
 		font-size: 14px; color: #999; font-weight: 100;
 	}
+	.app.s2 h2 {
+		background-position: left -18px;
+	}
+	.app.s3 h2 {
+		background-position: left -68px;
+	}
+	.app.s4 h2 {
+		background-position: left -118px;
+	}
+	.app.s5 h2 {
+		background-position: left -168px;
+	}
+
 
 .app dt {
 	display: none;
@@ -317,9 +363,23 @@ h2 {
 	.app .icon {
 		display: block; float: left;
 		width: 80px; height: 80px; margin: 0 10px 0 0;
+		background: url(../img/icon-bg.png);
+	}
+	.app #apps-mag .icon {
+		background: url(../img/apps-mag-icon.png);
+	}
+	.app .icon img {
+		margin: 0 0 0 4px;
 	}
 	.app .info span {
 		color: #999;
+	}
+	
+	.app dd.unavailable:hover {
+		background: #eee;
+	}
+	.app dd.unavailable .info a {
+		color: #333; text-decoration: none;
 	}
 
 /* team */
