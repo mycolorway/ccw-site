@@ -82,22 +82,31 @@ h2 {
 	}
 
 /* slide */
-.slide .player {
-	height: 434px; width: 960px;
+.slide {
+	position: relative; overflow: hidden;
+	width: 960px; height: 470px;
 }
 
-.slide .ctrl {
-	height: 36px; width: 960px;
+.slide #player {
+	position: absolute; overflow: hidden;
+	height: 434px; width: 3840px;
+}
+	.slide #player li {
+		float: left; width: 960px;
+	}
+
+.slide #ctrl {
+	height: 36px; width: 960px; margin-top: 434px;
 	background: url(../img/hr.png) no-repeat center;
 	text-align: center;
 }
-	.slide .ctrl span {
+	.slide #ctrl li {
 		display: inline-block;
 		width: 10px; height: 10px; margin: 0 5px;
 		color: #ccc; font-size: 20px; text-shadow: 0 -1px 0 #999;
 		
 	}
-	.slide .ctrl span.cur {
+	.slide #ctrl li.cur {
 		color: #5399df; text-shadow: 0 -1px 0 #666;
 	}
 
@@ -165,11 +174,11 @@ h2 {
 	
 .mymag-box .app-li li {
 		float: left;
-		width: 80px; height: 80px; margin: 20px 13px 20px 24px;
+		width: 80px; height: 80px; margin: 20px 13px 20px 38px;
 	}
 	.mymag-box .app-li li a {
 		display: inline-block;
-		width: 80px; height: 80px; background: url(../img/icon-bg.png); opacity: .8;
+		width: 80px; height: 80px; background: url(../img/icon-bg.png); opacity: .9;
 	}
 	.mymag-box .app-li li a:hover {
 		opacity: 1;
@@ -177,16 +186,19 @@ h2 {
 	.mymag-box .app-li li img {
 		margin: 0 0 0 4px;
 	}
-	
-.client-li li {
-	float: left;
-	margin: 0 30px 20px 30px;
+
+.client-li {
+	margin: 0 30px;
 }
+	.client-li li {
+		float: left;
+		margin: 0 10px;
+	}
 	.client-li a {
-		opacity: .8;
+		opacity: .4;
 	}
 	.client-li a:hover {
-		opacity: 1;
+		opacity: .5;
 	}
 
 /* index : other-box */
@@ -384,10 +396,11 @@ h2 {
 
 /* team */
 h1.slogan {
-	font-size: 40px; color: #666; text-align: center; line-height: 100px; text-shadow: 0 1px 0 #fff; 
+	font-size: 40px; font-family: tahoma,'黑体'; color: #666; text-align: center; line-height: 150px; text-shadow: 0 1px 0 #fff; 
 }
 
 .buddy {
+	position: relative;
 	padding: 0 0 36px;
 	background: url(../img/hr.png) no-repeat bottom;
 }
@@ -413,14 +426,96 @@ h1.slogan {
 		font-size: 12px; color: #999;
 	}
 
-
-
-
-
-
-
-
-
+	.buddy img {
+		position: absolute; z-index: 9;
+	}
+	.buddy.manfred img {
+		left: 100px; top: 0;
+	}
+	.buddy.manfred .info {
+		margin-top: 15px; height: 300px;
+	}
+	.buddy.peng img {
+		right: 100px; top: -27px;
+	}
+	.buddy.peng .info {
+		height: 274px;
+	}
+	.buddy.shawn {
+		height: 347px;
+	}
+	.buddy.shawn img {
+		left: 0; top: 30px;
+	}
+	.buddy.shawn .info {
+		width: 380px; padding-top: 50px;
+	}
+	.buddy.zchar img {
+		right: 50px; top: 0;
+	}
+	.buddy.zchar .info {
+		padding-top: 38px; height: 249px;
+	}
+	.buddy.farthinker img {
+		left: 0; top: 0;
+	}
+	.buddy.farthinker .info {
+		padding-top: 57px; height: 199px;
+	}
+	.buddy.fish img {
+		right: 0; top: 0;
+	}
+	.buddy.fish .info {
+		padding-top: 12px; height: 300px;
+	}
+	.buddy.et img {
+		left: 100px; top: 0;
+	}
+	.buddy.et .info {
+		padding-top: 80px; height: 224px;
+	}
+	.buddy.dragon img {
+		right: 100px; top: 0;
+	}
+	.buddy.dragon .info {
+		padding-top: 155px; height: 148px;
+	}
+	.buddy.lendice img {
+		left: 100px; top: 0;
+	}
+	.buddy.lendice .info {
+		padding-top: 71px; height: 199px;
+	}
+	.buddy.mybeky img {
+		right: 40px; top: -58px;
+	}
+	.buddy.mybeky .info {
+		padding-top: 96px; height: 224px;
+	}
+	.buddy.tinyfive img {
+		left: 40px; top: -50px;
+	}
+	.buddy.tinyfive .info {
+		padding-top: 84px; height: 249px;
+	}
+	.buddy.lulu img {
+		right: 40px; top: -30px;
+	}
+	.buddy.lulu .info {
+		padding-top: 92px; height: 199px;
+	}
+	.buddy.ahao img {
+		left: 80px; top: 0;
+	}
+	.buddy.ahao .info {
+		padding-top: 70px; height: 199px;
+	}
+	.buddy.maklu img {
+		right: 80px; top: 0;
+	}
+	.buddy.maklu .info {
+		padding-top: 124px; height: 173px;
+	}
 
 /* footer */
 .footer {
@@ -434,16 +529,3 @@ h1.slogan {
 	.footer .links a:hover {
 		color: #333;
 	}
-
-
-
-
-
-
-
-
-
-
-
-
-

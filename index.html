@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta http-equiv="X-UA-Compatible" content="chrome=1">
 	<meta charset="utf-8" />
 	<title>彩程设计-专注于用户体验设计</title>
 	<link rel="stylesheet" href="assets/css/default.css" />
@@ -23,19 +24,19 @@
 		
 		<div class="content">
 		
-			<div class="slide">
-				<div class="player">
-					<div class="s1 cur"><img src="assets/img/slide1.jpg" alt="广告" /></div>
-					<div class="s2"></div>
-					<div class="s3"></div>
-					<div class="s4"></div>
-				</div>
-				<div class="ctrl">
-					<span class="c1 cur">•</span>
-					<span class="c2">•</span>
-					<span class="c3">•</span>
-					<span class="c4">•</span>
-				</div>
+			<div class="slide clearfix">
+				<ul id="player" style="left:0;">
+					<li><img src="assets/img/slide1.jpg" alt="广告" /></li>
+					<li><img src="assets/img/slide1.jpg" alt="广告" /></li>
+					<li><img src="assets/img/slide1.jpg" alt="广告" /></li>
+					<li><img src="assets/img/slide1.jpg" alt="广告" /></li>
+				</ul>
+				<ul id="ctrl">
+					<li class="c1 cur">•</li>
+					<li class="c2">•</li>
+					<li class="c3">•</li>
+					<li class="c4">•</li>
+				</ul>
 			</div>
 			
 			<div class="mymag-box">
@@ -59,23 +60,22 @@
 				</div>
 				<div class="app-li">
 					<ul class="clearfix">
-						<li><a href="#" title="百家"><img width="72" height="72" src="assets/img/app-icon.png" alt="百家" /></a></li>
-						<li><a href="#" title="关军"><img width="72" height="72" src="assets/img/app-icon.png" alt="关军" /></a></li>
-						<li><a href="#" title="华大点滴"><img width="72" height="72" src="assets/img/app-icon.png" alt="华大点滴" /></a></li>
-						<li><a href="#" title="冯唐文字"><img width="72" height="72" src="assets/img/app-icon.png" alt="冯唐文字" /></a></li>
-						<li><a href="#" title="爆笑西游"><img width="72" height="72" src="assets/img/app-icon.png" alt="爆笑西游" /></a></li>
-						<li><a href="#" title="龙湖天街"><img width="72" height="72" src="assets/img/app-icon.png" alt="龙湖天街" /></a></li>
-						<li><a href="#" title="新潮"><img width="72" height="72" src="assets/img/app-icon.png" alt="新潮" /></a></li>
-						<li><a href="#" title="VECO"><img width="72" height="72" src="assets/img/app-icon.png" alt="VECO" /></a></li>
+						<li><a href="#" title="百家"><img width="72" height="72" src="assets/img/apps/mag.png" alt="百家" /></a></li>
+						<li><a href="#" title="关军"><img width="72" height="72" src="assets/img/apps/guanjun.png" alt="关军" /></a></li>
+						<li><a href="#" title="VECO"><img width="72" height="72" src="assets/img/apps/veco.png" alt="VECO" /></a></li>
+						<li><a href="#" title="冯唐文字"><img width="72" height="72" src="assets/img/apps/fengtang.png" alt="冯唐文字" /></a></li>
+						<li><a href="#" title="爆笑西游"><img width="72" height="72" src="assets/img/apps/baoxiao.png" alt="爆笑西游" /></a></li>
+						<li><a href="#" title="龙湖天街"><img width="72" height="72" src="assets/img/apps/longhu.png" alt="龙湖天街" /></a></li>
+						<li><a href="#" title="新潮"><img width="72" height="72" src="assets/img/apps/xinchao.png" alt="新潮" /></a></li>
 					</ul>
 				</div>
 				<div class="client-li clearfix">
 					<ul>
-						<li><a href="#"><img src="assets/img/client-icon.png" alt="中国移动" /></a></li>
-						<li><a href="#"><img src="assets/img/client-icon.png" alt="Asiainfo" /></a></li>
-						<li><a href="#"><img src="assets/img/client-icon.png" alt="龙湖地产" /></a></li>
-						<li><a href="#"><img src="assets/img/client-icon.png" alt="万科" /></a></li>
-						<li><a href="#"><img src="assets/img/client-icon.png" alt="TINMAN ARTS" /></a></li>
+						<li><a href="#"><img src="assets/img/clients/cmcc.png" alt="中国移动" /></a></li>
+						<li><a href="#"><img src="assets/img/clients/ai.png" alt="Asiainfo" /></a></li>
+						<li><a href="#"><img src="assets/img/clients/longhu.png" alt="龙湖地产" /></a></li>
+						<li><a href="#"><img src="assets/img/clients/wanke.png" alt="万科" /></a></li>
+						<li><a href="#"><img src="assets/img/clients/ta.png" alt="TINMAN ARTS" /></a></li>
 					</ul>
 				</div>
 			</div>
@@ -93,12 +93,12 @@
 					<div id="news-v">
 						<h3>新产品演示</h3>
 						<span>《财神的故事》动画书已上架，敬请下载</span><br />
-						<a href="#"><img width="200" height="150" src="assets/img/other-app-desc.png" alt="财神的故事" /></a>
+						<a href="#"><img width="200" height="150" src="assets/img/other-app-desc2.png" alt="财神的故事" /></a>
 					</div>
-					<div id="midi-pad">
-						<h3>Midi Pad</h3>
-						<span>把你的iPad，变成一部真正的DJ调音台</span><br />
-						<a href="#"><img width="200" height="150" src="assets/img/other-app-desc.png" alt="DJ调音台" /></a>
+					<div id="blueprint">
+						<h3>即将推出《蓝图周刊》</h3>
+						<span>让有性格的信息，找到有性格的人</span><br />
+						<a href="#"><img width="200" height="150" src="assets/img/other-app-desc3.png" alt="DJ调音台" /></a>
 					</div>
 				</div>
 			</div>
@@ -124,7 +124,7 @@
 						<img src="assets/img/contact-index-ooo.png" width="330" height="231" />
 					</div>
 					<div id="ahao">
-						<h3>产品咨询、上午洽谈 找阿豪</h3>
+						<h3>产品咨询、商务洽谈 找阿豪</h3>
 						<span>解决方案咨询、产品洽谈订购请联系为<br />
 						给予移动互联网，尤其是iPad&iPhone<br />
 						欢迎选用我们成熟的产品与解决方案<br />
@@ -160,5 +160,6 @@
 		</div>
 		
 	</div>
+<script type="text/javascript" src="assets/js/slide.js"></script> 
 </body>
 </html>
