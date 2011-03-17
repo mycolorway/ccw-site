@@ -236,6 +236,13 @@ h2 {
 		display: inline-block;
 		margin: 10px 0 0;
 	}
+	
+	.other-box .desc img {
+		opacity: .9;
+	}
+	.other-box .desc img:hover {
+		opacity: 1;
+	}
 
 /* contact-box */
 .contact-box {
@@ -387,11 +394,24 @@ h2 {
 		color: #999;
 	}
 	
+	.app dd.unavailable {
+		position: relative; overflow: hidden;
+	}
+	.app dd.unavailable .info span {
+		color: #aaa;
+	}
+	.app dd.unavailable .mask {
+		position: absolute; top: 0; left: 0;
+		height: 80px; width: 200px; opacity: .5;
+	}
+	.app dd.unavailable img {
+		filter: gray; opacity: .2;
+	}
 	.app dd.unavailable:hover {
 		background: #eee;
 	}
 	.app dd.unavailable .info a {
-		color: #333; text-decoration: none;
+		color: #999; text-decoration: none;
 	}
 
 /* team */
@@ -511,7 +531,10 @@ h1.slogan {
 		padding-top: 70px; height: 199px;
 	}
 	.buddy.maklu img {
-		right: 80px; top: 0;
+		right: 80px; top: 0; opacity: .5;
+	}
+	.buddy.maklu img:hover {
+		right: 80px; top: 0; opacity: 1;
 	}
 	.buddy.maklu .info {
 		padding-top: 124px; height: 173px;
