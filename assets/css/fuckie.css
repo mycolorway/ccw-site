@@ -1,0 +1,42 @@
+@charset "utf-8";
+
+#fuckie {
+	width: 960px; height: 180px; margin: 0 auto;
+	text-align: center; background: url(../img/ie6-bg.png) no-repeat center;
+}
+
+#fuckie .tips {
+	font-size: 16px; line-height: 80px;
+}
+
+#fuckie .brs {
+	margin-left: 220px;
+}
+
+#fuckie .brs li {
+	float: left;
+}
+
+#fuckie .brs a {
+	display: block;
+	height: 54px; width: 171px;
+	text-indent: -4444px;
+}
+	#fuckie .brs .cr a {
+		background: url(../img/ie6-brs.png) no-repeat 0px 10px;
+	}
+	#fuckie .brs .cr a:hover {
+		background: url(../img/ie6-brs.png) no-repeat 0px -70px;
+	}
+	#fuckie .brs .ff a {
+		background: url(../img/ie6-brs.png) no-repeat -184px 10px;
+	}
+	#fuckie .brs .ff a:hover {
+		background: url(../img/ie6-brs.png) no-repeat -184px -70px;
+	}
+	#fuckie .brs .ie9 a {
+		background: url(../img/ie6-brs.png) no-repeat -369px 10px;
+	}
+	#fuckie .brs .ie9 a:hover {
+		background: url(../img/ie6-brs.png) no-repeat -369px -70px;
+	}
