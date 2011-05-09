@@ -37,8 +37,8 @@ function transition( index ) {
     }
     
     slides.eq( currentIndex )
-        .fadeOut( 1000 );
-    newSlide.fadeIn( 1000, function() {
+        .fadeOut( "slow" );
+    newSlide.fadeIn( "slow", function() {
         $( this ).addClass( "cur" )
             .siblings( "li" )
             .removeClass( "cur" );

@@ -110,12 +110,13 @@ h2 {
 	height: 36px; width: 960px; margin-top: 434px;
 	background: url(../img/hr.png) no-repeat center;
 	text-align: center;
+	cursor: default;
 }
 	.slide #ctrl li {
 		display: inline-block;
 		width: 10px; height: 10px; margin: 0 5px;
 		color: #ccc; font-size: 20px; text-shadow: 0 -1px 0 #999;
-		
+		cursor: default;
 	}
 	.slide #ctrl li.cur {
 		color: #5399df; text-shadow: 0 -1px 0 #666;
