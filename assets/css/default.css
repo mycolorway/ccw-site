@@ -53,28 +53,33 @@ h2 {
 	.nav a {
 		float: left; display: inline-block;
 		padding: 3px 35px 6px; border-top: 1px solid #ececec; border-left: 1px solid #fff; border-right:1px solid #d8d9d8 ; outline: 0;
-		font-size: 14px; font-weight: 800; color: #666; background: #ccc;
+		font-size: 14px; font-weight: 800; color: #666666;
+		background: #ccc url(../img/nav-bg.png) center -53px no-repeat;
 		background: -moz-linear-gradient(top, #fff, #ccc);
 		background: -webkit-gradient(linear, 0 0, 0 100%, from(#fff), to(#ccc));
 	}
 	.nav a:hover {
-		background: #ddd; text-decoration: none;
+		background: #ddd url(../img/nav-bg.png) center -106px no-repeat; text-decoration: none;
 		background: -moz-linear-gradient(top, #fff, #ddd);
 		background: -webkit-gradient(linear, 0 0, 0 100%, from(#fff), to(#ddd));
 	}
 	.nav a:active {
-		background: #bbb; text-decoration: none;
+		background: #bbb url(../img/nav-bg.png) center -156px no-repeat; text-decoration: none;
 		background: -moz-linear-gradient(top, #eee, #bbb);
 		background: -webkit-gradient(linear, 0 0, 0 100%, from(#eee), to(#bbb));
 	}
 	.nav a.cur {
 		padding-top: 4px; margin-top: -1px;
 		border-top: 1px solid #5e90bd; border-right:1px solid #518cc9; border-left: 1px solid #5a99d7;
-		color: #fff; background: #589de3;
+		color: #fff; background: #589de3 url(../img/nav-bg.png) center -1px no-repeat;
 		background: -moz-linear-gradient(top, #70b3f3, #5399df, #70b3f3);
 		background: -webkit-gradient(linear, 0 0, 0 100%, from(#70b3f3), color-stop(50%, #5399df), color-stop(100%, #70b3f3));
 	}
+	.nav a.cur:hover {
+		background: #589de3 url(../img/nav-bg.png) center -1px no-repeat;
+	}
 	.nav a.first {
+		border-left: 1px solid #D8D9D8;
 		-moz-border-radius: 5px 0 0 5px; -khtml-border-radius: 5px 0 0 5px; -webkit-border-radius: 5px 0 0 5px; border-radius: 5px 0 0 5px;
 	}
 	.nav a.last {
@@ -89,10 +94,16 @@ h2 {
 
 .slide #player {
 	position: absolute; overflow: hidden;
-	height: 434px; width: 3840px;
+	height: 434px; width: 960px;
+	top: 0; left: 0;
 }
 	.slide #player li {
-		float: left; width: 960px;
+		height: 434px; width: 960px;
+		position: absolute; top: 0; left: 0;
+		display: none;
+	}
+	.slide #player li.cur {
+		display: block;
 	}
 
 .slide #ctrl {
@@ -267,14 +278,14 @@ h2 {
 		font-size: 14px;
 	}
 	.contact-box .desc #peng {
-		margin-top: 30px;
+		margin-top: 15px;
 		text-align: right;
 	}
 	.contact-box .desc #ooo {
 		width: 330px;
 	}
 	.contact-box .desc #ahao {
-		margin-top: 48px;
+		margin-top: 16px;
 	}
 	.contact-box .desc span {
 		color: #666;
@@ -299,7 +310,7 @@ h2 {
 		float: right;
 	}
 	.contact-box .follow .follows a {
-		margin-left: 20px; padding-left: 20px;
+		margin-left: 20px; padding: 5px 0 5px 20px;
 		color: #333;
 	}
 	.contact-box .follow .follows a:hover {
@@ -450,13 +461,13 @@ h1.slogan {
 		position: absolute; z-index: 9;
 	}
 	.buddy.manfred img {
-		left: 100px; top: 0;
+		left: 100px; top: 38px;
 	}
 	.buddy.manfred .info {
-		margin-top: 15px; height: 300px;
+		margin-top: 15px; height: 330px;
 	}
 	.buddy.peng img {
-		right: 100px; top: -27px;
+		right: -45px; top: -27px;
 	}
 	.buddy.peng .info {
 		height: 274px;
@@ -480,7 +491,7 @@ h1.slogan {
 		left: 0; top: 0;
 	}
 	.buddy.farthinker .info {
-		padding-top: 57px; height: 199px;
+		padding-top: 10px; height: 251px;
 	}
 	.buddy.fish img {
 		right: 0; top: 0;
@@ -489,7 +500,7 @@ h1.slogan {
 		padding-top: 12px; height: 300px;
 	}
 	.buddy.et img {
-		left: 100px; top: 0;
+		left: -25px; top: 0;
 	}
 	.buddy.et .info {
 		padding-top: 80px; height: 224px;
@@ -498,13 +509,13 @@ h1.slogan {
 		right: 100px; top: 0;
 	}
 	.buddy.dragon .info {
-		padding-top: 155px; height: 148px;
+		padding-top: 130px; height: 173px;
 	}
 	.buddy.lendice img {
 		left: 100px; top: 0;
 	}
 	.buddy.lendice .info {
-		padding-top: 71px; height: 199px;
+		padding-top: 40px; height: 230px;
 	}
 	.buddy.mybeky img {
 		right: 40px; top: -58px;
@@ -516,7 +527,7 @@ h1.slogan {
 		left: 40px; top: -50px;
 	}
 	.buddy.tinyfive .info {
-		padding-top: 84px; height: 249px;
+		padding-top: 54px; height: 279px;
 	}
 	.buddy.lulu img {
 		right: 40px; top: -30px;
@@ -531,13 +542,13 @@ h1.slogan {
 		padding-top: 70px; height: 199px;
 	}
 	.buddy.maklu img {
-		right: 80px; top: 0; opacity: .5;
-	}
-	.buddy.maklu img:hover {
-		right: 80px; top: 0; opacity: 1;
+		right: 80px; top: 0;
 	}
 	.buddy.maklu .info {
 		padding-top: 124px; height: 173px;
+	}
+	.buddy.you img {
+		left: 60px; top: 56px;
 	}
 
 /* footer */
@@ -552,3 +563,25 @@ h1.slogan {
 	.footer .links a:hover {
 		color: #333;
 	}
+
+/* v-show */
+.v-show {
+	display: none;
+	position: fixed; top: 0%; left: 0%; z-index: 99;
+	width: 100%; height: 100%;
+}
+	.v-show .inr {
+		position: absolute; left: 50%; top: 50%;
+		margin-left: -330px; margin-top: -220px; width: 600px; height: 380px; padding: 20px;
+		-moz-border-radius: 5px; -khtml-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px;
+		-moz-box-shadow: 0 4px 18px #000; -khtml-box-shadow: 0 4px 18px #000; -webkit-box-shadow: 0 4px 18px #000; box-shadow: 0 4px 18px #000;
+		background: #fff;
+	}
+	.v-show .close {
+		display: block; position: absolute; top: -7px; left: -7px;
+		width: 26px; height: 26px;
+		background: url(../img/close-bg.png) center top no-repeat; text-align: center; line-height: 17px; color: #fff; font-weight: 800; text-indent: -4444px;
+	}
+	.v-show .close:hover {
+		text-decoration: none; background: url(../img/close-bg.png) center bottom no-repeat;
+	} 

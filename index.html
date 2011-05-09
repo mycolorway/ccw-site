@@ -8,6 +8,9 @@
 	<!--[if lte IE 8]>
 		<link rel="stylesheet" href="assets/css/fuckie.css" />
 	<![endif]-->
+	
+	<script type="text/javascript" src="assets/js/jquery-1.6.min.js"></script>
+	<script type="text/javascript" src="assets/js/banner.js"></script>
 </head>
 <body>
 
@@ -40,11 +43,11 @@
 		<div class="content">
 		
 			<div class="slide clearfix">
-				<ul id="player" style="left:0;">
-					<li><a href="http://mag.mycolorway.com/"><img src="assets/img/slide1.jpg" alt="百家，让ipad杂志活起来" /></a></li>
-					<li><a href="http://bit.ly/csstory"><img src="assets/img/slide2.jpg" alt="中国神话故事系列动画书" /></a></li>
-					<li><a href="http://bit.ly/xiyou1lite"><img src="assets/img/slide3.jpg" alt="ipad爆笑西游" /></a></li>
-					<li><a href="http://bit.ly/chickensrun"><img src="assets/img/slide4.jpg" alt="小鸡快跑系列动画书" /></a></li>
+				<ul id="player">
+					<li class="cur"><a href="http://mag.mycolorway.com/" target="_blank"><img src="assets/img/slide1.jpg" alt="百家，让ipad杂志活起来" /></a></li>
+					<li><a href="http://bit.ly/zhengming" target="_blank"><img src="assets/img/slide2.jpg" alt="争鸣，ipad杂志预览工具" /></a></li>
+					<li><a href="#" target="_blank"><img src="assets/img/slide3.jpg" alt="关注移动互联，服务企业用户" /></a></li>
+					<li><a href="#" target="_blank"><img src="assets/img/slide4.jpg" alt="关注移动互联，服务企业用户" /></a></li>
 				</ul>
 				<ul id="ctrl">
 					<li class="c1 cur">•</li>
@@ -59,38 +62,38 @@
 				<p class="slogan clearfix">iPad电子杂志解决方案，自助出版从未有如此简单</p>
 				<div class="desc clearfix">
 					<div id="app-desc">
-						<h3><a href="http://blog.mycolorway.com/2010/11/29/mymag-release/">品牌App定制</a></h3>
+						<h3><a target="_blank" href="http://blog.mycolorway.com/2010/11/29/mymag-release/">品牌App定制</a></h3>
 						<span>为您设计自有品牌与外观，定制特殊功能的iPad杂志App</span><br />
-						<a class="more" href="http://blog.mycolorway.com/2010/11/29/mymag-release/">案例与客户</a>
+						<a class="more" target="_blank" href="http://blog.mycolorway.com/2010/11/29/mymag-release/">案例与客户</a>
 					</div>
 					<div id="v-desc">
-						<img width="195" height="152" src="assets/img/lifeweekly-v.png" alt="三联生活周刊iPad演示视频" />
-						<a class="v-link" href="http://v.youku.com/v_show/id_XMjQ4OTY2OTA0.html"></a>
+						<img width="195" height="152" onclick="document.getElementById('v-show-mag').style.display='block'" src="assets/img/lifeweekly-v.png" alt="三联生活周刊iPad演示视频" />
+						<a class="v-link" onclick="document.getElementById('v-show-mag').style.display='block'" href="javascript:void(0)"></a>
 					</div>
 					<div id="mymag-desc">
-						<h3><a href="http://mag.mycolorway.com/">“百家”自助出版平台</a></h3>
+						<h3><a href="http://mag.mycolorway.com/" target="_blank">“百家争鸣”iPad杂志解决方案</a></h3>
 						<span>上传、编辑、管理和发布自己iPad杂志中的内容，包括增加各种导航和交互</span><br />
-						<a class="more" href="http://mag.mycolorway.com/">登录百家</a>
+						<a class="more" href="http://mag.mycolorway.com/" target="_blank">登录百家</a>
 					</div>
 				</div>
 				<div class="app-li">
 					<ul class="clearfix">
-						<li><a href="http://bit.ly/baijia" title="百家"><img width="72" height="72" src="assets/img/apps/mag.png" alt="百家" /></a></li>
-						<li><a href="http://bit.ly/bigfootprint" title="关军"><img width="72" height="72" src="assets/img/apps/guanjun.png" alt="关军" /></a></li>
-						<li><a href="#" title="VECO"><img width="72" height="72" src="assets/img/apps/veco.png" alt="VECO" /></a></li>
-						<li><a href="http://bit.ly/fengtang" title="冯唐文字"><img width="72" height="72" src="assets/img/apps/fengtang.png" alt="冯唐文字" /></a></li>
-						<li><a href="http://bit.ly/xiyou1" title="爆笑西游"><img width="72" height="72" src="assets/img/apps/baoxiao.png" alt="爆笑西游" /></a></li>
+						<li><a href="http://bit.ly/blueweekly" title="蓝图" target="_blank"><img width="72" height="72" src="assets/img/apps/blue.png" alt="蓝图" /></a></li>
+						<li><a href="http://bit.ly/bigfootprint" title="关军" target="_blank"><img width="72" height="72" src="assets/img/apps/guanjun.png" alt="关军" /></a></li>
+						<li><a href="http://bit.ly/fengtang" title="冯唐文字" target="_blank"><img width="72" height="72" src="assets/img/apps/fengtang.png" alt="冯唐文字" /></a></li>
+						<li><a href="http://bit.ly/zhengming" title="争鸣" target="_blank"><img width="72" height="72" src="assets/img/apps/icon-zhengming.png" alt="争鸣" /></a></li>
+						<li><a href="http://bit.ly/xiyou1" title="爆笑西游" target="_blank"><img width="72" height="72" src="assets/img/apps/baoxiao.png" alt="爆笑西游" /></a></li>
 						<li><a href="#" title="龙湖天街"><img width="72" height="72" src="assets/img/apps/longhu.png" alt="龙湖天街" /></a></li>
-						<li><a href="#" title="新潮"><img width="72" height="72" src="assets/img/apps/xinchao.png" alt="新潮" /></a></li>
+						<li><a target="_blank" href="http://bit.ly/xinchaoapp" title="新潮"><img width="72" height="72" src="assets/img/apps/xinchao.png" alt="新潮" /></a></li>
 					</ul>
 				</div>
 				<div class="client-li clearfix">
 					<ul>
-						<li><a href="http://www.10086.cn/aboutus/index_4458.htm"><img src="assets/img/clients/cmcc.png" alt="中国移动" /></a></li>
-						<li><a href="http://www.asiainfo-linkage.com.cn/"><img src="assets/img/clients/ai.png" alt="Asiainfo" /></a></li>
-						<li><a href="http://www.longfor.com/"><img src="assets/img/clients/longhu.png" alt="龙湖地产" /></a></li>
-						<li><a href="http://www.vanke.com/"><img src="assets/img/clients/wanke.png" alt="万科" /></a></li>
-						<li><a href="http://www.tinman.cn/"><img src="assets/img/clients/ta.png" alt="TINMAN ARTS" /></a></li>
+						<li><a href="http://www.10086.cn/aboutus/index_4458.htm" target="_blank"><img src="assets/img/clients/cmcc.png" alt="中国移动" /></a></li>
+						<li><a href="http://www.asiainfo-linkage.com.cn/" target="_blank"><img src="assets/img/clients/ai.png" alt="Asiainfo" /></a></li>
+						<li><a href="http://www.longfor.com/" target="_blank"><img src="assets/img/clients/longhu.png" alt="龙湖地产" /></a></li>
+						<li><a href="http://www.vanke.com/" target="_blank"><img src="assets/img/clients/wanke.png" alt="万科" /></a></li>
+						<li><a href="http://www.tinman.cn/" target="_blank"><img src="assets/img/clients/ta.png" alt="TINMAN ARTS" /></a></li>
 					</ul>
 				</div>
 			</div>
@@ -102,18 +105,18 @@
 				<div class="desc clearfix">
 					<div id="ch-run">
 						<h3>《小鸡快跑》系列动画书</h3>
-						<span>两度入围苹果新品推荐，全球下载超50万次</span><br />
-						<a href="http://bit.ly/chickensrun"><img width="200" height="150" src="assets/img/other-app-desc.png" alt="小鸡快跑" /></a>
+						<span>两度入围苹果新品推荐，全球下载超16万次</span><br />
+						<a href="http://bit.ly/chickensrun" target="_blank"><img width="200" height="150" src="assets/img/other-app-desc.png" alt="小鸡快跑" /></a>
 					</div>
 					<div id="news-v">
-						<h3>新产品演示</h3>
-						<span>《财神的故事》动画书已上架，敬请下载</span><br />
-						<a href="http://v.youku.com/v_show/id_XMjM5OTgyOTk2.html"><img width="200" height="150" src="assets/img/other-app-desc2.png" alt="财神的故事" /></a>
+						<h3>最新应用</h3>
+						<span>让有性格的信息，找到有性格的人</span><br />
+                        <a href="http://bit.ly/blueweekly" target="_blank"><img width="200" height="150" src="assets/img/other-app-desc2.png" alt="蓝图周刊" /></a>
 					</div>
 					<div id="blueprint">
-						<h3>即将推出《蓝图周刊》</h3>
-						<span>让有性格的信息，找到有性格的人</span><br />
-						<a href="http://blog.mycolorway.com/"><img width="200" height="150" src="assets/img/other-app-desc3.png" alt="蓝图周刊" /></a>
+						<h3>即将推出《门神的故事》</h3>
+						<span>用最欢乐的方式，触摸中国传统故事</span><br />
+						<img width="200" height="150" src="assets/img/other-app-desc3.png" alt="门神的故事" />
 					</div>
 				</div>
 			</div>
@@ -125,14 +128,15 @@
 				<div class="desc clearfix">
 					<div id="peng">
 						<h3>媒体接待、业界交流 找老妖</h3>
-						<span>媒体采访报道、业界经验交流请联系为<br />
-						每个月第三个星期天下午2:30<br />
-						我在民土咖啡“<a href="http://ucdchina.com/club">UCD书友会</a>”成都沙龙<br />
-						（成都市锦江区小科甲巷1号第一城B座6楼）<br />
+						<span>媒体采访报道、业界经验交流请联系我<br />
+                        每月第三个周日14:30，“<a href="http://ucdchina.com/club" target="_blank">UCD书友会</a>”成都沙龙<br />
+					    (成都锦江区小科甲巷1号第一城B座6楼民土咖啡)<br />
 						期待与您面对面</span><br />
 						<span class="contact">
-							<span class="name">老妖（刘鹏）</span><br />
-							<span class="phone-mail">135 502 72317 / peng@mycolorway.com</span>
+							<span class="name">刘鹏（老妖）</span><br />
+                            <span class="phone-mail">手机: 135 502 72317</span><br />
+                            <span class="phone-mail">Email: peng@mycolorway.com</span><br />
+                            <span class="phone-mail">新浪微博: <a href="http://t.sina.com.cn/penggreat" target="_blank">@老妖在路上</a></span><br />
 						</span>
 					</div>
 					<div id="ooo">
@@ -140,13 +144,15 @@
 					</div>
 					<div id="ahao">
 						<h3>产品咨询、商务洽谈 找阿豪</h3>
-						<span>解决方案咨询、产品洽谈订购请联系为<br />
-						给予移动互联网，尤其是iPad&iPhone<br />
+						<span>解决方案咨询、产品洽谈订购请联系我<br />
+						基于移动互联网，尤其是iPad&iPhone<br />
 						欢迎选用我们成熟的产品与解决方案<br />
 						也欢迎找我们定制开发，或与我们合作运营</span><br />
 						<span class="contact">
 							<span class="name">刘畅（阿豪）</span><br />
-							<span class="phone-mail">186 080 00015 / liuchang@mycolorway.com</span>
+                            <span class="phone-mail">手机: 186 080 00015</span><br />
+                            <span class="phone-mail">Email: liuchang@mycolorway.com</span><br />
+                            <span class="phone-mail">新浪微博: <a href="http://t.sina.com.cn/1606615752" target="_blank">@牛言</a></span><br />
 						</span>
 					</div>
 				</div>
@@ -155,8 +161,8 @@
 					<span class="follows">
 						<a class="mail" href="mailto:team+site@mycolorway.com">给我们写邮件</a>
 						<a class="blog" href="http://blog.mycolorway.com/">订阅彩程博客</a>
-						<a class="sina" href="http://t.sina.com.cn/mycolorway">彩程新浪微博</a>
-						<a class="twitter" href="https://twitter.com/mycolorway">彩程Twitter</a>
+						<a class="sina" href="http://t.sina.com.cn/mycolorway" target="_blank">彩程新浪微博</a>
+						<a class="twitter" href="https://twitter.com/mycolorway" target="_blank">彩程Twitter</a>
 					</span>
 				</div>
 			</div>
@@ -175,19 +181,33 @@
 		</div>
 		
 	</div>
-<script type="text/javascript" src="assets/js/slide.js"></script>
-<script type="text/javascript">
+	
+	<div id="v-show-mag" class="v-show"> 
+		<div class="inr"> 
+			<embed src="http://player.youku.com/player.php/sid/XMjQ4OTY2OTA0/v.swf" quality="high" width="100%" height="100%" align="middle" allowScriptAccess="sameDomain" type="application/x-shockwave-flash"></embed> 
+			<a class="close" href="javascript:void(0)" onclick="document.getElementById('v-show-mag').style.display='none'">x</a> 
+		</div> 
+	</div>
+	
+	<div id="v-show-sh" class="v-show"> 
+		<div class="inr"> 
+			<embed src="http://player.youku.com/player.php/sid/XMjM5OTgyOTk2/v.swf" quality="high" width="100%" height="100%" align="middle" allowScriptAccess="sameDomain" type="application/x-shockwave-flash"></embed>
+			<a class="close" href="javascript:void(0)" onclick="document.getElementById('v-show-sh').style.display='none'">x</a> 
+		</div> 
+	</div>
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-10576670-1']);
+        _gaq.push(['_setDomainName', '.mycolorway.com']);
+        _gaq.push(['_trackPageview']);
 
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-10576670-13']);
-  _gaq.push(['_trackPageview']);
+        (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
 
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
+    </script>
 
-</script>
 </body>
 </html>
