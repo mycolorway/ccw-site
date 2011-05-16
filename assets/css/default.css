@@ -110,13 +110,12 @@ h2 {
 	height: 36px; width: 960px; margin-top: 434px;
 	background: url(../img/hr.png) no-repeat center;
 	text-align: center;
-	cursor: default;
 }
 	.slide #ctrl li {
 		display: inline-block;
 		width: 10px; height: 10px; margin: 0 5px;
 		color: #ccc; font-size: 20px; text-shadow: 0 -1px 0 #999;
-		cursor: default;
+		
 	}
 	.slide #ctrl li.cur {
 		color: #5399df; text-shadow: 0 -1px 0 #666;
@@ -139,49 +138,29 @@ h2 {
 .mymag-box .desc {
 	width: 960px; padding-left: 60px;
 }
-	.mymag-box #app-desc,
-	.mymag-box #mymag-desc,
-	.mymag-box #v-desc {
+	.mymag-box #app-desc {
 		float: left;
-		width: 240px; padding: 20px 0 50px;
+		width:157px;
+	}
+	.mymag-box #mymag-desc {
+		float: left;
+		width:147px;
+	}
+	.mymag-box #mymag-desc a:hover,
+	.mymag-box #app-desc a:hover {
+		opacity:.8;
 	}
 	.mymag-box #v-desc {
-		width: 260px; padding: 15px 0 0;
+		float: left;
+		width: 512px; padding: 15px 0 30px;
 		text-align: center;
 	}
 	.mymag-box a.v-link {
 		display: block; position: absolute;
-		width: 159px; height: 120px; margin: -140px 0 0 51px;
+		width: 191px; height: 110px; margin: -233px 0 0 155px;
 	}
 	.mymag-box a.v-link:hover {
 		background: #fff; opacity: .5;
-	}
-	.mymag-box #app-desc {
-		padding-right: 40px;
-		background: url(../img/app-bg.png) no-repeat center right; text-align: right;
-	}
-	.mymag-box #mymag-desc {
-		padding-left: 40px;
-		background: url(../img/mag-bg.png) no-repeat center left;
-	}
-	.mymag-box .desc h3 {
-		font-size: 14px; line-height: 40px;
-	}
-	.mymag-box .desc h3 a:hover {
-		text-decoration: none;
-	}
-	.mymag-box .desc a.more {
-		padding-left: 15px;
-		line-height: 40px; color: #999;
-	}
-	.mymag-box .desc a.more:hover {
-		color: #aaa; text-decoration: none;
-	}
-	.mymag-box #app-desc a.more {
-		background: url(../img/ico-app-more.png) no-repeat center left;
-	}
-	.mymag-box #mymag-desc a.more {
-		background: url(../img/ico-mag-more.png) no-repeat center left;
 	}
 	
 .mymag-box .app-li li {
