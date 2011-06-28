@@ -40,3 +40,5 @@
 	#fuckie .brs .ie9 a:hover {
 		background: url(../img/ie6-brs.png) no-repeat -369px -70px;
 	}
+
+.teamcola-box .desc a.link { background:none; }

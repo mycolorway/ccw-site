@@ -144,10 +144,10 @@ h2 {
 	.teamcola-box .desc dd.r { text-align:left; }
 	.teamcola-box .desc dd.l { text-align:right; }
 	
-	.teamcola-box .desc .l.t { top:63px; left:200px; }
-	.teamcola-box .desc .r.t { top:183px; left:474px; }
-	.teamcola-box .desc .l.b { top:308px; left:164px; }
-	.teamcola-box .desc .r.b { top:418px; left:415px; }
+	.teamcola-box .desc dd.x1 { top:63px; left:200px; }
+	.teamcola-box .desc dd.x2 { top:183px; left:474px; }
+	.teamcola-box .desc dd.x3 { top:308px; left:164px; }
+	.teamcola-box .desc dd.x4 { top:418px; left:415px; }
 	
 	.teamcola-box .desc a.link {
 		position:absolute; top:165px; left:321px; display:block; 
