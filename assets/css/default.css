@@ -121,76 +121,46 @@ h2 {
 		color: #5399df; text-shadow: 0 -1px 0 #666;
 	}
 
-/* index : mymag-box */
-.mymag-box {
+/* index : teamcola-box */
+.teamcola-box {
 	margin: 10px 0 40px;
 }
 
-.mymag-box h2 {
-	text-align: center;
+.teamcola-box h2 {
+	text-align: center; padding:28px 0 10px; line-height:1;
 }
 
-.mymag-box .slogan {
-	height: 94px; margin: 0 0 20px;
-	background: url(../img/mag-slogan.png) center no-repeat; text-indent: -4444px;
+.teamcola-box h3 {
+	text-align: center; font-size:16px;
 }
 
-.mymag-box .desc {
-	width: 960px; padding-left: 60px;
+.teamcola-box .desc {
+	position:relative;
+	width:780px; height:480px; margin:40px auto;
+	background:url(../img/teamcola-box-bg.png);
 }
-	.mymag-box #app-desc {
-		float: left;
-		width:157px;
-	}
-	.mymag-box #mymag-desc {
-		float: left;
-		width:147px;
-	}
-	.mymag-box #mymag-desc a:hover,
-	.mymag-box #app-desc a:hover {
-		opacity:.8;
-	}
-	.mymag-box #v-desc {
-		float: left;
-		width: 512px; padding: 15px 0 30px;
-		text-align: center;
-	}
-	.mymag-box a.v-link {
-		display: block; position: absolute;
-		width: 191px; height: 110px; margin: -233px 0 0 155px;
-	}
-	.mymag-box a.v-link:hover {
-		background: #fff; opacity: .5;
-	}
+	.teamcola-box .desc dt { text-indent:-4444px; }
+	.teamcola-box .desc dd { position:absolute; font-size:12px; font-weight:100; color:#999; }
+	.teamcola-box .desc dd.r { text-align:left; }
+	.teamcola-box .desc dd.l { text-align:right; }
 	
-.mymag-box .app-li li {
-		float: left;
-		width: 80px; height: 80px; margin: 20px 13px 20px 38px;
+	.teamcola-box .desc .l.t { top:63px; left:200px; }
+	.teamcola-box .desc .r.t { top:183px; left:474px; }
+	.teamcola-box .desc .l.b { top:308px; left:164px; }
+	.teamcola-box .desc .r.b { top:418px; left:415px; }
+	
+	.teamcola-box .desc a.link {
+		position:absolute; top:165px; left:321px; display:block; 
+		width:130px; height:130px;
+		text-indent:-4444px; background:#fff; opacity:.1;
 	}
-	.mymag-box .app-li li a {
-		display: inline-block;
-		width: 80px; height: 80px; background: url(../img/icon-bg.png); opacity: .9;
-	}
-	.mymag-box .app-li li a:hover {
-		opacity: 1;
-	}
-	.mymag-box .app-li li img {
-		margin: 0 0 0 4px;
-	}
+	.teamcola-box .desc a.link:hover { opacity:0; }
 
-.client-li {
-	margin: 0 30px;
-}
-	.client-li li {
-		float: left;
-		margin: 0 10px;
-	}
-	.client-li a {
-		opacity: .4;
-	}
-	.client-li a:hover {
-		opacity: .5;
-	}
+.client-li { margin: 0 0 0 80px; }
+	.client-li .title { margin:20px 80px 20px 0; text-align: center; font-size:16px; font-weight:800; }
+	.client-li li { float: left; margin: 0 10px; }
+	.client-li a { opacity: .8; }
+	.client-li a:hover { opacity: 1; }
 
 /* index : other-box */
 .other-box {
@@ -219,6 +189,11 @@ h2 {
 	}
 	.other-box .desc span {
 		color: #999;
+	}
+	.other-box .desc span a {
+		display:inline;
+		margin:0;
+		color:#999; text-decoration:none;
 	}
 	.other-box .desc a {
 		display: inline-block;
@@ -355,6 +330,11 @@ h2 {
 		background-position: left -168px;
 	}
 
+.app .img { float:left; }
+.app .desc { margin-left:270px; }
+.app .desc p { margin:15px 0; font-size:14px; color:#666; }
+.app.s1 { padding-bottom:20px; border-bottom:1px dotted #999; }
+.app.s2 { margin-bottom:50px; }
 
 .app dt {
 	display: none;
