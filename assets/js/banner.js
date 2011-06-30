@@ -26,7 +26,7 @@ $( function() {
 });
 
 function transition( index ) {
-    var slides = $( "#player li" ),
+    var slides = $( "#player li" ).stop( true, true ),
         ctrls = $( "#ctrl li" )
         newIndex = isNaN( index ) ? currentIndex + 1 : index,
         newSlide = slides.eq( newIndex );
