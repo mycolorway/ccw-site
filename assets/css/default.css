@@ -137,7 +137,7 @@ h2 {
 .teamcola-box .desc {
 	position:relative;
 	width:780px; height:480px; margin:40px auto;
-	background:url(../img/teamcola-box-bg.png);
+	background:url(../img/teamcola-box-bg.png) no-repeat 0 0;
 }
 	.teamcola-box .desc dt { text-indent:-4444px; }
 	.teamcola-box .desc dd { position:absolute; font-size:12px; font-weight:100; color:#999; }
@@ -150,11 +150,12 @@ h2 {
 	.teamcola-box .desc dd.x4 { top:418px; left:415px; }
 	
 	.teamcola-box .desc a.link {
-		position:absolute; top:165px; left:321px; display:block; 
+		position:absolute; top:165px; left:321px; display:block;
 		width:130px; height:130px;
 		text-indent:-4444px; background:#fff; opacity:.1;
 	}
 	.teamcola-box .desc a.link:hover { opacity:0; }
+	.teamcola-box .desc a.link:active { opacity:1; background:url(../img/teamcola-box-btn-active.png) -9px -8px no-repeat; }
 
 .client-li { margin: 0 0 0 80px; }
 	.client-li .title { margin:20px 80px 20px 0; text-align: center; font-size:16px; font-weight:800; }
