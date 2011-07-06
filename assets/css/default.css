@@ -428,7 +428,7 @@ h1.slogan {
 		right: -45px; top: -27px;
 	}
 	.buddy.peng .info {
-		height: 274px;
+		height: 280px; padding-top: 30px;
 	}
 	.buddy.shawn {
 		height: 347px;
@@ -497,7 +497,7 @@ h1.slogan {
 		left: 80px; top: 0;
 	}
 	.buddy.ahao .info {
-		padding-top: 70px; height: 199px;
+		padding-top: 80px; height: 199px;
 	}
 	.buddy.maklu img {
 		right: 80px; top: 0;
