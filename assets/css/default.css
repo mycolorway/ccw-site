@@ -260,6 +260,9 @@ h2 {
 	-moz-box-shadow: 0 0 4px #ddd; -khtml-box-shadow: 0 0 4px #ddd; -webkit-box-shadow: 0 0 4px #ddd; box-shadow: 0 0 4px #ddd; 
 	background: #fff;
 }
+    .contact-box .follow .addr {
+        float:left;
+    }
 	.contact-box .follow .follows {
 		float: right;
 	}
