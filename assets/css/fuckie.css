@@ -42,3 +42,7 @@
 	}
 
 .teamcola-box .desc a.link { background:none; }
+
+.slide { height: 470px !important; }
+
+.slide #ctrl li { display: inline; }

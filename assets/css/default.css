@@ -107,7 +107,8 @@ h2 {
 	}
 
 .slide #ctrl {
-	height: 36px; width: 960px; margin-top: 434px;
+    position:absolute; top:434px;
+	height: 36px; width: 960px;
 	background: url(../img/hr.png) no-repeat center;
 	text-align: center;
 }
