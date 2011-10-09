@@ -52,7 +52,7 @@ h2 {
 }
 	.nav a {
 		float: left; display: inline-block;
-		padding: 3px 35px 6px; border-top: 1px solid #ececec; border-left: 1px solid #fff; border-right:1px solid #d8d9d8 ; outline: 0;
+		padding: 3px 40px 6px; border-top: 1px solid #ececec; border-left: 1px solid #fff; border-right:1px solid #d8d9d8 ; outline: 0;
 		font-size: 14px; font-weight: 800; color: #666666;
 		background: #ccc url(../img/nav-bg.png) center -53px no-repeat;
 		background: -moz-linear-gradient(top, #fff, #ccc);
