@@ -387,6 +387,44 @@ h2 {
 		color: #999; text-decoration: none;
 	}
 
+.cases {
+	width: 960px;
+	margin-top: 60px;
+	margin-bottom: 20px;
+}
+.cases ul li {
+	float: left;
+	margin-right: 40px;
+	margin-bottom: 30px;
+	width: 278px;
+}
+.cases ul li div {
+	border: 1px solid #ccc;
+	width: 278px;
+	height:128px;
+	
+}
+
+.cases ul li h5 {
+	font-size: 16px;
+	margin-top: 15px;
+	margin-bottom: 5px;
+}
+
+.cases ul li p {
+	font-size: 14px;
+	color: #666666;
+}
+
+.btn-contact a{
+	background: url('../img/apps/contact.jpg') no-repeat top center;
+	display: block;
+	width: 900px;
+	height: 140px;
+	text-indent: -9999em;
+	
+}
+
 /* team */
 h1.slogan {
 	font-size: 40px; font-family: tahoma,'黑体'; color: #666; text-align: center; line-height: 150px; text-shadow: 0 1px 0 #fff; 
