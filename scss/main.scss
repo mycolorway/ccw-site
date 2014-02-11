@@ -50,21 +50,19 @@ header {
 			position: relative;
 			display: block;
 			&:first-child {
-				margin: 0 25px;
+				margin: 0 35px;
 			}
 
-			a, a:active {
+			a {
 				font-size: 18px;
-				color: #666;
+				color: #999;
+				&.selected { color: #000; }
 			}
 		}
 	}
 }
 
-
-
-
-main.masthead {
+main#page-index {
 	text-align: center;
 
 	a.btn {
@@ -74,113 +72,235 @@ main.masthead {
 		color: #fff;
 		font-size: 40px;
 	}
-}
 
-h2.slogan {
-	font-size: 68px;
-	color: #000;
-	line-height: 88px;
-	font-weight: normal;
-}
+	h2.slogan {
+		font-size: 68px;
+		color: #000;
+		line-height: 88px;
+		font-weight: normal;
+	}
 
-.tower {
-	.tower-logo {
-		@include at2x('/img/tower-logo', png, 100% , auto);
+	.tower {
+		.tower-logo {
+			@include at2x('/img/tower-logo', png, 100% , auto);
+			background-size: 100%;
+			height: 272px; width: 200px;
+			margin: 0 auto;
+		}
+
+		.subtitle {
+			font-size: 38px;
+			color: #666;
+			margin: 24px 0 30px;
+		}
+	}
+
+	.hero-image {
+		@include at2x('/img/hero', jpg, 100% , auto);
 		background-size: 100%;
-		height: 272px; width: 200px;
+		background-position: 50%;
+		max-width: 839px; height: 505px;
 		margin: 0 auto;
 	}
 
-	.subtitle {
-		font-size: 38px;
-		color: #666;
-		margin: 24px 0 30px;
-	}
-}
+	.stat {
+		margin: 48px 0 80px;
 
-.hero-image {
-	@include at2x('/img/hero', jpg, 100% , auto);
-	background-size: 100%;
-	background-position: 50%;
-	max-width: 839px; height: 505px;
-	margin: 0 auto;
-}
+		h3 {
+			font-size: 48px;
+			color: #666;
+			font-weight: normal;
+			margin: 0;
+		}
 
-.stat {
-	margin: 48px 0 80px;
+		p.num {
+			font-size: 220px;
+			font-weight: bold;
+			color: #000;
+			margin: 0;
+			line-height: 1;
+		}
 
-	h3 {
-		font-size: 48px;
-		color: #666;
-		font-weight: normal;
-		margin: 0;
-	}
-
-	p.num {
-		font-size: 220px;
-		font-weight: bold;
-		color: #000;
-		margin: 0;
-		line-height: 1;
+		.plus {
+			font-size: 160px;
+			font-weight: normal;
+			color: #666;
+			line-height: 200px;
+			margin-left: 20px;
+			vertical-align: top;
+		}
 	}
 
-	.plus {
-		font-size: 160px;
-		font-weight: normal;
-		color: #666;
-		line-height: 200px;
-		margin-left: 20px;
-		vertical-align: top;
-	}
-}
+	.others {
+		padding: 240px 0 180px;
 
-.others {
-	padding: 240px 0 180px;
+		ul {
+			width: 100%;
+			list-style: none;
+			padding: 0;
+			margin: 0;
 
-	ul {
-		width: 100%;
-		list-style: none;
-		padding: 0;
-		margin: 0;
-
-		li {
-			width: 42%;
-			margin-left: 8%;
-			float: left;
-			text-align: left;
-
-			a {
-				display: block;
-				cursor: pointer;
-			}
-
-			i {
-				width: 85px; height: 85px;
+			li {
+				width: 42%;
+				margin-left: 8%;
 				float: left;
-				position: relative;
-				&.designboard {
-					@include at2x('/img/designboard', png, 100% , auto);
-				}
-				&.teamcola {
-					@include at2x('/img/teamcola', png, 100% , auto);
-				}
-			}
+				text-align: left;
 
-			.detail {
-				margin-left: 110px;
-				padding: 10px 0;
+				a {
+					display: block;
+					cursor: pointer;
+				}
 
-				h4 { letter-spacing: 4px; }
-				h4, p {
-					margin: 0;
-					font-size: 28px;
-					font-weight: lighter;
-					color: #000;
+				i {
+					width: 85px; height: 85px;
+					float: left;
+					position: relative;
+					&.designboard {
+						@include at2x('/img/designboard', png, 100% , auto);
+					}
+					&.teamcola {
+						@include at2x('/img/teamcola', png, 100% , auto);
+					}
+				}
+
+				.detail {
+					margin-left: 110px;
+					padding: 10px 0;
+
+					h4 { letter-spacing: 4px; }
+					h4, p {
+						margin: 0;
+						font-size: 28px;
+						font-weight: lighter;
+						color: #000;
+					}
 				}
 			}
 		}
 	}
 }
+
+main#page-team {
+	text-align: center;
+
+	h2.title {
+		font-size: 64px;
+		font-weight: normal;
+		margin: 0;
+	}
+	p.subtitle {
+		font-size: 44px;
+		line-height: 2em;
+		color: #7b7b7b;
+		margin: 0 0 30px 0;
+	}
+
+	.map {
+		@include at2x('/img/earth', png, 100% , auto);
+		background-position: center;
+		width: 100%; height: 937px;
+		position: absolute;
+		left: 0; right: 0;
+	}
+
+	.hire {
+		padding: 0;
+		width: 100%;
+		list-style: none;
+		margin-top: 1010px;
+
+		li {
+			width: 35%;
+			margin-left: 10%;
+			display: inline-block;
+			text-align: left;
+
+			h4 {
+				font-size: 44px;
+				font-weight: normal;
+				line-height: 1.5em;
+				color: #333;
+				margin: 0;
+			}
+
+			p {
+				font-size: 20px;
+				color: #7d7d7d;
+				line-height: 1.5em;
+				margin: 0;
+			}
+		}
+	}
+
+	p.slogan {
+		font-size: 36px;
+		line-height: 1.4em;
+		margin: 120px 0 36px
+	}
+
+	p.tips {
+		font-size: 16px;
+		color: #666;
+		line-height: 1.3em;
+		margin-bottom: 160px;
+		a {
+			color: #43b4dd;
+		}
+	}
+
+	.contact {
+		margin-bottom: 160px;
+
+		.coffee {
+			@include at2x('/img/coffee', png, 100% , auto);
+			background-position: center;
+			width: 122px; height: 117px;
+			display: block;
+			margin: 0 auto;
+		}
+
+		h2 {
+			font-size: 56px;
+			font-weight: normal;
+			margin: 60px 0;
+		}
+
+		.contact-card {
+			margin: 0 auto;
+			width: 440px;
+
+			i {
+				@include at2x('/img/manfred-large', png, 100% , auto);
+				background-position: center;
+				width: 104px; height: 108px;
+				display: block;
+				float: left;
+				position: relative;
+			}
+
+			.detail {
+				margin-left: 130px;
+				text-align: left;
+
+				.name {
+					font-size: 36px;
+				}
+				.position {
+					font-size: 24px;
+					color: #666;
+				}
+				p {
+					margin: 0;
+					font-size: 20px;
+					line-height: 1.5em;
+					color: #666;
+					a { color: #666; }
+				}
+			}
+		}
+	}
+}
+
 
 footer {
 	margin: 0; padding: 0;
@@ -236,86 +356,138 @@ footer {
 }
 
 @media (max-width: 767px) {
-	main.masthead .container {
-  	margin-top: 40px;
-  }
+	main#page-index .container {
+		margin-top: 40px;
 
-  header {
-  	margin-top: 20px;
+		a.btn {
+			font-size: 20px;
+			padding: 14px 40px
+		}
 
-	  a.brand {
+		h2.slogan {
+			font-size: 26px;
+			line-height: 38px;
+		}
+
+		.tower-logo {
+			max-width: 120px;
+			max-height: 180px;
+		}
+
+		.tower .subtitle {
+			font-size: 26px;
+			margin: 12px 0 20px;
+		}
+
+		.hero-image {
+			height: 400px;
+		}
+
+		.stat {
+			margin: 26px 0 60px;
+			h3 { font-size: 26px; }
+
+			p.num {
+				font-size: 60px;
+				margin-top: 10px;
+			}
+
+			.plus {
+				font-size: 40px;
+				line-height: 50px;
+				margin-left: 10px;
+			}
+		}
+
+		.others {
+			padding: 100px 0 180px;
+
+			ul li {
+				width: 80%;
+				text-align: center;
+				min-height: 80px;
+
+				i {
+					max-width: 60px;
+					background-size: 60px;
+					background-position: center;
+					display: inline-block;
+					vertical-align: middle;
+					float: none;
+				}
+
+				.detail {
+					margin-left: 20px;
+					display: inline-block;
+					vertical-align: middle;
+					h4, p { font-size: 16px; }
+				}
+			}
+		}
+	}
+
+	main#page-team .container {
+		margin-top: 40px;
+		padding-left: 5px;
+		padding-right: 5px;
+
+		h2.title { font-size: 36px; }
+		p.subtitle {
+			font-size: 24px;
+			line-height: 1.3em;
+		}
+
+		.hire {
+			margin: 0;
+
+			li {
+				width: 100%;
+				margin-left: 0;
+				text-align: center;
+
+				h4 { font-size: 24px; }
+				p { font-size: 16px; }
+			}
+		}
+
+		.slogan {
+			font-size: 22px;
+			margin: 40px 0 30px;
+		}
+
+		.tips { margin-bottom: 60px; }
+
+		.contact {
+			margin-bottom: 60px;
+
+			h2 {
+				font-size: 24px;
+				margin: 20px 0;
+			}
+
+			.contact-card {
+				width: 100%;
+
+				.avatar { display: none; }
+				.detail {
+					margin: 0;
+					text-align: center;
+					p { font-size: 18px; }
+				}
+			}
+		}
+	}
+
+	header {
+		margin-top: 20px;
+
+		a.brand {
 			background-size: 50%;
 			position: absolute;
 		}
-  }
-
-  h2.slogan {
-		font-size: 26px;
-		line-height: 38px;
 	}
 
-	.tower-logo {
-		max-width: 120px;
-		max-height: 180px;
-	}
-
-	.tower .subtitle {
-		font-size: 26px;
-		margin: 12px 0 20px;
-	}
-
-	.hero-image {
-		height: 400px;
-	}
-
-	.stat {
-		margin: 26px 0 60px;
-		h3 { font-size: 26px; }
-
-		p.num {
-			font-size: 60px;
-			margin-top: 10px;
-		}
-
-		.plus {
-			font-size: 40px;
-			line-height: 50px;
-			margin-left: 10px;
-		}
-	}
-
-	main.masthead a.btn {
-		font-size: 20px;
-		padding: 14px 40px
-	}
-
-	.others {
-		padding: 100px 0 180px;
-
-		ul li {
-			width: 80%;
-			text-align: center;
-			min-height: 80px;
-
-			i {
-				max-width: 60px;
-				background-size: 60px;
-				background-position: center;
-				display: inline-block;
-				vertical-align: middle;
-				float: none;
-			}
-
-			.detail {
-				margin-left: 20px;
-				display: inline-block;
-				vertical-align: middle;
-				h4, p { font-size: 16px; }
-			}
-		}
-	}
-
-	.footer-links {
+	.footer-links, main#page-team .map {
 		display: none;
 	}
 	footer .container {
@@ -336,12 +508,20 @@ footer {
 	.container {
 		width: 750px;
 	}
-	main.masthead .container {
-  	margin-top: 60px;
-  }
-  h2.slogan {
-		font-size: 58px;
-		line-height: 78px;
+	main#page-index .container {
+		margin-top: 60px;
+		h2.slogan {
+			font-size: 58px;
+			line-height: 78px;
+		}
+	}
+
+	main#page-team .container {
+		margin-top: 100px;
+		.hire li {
+			width: 40%;
+			margin-left: 5%;
+		}
 	}
 }
 
@@ -349,17 +529,24 @@ footer {
 	.container {
 		width: 970px;
 	}
-	main.masthead .container {
-  	margin-top: 80px;
-  }
+	main#page-index .container {
+		margin-top: 80px;
+	}
+	main#page-team .container {
+		margin-top: 120px;
+
+	}
 }
 
 @media (min-width: 1200px) {
 	.container {
 		width: 1000px;
 	}
-	main.masthead .container {
+	main#page-index .container {
 		margin-top: 100px;
+	}
+	main#page-team .container {
+		margin-top: 140px;
 	}
 	.tower {
 		margin-top: 50px;

@@ -35,120 +35,223 @@ header {
       position: relative;
       display: block; }
       header nav ul li:first-child {
-        margin: 0 25px; }
-      header nav ul li a, header nav ul li a:active {
+        margin: 0 35px; }
+      header nav ul li a {
         font-size: 18px;
-        color: #666; }
+        color: #999; }
+        header nav ul li a.selected {
+          color: #000; }
 
-main.masthead {
+main#page-index {
   text-align: center; }
-  main.masthead a.btn {
+  main#page-index a.btn {
     background-color: #8fbbb6;
     padding: 20px 53px;
     border-radius: 6px;
     color: #fff;
     font-size: 40px; }
-
-h2.slogan {
-  font-size: 68px;
-  color: #000;
-  line-height: 88px;
-  font-weight: normal; }
-
-.tower .tower-logo {
-  background-image: url("/img/tower-logo.png");
-  background-repeat: no-repeat;
-  background-size: 100%;
-  height: 272px;
-  width: 200px;
-  margin: 0 auto; }
-  @media all and (-webkit-min-device-pixel-ratio: 1.5), all and (-o-min-device-pixel-ratio: 3 / 2), all and (min--moz-device-pixel-ratio: 1.5), all and (min-device-pixel-ratio: 1.5) {
-    .tower .tower-logo {
-      background-image: url("/img/tower-logo@2x.png");
-      background-size: 100% auto; } }
-.tower .subtitle {
-  font-size: 38px;
-  color: #666;
-  margin: 24px 0 30px; }
-
-.hero-image {
-  background-image: url("/img/hero.jpg");
-  background-repeat: no-repeat;
-  background-size: 100%;
-  background-position: 50%;
-  max-width: 839px;
-  height: 505px;
-  margin: 0 auto; }
-  @media all and (-webkit-min-device-pixel-ratio: 1.5), all and (-o-min-device-pixel-ratio: 3 / 2), all and (min--moz-device-pixel-ratio: 1.5), all and (min-device-pixel-ratio: 1.5) {
-    .hero-image {
-      background-image: url("/img/hero@2x.jpg");
-      background-size: 100% auto; } }
-
-.stat {
-  margin: 48px 0 80px; }
-  .stat h3 {
-    font-size: 48px;
+  main#page-index h2.slogan {
+    font-size: 68px;
+    color: #000;
+    line-height: 88px;
+    font-weight: normal; }
+  main#page-index .tower .tower-logo {
+    background-image: url("/img/tower-logo.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 272px;
+    width: 200px;
+    margin: 0 auto; }
+    @media all and (-webkit-min-device-pixel-ratio: 1.5), all and (-o-min-device-pixel-ratio: 3 / 2), all and (min--moz-device-pixel-ratio: 1.5), all and (min-device-pixel-ratio: 1.5) {
+      main#page-index .tower .tower-logo {
+        background-image: url("/img/tower-logo@2x.png");
+        background-size: 100% auto; } }
+  main#page-index .tower .subtitle {
+    font-size: 38px;
     color: #666;
+    margin: 24px 0 30px; }
+  main#page-index .hero-image {
+    background-image: url("/img/hero.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: 50%;
+    max-width: 839px;
+    height: 505px;
+    margin: 0 auto; }
+    @media all and (-webkit-min-device-pixel-ratio: 1.5), all and (-o-min-device-pixel-ratio: 3 / 2), all and (min--moz-device-pixel-ratio: 1.5), all and (min-device-pixel-ratio: 1.5) {
+      main#page-index .hero-image {
+        background-image: url("/img/hero@2x.jpg");
+        background-size: 100% auto; } }
+  main#page-index .stat {
+    margin: 48px 0 80px; }
+    main#page-index .stat h3 {
+      font-size: 48px;
+      color: #666;
+      font-weight: normal;
+      margin: 0; }
+    main#page-index .stat p.num {
+      font-size: 220px;
+      font-weight: bold;
+      color: #000;
+      margin: 0;
+      line-height: 1; }
+    main#page-index .stat .plus {
+      font-size: 160px;
+      font-weight: normal;
+      color: #666;
+      line-height: 200px;
+      margin-left: 20px;
+      vertical-align: top; }
+  main#page-index .others {
+    padding: 240px 0 180px; }
+    main#page-index .others ul {
+      width: 100%;
+      list-style: none;
+      padding: 0;
+      margin: 0; }
+      main#page-index .others ul li {
+        width: 42%;
+        margin-left: 8%;
+        float: left;
+        text-align: left; }
+        main#page-index .others ul li a {
+          display: block;
+          cursor: pointer; }
+        main#page-index .others ul li i {
+          width: 85px;
+          height: 85px;
+          float: left;
+          position: relative; }
+          main#page-index .others ul li i.designboard {
+            background-image: url("/img/designboard.png");
+            background-repeat: no-repeat; }
+            @media all and (-webkit-min-device-pixel-ratio: 1.5), all and (-o-min-device-pixel-ratio: 3 / 2), all and (min--moz-device-pixel-ratio: 1.5), all and (min-device-pixel-ratio: 1.5) {
+              main#page-index .others ul li i.designboard {
+                background-image: url("/img/designboard@2x.png");
+                background-size: 100% auto; } }
+          main#page-index .others ul li i.teamcola {
+            background-image: url("/img/teamcola.png");
+            background-repeat: no-repeat; }
+            @media all and (-webkit-min-device-pixel-ratio: 1.5), all and (-o-min-device-pixel-ratio: 3 / 2), all and (min--moz-device-pixel-ratio: 1.5), all and (min-device-pixel-ratio: 1.5) {
+              main#page-index .others ul li i.teamcola {
+                background-image: url("/img/teamcola@2x.png");
+                background-size: 100% auto; } }
+        main#page-index .others ul li .detail {
+          margin-left: 110px;
+          padding: 10px 0; }
+          main#page-index .others ul li .detail h4 {
+            letter-spacing: 4px; }
+          main#page-index .others ul li .detail h4, main#page-index .others ul li .detail p {
+            margin: 0;
+            font-size: 28px;
+            font-weight: lighter;
+            color: #000; }
+
+main#page-team {
+  text-align: center; }
+  main#page-team h2.title {
+    font-size: 64px;
     font-weight: normal;
     margin: 0; }
-  .stat p.num {
-    font-size: 220px;
-    font-weight: bold;
-    color: #000;
-    margin: 0;
-    line-height: 1; }
-  .stat .plus {
-    font-size: 160px;
-    font-weight: normal;
-    color: #666;
-    line-height: 200px;
-    margin-left: 20px;
-    vertical-align: top; }
-
-.others {
-  padding: 240px 0 180px; }
-  .others ul {
+  main#page-team p.subtitle {
+    font-size: 44px;
+    line-height: 2em;
+    color: #7b7b7b;
+    margin: 0 0 30px 0; }
+  main#page-team .map {
+    background-image: url("/img/earth.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 937px;
+    position: absolute;
+    left: 0;
+    right: 0; }
+    @media all and (-webkit-min-device-pixel-ratio: 1.5), all and (-o-min-device-pixel-ratio: 3 / 2), all and (min--moz-device-pixel-ratio: 1.5), all and (min-device-pixel-ratio: 1.5) {
+      main#page-team .map {
+        background-image: url("/img/earth@2x.png");
+        background-size: 100% auto; } }
+  main#page-team .hire {
+    padding: 0;
     width: 100%;
     list-style: none;
-    padding: 0;
-    margin: 0; }
-    .others ul li {
-      width: 42%;
-      margin-left: 8%;
-      float: left;
+    margin-top: 1010px; }
+    main#page-team .hire li {
+      width: 35%;
+      margin-left: 10%;
+      display: inline-block;
       text-align: left; }
-      .others ul li a {
+      main#page-team .hire li h4 {
+        font-size: 44px;
+        font-weight: normal;
+        line-height: 1.5em;
+        color: #333;
+        margin: 0; }
+      main#page-team .hire li p {
+        font-size: 20px;
+        color: #7d7d7d;
+        line-height: 1.5em;
+        margin: 0; }
+  main#page-team p.slogan {
+    font-size: 36px;
+    line-height: 1.4em;
+    margin: 120px 0 36px; }
+  main#page-team p.tips {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.3em;
+    margin-bottom: 160px; }
+    main#page-team p.tips a {
+      color: #43b4dd; }
+  main#page-team .contact {
+    margin-bottom: 160px; }
+    main#page-team .contact .coffee {
+      background-image: url("/img/coffee.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      width: 122px;
+      height: 117px;
+      display: block;
+      margin: 0 auto; }
+      @media all and (-webkit-min-device-pixel-ratio: 1.5), all and (-o-min-device-pixel-ratio: 3 / 2), all and (min--moz-device-pixel-ratio: 1.5), all and (min-device-pixel-ratio: 1.5) {
+        main#page-team .contact .coffee {
+          background-image: url("/img/coffee@2x.png");
+          background-size: 100% auto; } }
+    main#page-team .contact h2 {
+      font-size: 56px;
+      font-weight: normal;
+      margin: 60px 0; }
+    main#page-team .contact .contact-card {
+      margin: 0 auto;
+      width: 440px; }
+      main#page-team .contact .contact-card i {
+        background-image: url("/img/manfred-large.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 104px;
+        height: 108px;
         display: block;
-        cursor: pointer; }
-      .others ul li i {
-        width: 85px;
-        height: 85px;
         float: left;
         position: relative; }
-        .others ul li i.designboard {
-          background-image: url("/img/designboard.png");
-          background-repeat: no-repeat; }
-          @media all and (-webkit-min-device-pixel-ratio: 1.5), all and (-o-min-device-pixel-ratio: 3 / 2), all and (min--moz-device-pixel-ratio: 1.5), all and (min-device-pixel-ratio: 1.5) {
-            .others ul li i.designboard {
-              background-image: url("/img/designboard@2x.png");
-              background-size: 100% auto; } }
-        .others ul li i.teamcola {
-          background-image: url("/img/teamcola.png");
-          background-repeat: no-repeat; }
-          @media all and (-webkit-min-device-pixel-ratio: 1.5), all and (-o-min-device-pixel-ratio: 3 / 2), all and (min--moz-device-pixel-ratio: 1.5), all and (min-device-pixel-ratio: 1.5) {
-            .others ul li i.teamcola {
-              background-image: url("/img/teamcola@2x.png");
-              background-size: 100% auto; } }
-      .others ul li .detail {
-        margin-left: 110px;
-        padding: 10px 0; }
-        .others ul li .detail h4 {
-          letter-spacing: 4px; }
-        .others ul li .detail h4, .others ul li .detail p {
+        @media all and (-webkit-min-device-pixel-ratio: 1.5), all and (-o-min-device-pixel-ratio: 3 / 2), all and (min--moz-device-pixel-ratio: 1.5), all and (min-device-pixel-ratio: 1.5) {
+          main#page-team .contact .contact-card i {
+            background-image: url("/img/manfred-large@2x.png");
+            background-size: 100% auto; } }
+      main#page-team .contact .contact-card .detail {
+        margin-left: 130px;
+        text-align: left; }
+        main#page-team .contact .contact-card .detail .name {
+          font-size: 36px; }
+        main#page-team .contact .contact-card .detail .position {
+          font-size: 24px;
+          color: #666; }
+        main#page-team .contact .contact-card .detail p {
           margin: 0;
-          font-size: 28px;
-          font-weight: lighter;
-          color: #000; }
+          font-size: 20px;
+          line-height: 1.5em;
+          color: #666; }
+          main#page-team .contact .contact-card .detail p a {
+            color: #666; }
 
 footer {
   margin: 0;
@@ -202,8 +305,91 @@ footer {
             background-size: 100% auto; } }
 
 @media (max-width: 767px) {
-  main.masthead .container {
+  main#page-index .container {
     margin-top: 40px; }
+    main#page-index .container a.btn {
+      font-size: 20px;
+      padding: 14px 40px; }
+    main#page-index .container h2.slogan {
+      font-size: 26px;
+      line-height: 38px; }
+    main#page-index .container .tower-logo {
+      max-width: 120px;
+      max-height: 180px; }
+    main#page-index .container .tower .subtitle {
+      font-size: 26px;
+      margin: 12px 0 20px; }
+    main#page-index .container .hero-image {
+      height: 400px; }
+    main#page-index .container .stat {
+      margin: 26px 0 60px; }
+      main#page-index .container .stat h3 {
+        font-size: 26px; }
+      main#page-index .container .stat p.num {
+        font-size: 60px;
+        margin-top: 10px; }
+      main#page-index .container .stat .plus {
+        font-size: 40px;
+        line-height: 50px;
+        margin-left: 10px; }
+    main#page-index .container .others {
+      padding: 100px 0 180px; }
+      main#page-index .container .others ul li {
+        width: 80%;
+        text-align: center;
+        min-height: 80px; }
+        main#page-index .container .others ul li i {
+          max-width: 60px;
+          background-size: 60px;
+          background-position: center;
+          display: inline-block;
+          vertical-align: middle;
+          float: none; }
+        main#page-index .container .others ul li .detail {
+          margin-left: 20px;
+          display: inline-block;
+          vertical-align: middle; }
+          main#page-index .container .others ul li .detail h4, main#page-index .container .others ul li .detail p {
+            font-size: 16px; }
+
+  main#page-team .container {
+    margin-top: 40px;
+    padding-left: 5px;
+    padding-right: 5px; }
+    main#page-team .container h2.title {
+      font-size: 36px; }
+    main#page-team .container p.subtitle {
+      font-size: 24px;
+      line-height: 1.3em; }
+    main#page-team .container .hire {
+      margin: 0; }
+      main#page-team .container .hire li {
+        width: 100%;
+        margin-left: 0;
+        text-align: center; }
+        main#page-team .container .hire li h4 {
+          font-size: 24px; }
+        main#page-team .container .hire li p {
+          font-size: 16px; }
+    main#page-team .container .slogan {
+      font-size: 22px;
+      margin: 40px 0 30px; }
+    main#page-team .container .tips {
+      margin-bottom: 60px; }
+    main#page-team .container .contact {
+      margin-bottom: 60px; }
+      main#page-team .container .contact h2 {
+        font-size: 24px;
+        margin: 20px 0; }
+      main#page-team .container .contact .contact-card {
+        width: 100%; }
+        main#page-team .container .contact .contact-card .avatar {
+          display: none; }
+        main#page-team .container .contact .contact-card .detail {
+          margin: 0;
+          text-align: center; }
+          main#page-team .container .contact .contact-card .detail p {
+            font-size: 18px; }
 
   header {
     margin-top: 20px; }
@@ -211,58 +397,7 @@ footer {
       background-size: 50%;
       position: absolute; }
 
-  h2.slogan {
-    font-size: 26px;
-    line-height: 38px; }
-
-  .tower-logo {
-    max-width: 120px;
-    max-height: 180px; }
-
-  .tower .subtitle {
-    font-size: 26px;
-    margin: 12px 0 20px; }
-
-  .hero-image {
-    height: 400px; }
-
-  .stat {
-    margin: 26px 0 60px; }
-    .stat h3 {
-      font-size: 26px; }
-    .stat p.num {
-      font-size: 60px;
-      margin-top: 10px; }
-    .stat .plus {
-      font-size: 40px;
-      line-height: 50px;
-      margin-left: 10px; }
-
-  main.masthead a.btn {
-    font-size: 20px;
-    padding: 14px 40px; }
-
-  .others {
-    padding: 100px 0 180px; }
-    .others ul li {
-      width: 80%;
-      text-align: center;
-      min-height: 80px; }
-      .others ul li i {
-        max-width: 60px;
-        background-size: 60px;
-        background-position: center;
-        display: inline-block;
-        vertical-align: middle;
-        float: none; }
-      .others ul li .detail {
-        margin-left: 20px;
-        display: inline-block;
-        vertical-align: middle; }
-        .others ul li .detail h4, .others ul li .detail p {
-          font-size: 16px; }
-
-  .footer-links {
+  .footer-links, main#page-team .map {
     display: none; }
 
   footer .container {
@@ -282,24 +417,35 @@ footer {
   .container {
     width: 750px; }
 
-  main.masthead .container {
+  main#page-index .container {
     margin-top: 60px; }
+    main#page-index .container h2.slogan {
+      font-size: 58px;
+      line-height: 78px; }
 
-  h2.slogan {
-    font-size: 58px;
-    line-height: 78px; } }
+  main#page-team .container {
+    margin-top: 100px; }
+    main#page-team .container .hire li {
+      width: 40%;
+      margin-left: 5%; } }
 @media (min-width: 992px) {
   .container {
     width: 970px; }
 
-  main.masthead .container {
-    margin-top: 80px; } }
+  main#page-index .container {
+    margin-top: 80px; }
+
+  main#page-team .container {
+    margin-top: 120px; } }
 @media (min-width: 1200px) {
   .container {
     width: 1000px; }
 
-  main.masthead .container {
+  main#page-index .container {
     margin-top: 100px; }
+
+  main#page-team .container {
+    margin-top: 140px; }
 
   .tower {
     margin-top: 50px; } }
