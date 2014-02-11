@@ -171,6 +171,8 @@ main#page-team {
       main#page-team .map {
         background-image: url("/img/earth@2x.png");
         background-size: 100% auto; } }
+  main#page-team .hire-title {
+    display: none; }
   main#page-team .hire {
     padding: 0;
     width: 100%;
@@ -361,6 +363,12 @@ footer {
     main#page-team .container p.subtitle {
       font-size: 24px;
       line-height: 1.3em; }
+    main#page-team .container .hire-title {
+      display: block;
+      font-size: 26px;
+      font-weight: normal;
+      margin: .5em 0;
+      color: #7ecfbe; }
     main#page-team .container .hire {
       margin: 0; }
       main#page-team .container .hire li {
