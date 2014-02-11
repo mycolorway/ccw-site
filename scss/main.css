@@ -23,10 +23,6 @@ header {
     font-size: 48px;
     font-weight: bold;
     text-indent: -999px; }
-    @media all and (-webkit-min-device-pixel-ratio: 1.5), all and (-o-min-device-pixel-ratio: 3 / 2), all and (min--moz-device-pixel-ratio: 1.5), all and (min-device-pixel-ratio: 1.5) {
-      header a.brand {
-        background-image: url("/img/logo@2x.png");
-        background-size: 100% auto; } }
   header nav ul {
     float: right;
     margin: 0; }
@@ -55,34 +51,14 @@ h2.slogan {
   line-height: 88px;
   font-weight: normal; }
 
-.tower .tower-logo {
-  background-image: url("/img/tower-logo.png");
-  background-repeat: no-repeat;
-  background-size: 100%;
-  height: 272px;
-  width: 200px;
-  margin: 0 auto; }
-  @media all and (-webkit-min-device-pixel-ratio: 1.5), all and (-o-min-device-pixel-ratio: 3 / 2), all and (min--moz-device-pixel-ratio: 1.5), all and (min-device-pixel-ratio: 1.5) {
-    .tower .tower-logo {
-      background-image: url("/img/tower-logo@2x.png");
-      background-size: 100% auto; } }
 .tower .subtitle {
   font-size: 38px;
   color: #666;
   margin: 24px 0 30px; }
 
 .hero-image {
-  background-image: url("/img/hero.jpg");
-  background-repeat: no-repeat;
-  background-size: 100%;
-  background-position: 50%;
-  max-width: 839px;
-  height: 505px;
-  margin: 0 auto; }
-  @media all and (-webkit-min-device-pixel-ratio: 1.5), all and (-o-min-device-pixel-ratio: 3 / 2), all and (min--moz-device-pixel-ratio: 1.5), all and (min-device-pixel-ratio: 1.5) {
-    .hero-image {
-      background-image: url("/img/hero@2x.jpg");
-      background-size: 100% auto; } }
+  width: 100%;
+  max-width: 842px; }
 
 .stat {
   margin: 48px 0 80px; }
@@ -120,25 +96,9 @@ h2.slogan {
       .others ul li a {
         display: block;
         cursor: pointer; }
-      .others ul li i {
-        width: 85px;
-        height: 85px;
+      .others ul li img {
         float: left;
         position: relative; }
-        .others ul li i.designboard {
-          background-image: url("/img/designboard.png");
-          background-repeat: no-repeat; }
-          @media all and (-webkit-min-device-pixel-ratio: 1.5), all and (-o-min-device-pixel-ratio: 3 / 2), all and (min--moz-device-pixel-ratio: 1.5), all and (min-device-pixel-ratio: 1.5) {
-            .others ul li i.designboard {
-              background-image: url("/img/designboard@2x.png");
-              background-size: 100% auto; } }
-        .others ul li i.teamcola {
-          background-image: url("/img/teamcola.png");
-          background-repeat: no-repeat; }
-          @media all and (-webkit-min-device-pixel-ratio: 1.5), all and (-o-min-device-pixel-ratio: 3 / 2), all and (min--moz-device-pixel-ratio: 1.5), all and (min-device-pixel-ratio: 1.5) {
-            .others ul li i.teamcola {
-              background-image: url("/img/teamcola@2x.png");
-              background-size: 100% auto; } }
       .others ul li .detail {
         margin-left: 110px;
         padding: 10px 0; }
@@ -179,27 +139,31 @@ footer {
   float: right; }
   .social li {
     display: inline-block;
-    margin: 0 25px; }
+    margin-right: 50px; }
     .social li a {
+      background-image: url("/img/social.png");
+      background-repeat: no-repeat;
       display: block; }
-      .social li a.rss {
-        background-image: url("/img/rss.png");
-        background-repeat: no-repeat;
-        width: 28px;
-        height: 28px; }
-        @media all and (-webkit-min-device-pixel-ratio: 1.5), all and (-o-min-device-pixel-ratio: 3 / 2), all and (min--moz-device-pixel-ratio: 1.5), all and (min-device-pixel-ratio: 1.5) {
-          .social li a.rss {
-            background-image: url("/img/rss@2x.png");
-            background-size: 100% auto; } }
-      .social li a.weibo {
-        background-image: url("/img/weibo.png");
-        background-repeat: no-repeat;
-        width: 35px;
-        height: 28px; }
-        @media all and (-webkit-min-device-pixel-ratio: 1.5), all and (-o-min-device-pixel-ratio: 3 / 2), all and (min--moz-device-pixel-ratio: 1.5), all and (min-device-pixel-ratio: 1.5) {
-          .social li a.weibo {
-            background-image: url("/img/weibo@2x.png");
-            background-size: 100% auto; } }
+
+.gplus {
+  background-position: 0 0;
+  width: 27px;
+  height: 27px; }
+
+.rss {
+  background-position: 0 -67px;
+  width: 27px;
+  height: 27px; }
+
+.twitter {
+  background-position: 0 -134px;
+  width: 32px;
+  height: 26px; }
+
+.weibo {
+  background-position: 0 -200px;
+  width: 34px;
+  height: 31px; }
 
 @media (max-width: 767px) {
   main.masthead .container {
@@ -216,15 +180,11 @@ footer {
     line-height: 38px; }
 
   .tower-logo {
-    max-width: 120px;
-    max-height: 180px; }
+    max-width: 120px; }
 
   .tower .subtitle {
     font-size: 26px;
     margin: 12px 0 20px; }
-
-  .hero-image {
-    height: 400px; }
 
   .stat {
     margin: 26px 0 60px; }
@@ -248,10 +208,8 @@ footer {
       width: 80%;
       text-align: center;
       min-height: 80px; }
-      .others ul li i {
+      .others ul li img {
         max-width: 60px;
-        background-size: 60px;
-        background-position: center;
         display: inline-block;
         vertical-align: middle;
         float: none; }

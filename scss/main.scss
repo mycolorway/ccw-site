@@ -1,0 +1,367 @@
+@mixin at2x($path, $ext: "jpg", $w: auto, $h: auto) {
+	$at1x_path: "#{$path}.#{$ext}";
+	$at2x_path: "#{$path}@2x.#{$ext}";
+
+	background-image: url("#{$at1x_path}");
+	background-repeat: no-repeat;
+
+	@media all and (-webkit-min-device-pixel-ratio : 1.5),
+				 all and (-o-min-device-pixel-ratio: 3/2),
+				 all and (min--moz-device-pixel-ratio: 1.5),
+				 all and (min-device-pixel-ratio: 1.5) {
+					 background-image: url("#{$at2x_path}");
+					 background-size: $w $h;
+	}
+}
+
+.container {
+	margin-right: auto;
+	margin-left: auto;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+a:hover {
+	opacity: .8;
+}
+
+header {
+	position: relative;
+	min-height: 50px;
+	margin-top: 40px;
+
+	a.brand {
+		@include at2x('/img/logo', png, 100% , auto);
+		display: block;
+		float: left;
+		overflow: hidden;
+		width: 241px; height: 51px;
+		line-height: 1;
+		font-size: 48px;
+		font-weight: bold;
+		text-indent: -999px;
+	}
+
+	nav ul {
+		float: right;
+		margin: 0;
+		li {
+			float: left;
+			position: relative;
+			display: block;
+			&:first-child {
+				margin: 0 25px;
+			}
+
+			a, a:active {
+				font-size: 18px;
+				color: #666;
+			}
+		}
+	}
+}
+
+
+
+
+main.masthead {
+	text-align: center;
+
+	a.btn {
+		background-color: #8fbbb6;
+		padding: 20px 53px;
+		border-radius: 6px;
+		color: #fff;
+		font-size: 40px;
+	}
+}
+
+h2.slogan {
+	font-size: 68px;
+	color: #000;
+	line-height: 88px;
+	font-weight: normal;
+}
+
+.tower {
+	.tower-logo {
+		@include at2x('/img/tower-logo', png, 100% , auto);
+		background-size: 100%;
+		height: 272px; width: 200px;
+		margin: 0 auto;
+	}
+
+	.subtitle {
+		font-size: 38px;
+		color: #666;
+		margin: 24px 0 30px;
+	}
+}
+
+.hero-image {
+	@include at2x('/img/hero', jpg, 100% , auto);
+	background-size: 100%;
+	background-position: 50%;
+	max-width: 839px; height: 505px;
+	margin: 0 auto;
+}
+
+.stat {
+	margin: 48px 0 80px;
+
+	h3 {
+		font-size: 48px;
+		color: #666;
+		font-weight: normal;
+		margin: 0;
+	}
+
+	p.num {
+		font-size: 220px;
+		font-weight: bold;
+		color: #000;
+		margin: 0;
+		line-height: 1;
+	}
+
+	.plus {
+		font-size: 160px;
+		font-weight: normal;
+		color: #666;
+		line-height: 200px;
+		margin-left: 20px;
+		vertical-align: top;
+	}
+}
+
+.others {
+	padding: 240px 0 180px;
+
+	ul {
+		width: 100%;
+		list-style: none;
+		padding: 0;
+		margin: 0;
+
+		li {
+			width: 42%;
+			margin-left: 8%;
+			float: left;
+			text-align: left;
+
+			a {
+				display: block;
+				cursor: pointer;
+			}
+
+			i {
+				width: 85px; height: 85px;
+				float: left;
+				position: relative;
+				&.designboard {
+					@include at2x('/img/designboard', png, 100% , auto);
+				}
+				&.teamcola {
+					@include at2x('/img/teamcola', png, 100% , auto);
+				}
+			}
+
+			.detail {
+				margin-left: 110px;
+				padding: 10px 0;
+
+				h4 { letter-spacing: 4px; }
+				h4, p {
+					margin: 0;
+					font-size: 28px;
+					font-weight: lighter;
+					color: #000;
+				}
+			}
+		}
+	}
+}
+
+footer {
+	margin: 0; padding: 0;
+	background-color: #777;
+
+	.container {
+		width: 80%;
+		padding: 50px 0 43px;
+
+		p {
+			margin: 36px 0 0;
+			color: #aaa;
+			font-size: 16px;
+		}
+	}
+}
+
+.footer-links, .social{
+	list-style: none;
+	padding: 0; margin: 0;
+}
+
+.footer-links li {
+	float: left;
+	margin-right: 20px;
+	color: #aaa;
+
+	a {
+		font-size: 16px;
+		color: #aaa;
+	}
+}
+
+.social {
+	float: right;
+
+	li {
+		display: inline-block;
+		margin: 0 25px;
+
+		a {
+			display: block;
+			&.rss {
+				@include at2x('/img/rss', png, 100% , auto);
+				width: 28px; height: 28px;
+			}
+			&.weibo {
+				@include at2x('/img/weibo', png, 100% , auto);
+				width: 35px; height: 28px;
+			}
+		}
+	}
+}
+
+@media (max-width: 767px) {
+	main.masthead .container {
+  	margin-top: 40px;
+  }
+
+  header {
+  	margin-top: 20px;
+
+	  a.brand {
+			background-size: 50%;
+			position: absolute;
+		}
+  }
+
+  h2.slogan {
+		font-size: 26px;
+		line-height: 38px;
+	}
+
+	.tower-logo {
+		max-width: 120px;
+		max-height: 180px;
+	}
+
+	.tower .subtitle {
+		font-size: 26px;
+		margin: 12px 0 20px;
+	}
+
+	.hero-image {
+		height: 400px;
+	}
+
+	.stat {
+		margin: 26px 0 60px;
+		h3 { font-size: 26px; }
+
+		p.num {
+			font-size: 60px;
+			margin-top: 10px;
+		}
+
+		.plus {
+			font-size: 40px;
+			line-height: 50px;
+			margin-left: 10px;
+		}
+	}
+
+	main.masthead a.btn {
+		font-size: 20px;
+		padding: 14px 40px
+	}
+
+	.others {
+		padding: 100px 0 180px;
+
+		ul li {
+			width: 80%;
+			text-align: center;
+			min-height: 80px;
+
+			i {
+				max-width: 60px;
+				background-size: 60px;
+				background-position: center;
+				display: inline-block;
+				vertical-align: middle;
+				float: none;
+			}
+
+			.detail {
+				margin-left: 20px;
+				display: inline-block;
+				vertical-align: middle;
+				h4, p { font-size: 16px; }
+			}
+		}
+	}
+
+	.footer-links {
+		display: none;
+	}
+	footer .container {
+		width: 100%;
+		padding: 25px 0 30px;
+		text-align: center;
+		p { margin: 20px 0 0; }
+	}
+	.social {
+		float: none;
+		width: 62%;
+		margin: 0 auto;
+		li { margin: 0 4%; }
+	}
+}
+
+@media (min-width: 768px) {
+	.container {
+		width: 750px;
+	}
+	main.masthead .container {
+  	margin-top: 60px;
+  }
+  h2.slogan {
+		font-size: 58px;
+		line-height: 78px;
+	}
+}
+
+@media (min-width: 992px) {
+	.container {
+		width: 970px;
+	}
+	main.masthead .container {
+  	margin-top: 80px;
+  }
+}
+
+@media (min-width: 1200px) {
+	.container {
+		width: 1000px;
+	}
+	main.masthead .container {
+		margin-top: 100px;
+	}
+	.tower {
+		margin-top: 50px;
+	}
+}
