@@ -19,7 +19,7 @@ module.exports = (grunt) ->
 				files: ['styles/*.scss']
 				tasks: ['sass']
 			scripts:
-				files: ['src/*.coffee', 'src/buttons/*.coffee']
+				files: ['scripts/*.coffee']
 				tasks: ['coffee']
 
 	grunt.loadNpmTasks 'grunt-contrib-sass'

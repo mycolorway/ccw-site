@@ -209,6 +209,24 @@ a:hover {
 			margin: auto;
 		}
 
+		#shadow-circle {
+			left: -99999px;
+			position: absolute;
+			opacity: 0.8;
+			width: 160px; height: 160px;
+			background-color: white;
+
+			-moz-transform: scale(0.4);
+			-webkit-transform: scale(0.4);
+			transform: scale(0.4);
+			-moz-border-radius: 80px;
+			-webkit-border-radius: 80px;
+			border-radius: 80px;
+			-moz-transition: opacity 0.5s ease-in, -moz-transform 0.5s ease-in-out;
+			-webkit-transition: opacity 0.5s ease-in, -webkit-transform 0.5s ease-in-out;
+			transition: opacity 0.5s ease-in, transform 0.5s ease-in-out;
+		}
+
 		.member {
 			position: absolute;
 			.avatar {
@@ -218,6 +236,54 @@ a:hover {
 				&.triangle { width: 81px; height: 106px; }
 			}
 		}
+
+		.member-info {
+			display: none;
+			min-width: 170px;
+			position: absolute;
+			text-align: right;
+			color: #fff;
+			.name {
+				font-size: 24px;
+				line-height: 1.5em;
+				border-bottom: 2px solid rgba(255,255,255,0.5);
+			}
+			.title { font-size: 20px; line-height: 2em; }
+			p { margin: 0; }
+
+			&.left {
+				text-align: left;
+				min-width: 220px;
+				.name {
+					padding-top: 85px;
+					border-right: 2px solid rgba(255,255,255,0.5);
+				}
+			}
+
+			&.right .name {
+				padding-top: 40px;
+				border-left: 2px solid rgba(255,255,255,0.5);
+			}
+		}
+
+		.jack-info { top: 85px; left: 88px; }
+		.zchar-info { top: 292px; left: 108px; }
+		.malu-info { top: 162px; left: 200px; }
+		.manfred-info { top: 262px; right: -164px; }
+		.farthinker-info { top: 486px; right: 385px; }
+		.fish-info { top: 486px; right: 295px; }
+		.maklu-info { top: 486px; right: 205px; }
+		.mybeky-info { top: 486px; right: 115px; }
+		.seandong-info { top: 486px; right: 25px; }
+		.tinyfive-info { top: 486px; right: -65px; }
+		.ruochen-info { top: 486px; right: -155px; }
+		.snow-info { top: 566px; right: 170px; }
+		.dragon-info { top: 566px; right: 80px; }
+		.calf-info { top: 566px; right: -10px; }
+		.lendice-info { top: 566px; right: -100px; }
+		.dongdong-info { top: 566px; right: -190px; }
+		.alfredwu-info { top: 566px; right: -280px; }
+
 
 		.jack {
 			top: 114px; left: 24px;
@@ -321,8 +387,6 @@ a:hover {
 				@include at2x('/images/alfredwu', png, 100% , auto);
 			}
 		}
-
-
 	}
 
 	.hire {
