@@ -31,7 +31,7 @@ a:hover {
 	margin-top: 40px;
 
 	a.brand {
-		@include at2x('/img/logo', png, 100% , auto);
+		@include at2x('/images/logo', png, 100% , auto);
 		display: block;
 		float: left;
 		overflow: hidden;
@@ -82,7 +82,7 @@ a:hover {
 
 	.tower {
 		.tower-logo {
-			@include at2x('/img/tower-logo', png, 100% , auto);
+			@include at2x('/images/tower-logo', png, 100% , auto);
 			background-size: 100%;
 			height: 272px; width: 200px;
 			margin: 0 auto;
@@ -96,7 +96,7 @@ a:hover {
 	}
 
 	.hero-image {
-		@include at2x('/img/hero', jpg, 100% , auto);
+		@include at2x('/images/hero', jpg, 100% , auto);
 		background-size: 100%;
 		background-position: 50%;
 		max-width: 839px; height: 505px;
@@ -156,10 +156,10 @@ a:hover {
 					float: left;
 					position: relative;
 					&.designboard {
-						@include at2x('/img/designboard', png, 100% , auto);
+						@include at2x('/images/designboard', png, 100% , auto);
 					}
 					&.teamcola {
-						@include at2x('/img/teamcola', png, 100% , auto);
+						@include at2x('/images/teamcola', png, 100% , auto);
 					}
 				}
 
@@ -196,7 +196,7 @@ a:hover {
 	}
 
 	.map {
-		@include at2x('/img/earth', png, 100% , auto);
+		@include at2x('/images/earth', png, 100% , auto);
 		background-position: center;
 		width: 100%; height: 937px;
 		position: absolute;
@@ -254,7 +254,7 @@ a:hover {
 		margin-bottom: 160px;
 
 		.coffee {
-			@include at2x('/img/coffee', png, 100% , auto);
+			@include at2x('/images/coffee', png, 100% , auto);
 			background-position: center;
 			width: 122px; height: 117px;
 			display: block;
@@ -272,7 +272,7 @@ a:hover {
 			width: 440px;
 
 			i {
-				@include at2x('/img/manfred-large', png, 100% , auto);
+				@include at2x('/images/manfred-large', png, 100% , auto);
 				background-position: center;
 				width: 104px; height: 108px;
 				display: block;
@@ -346,11 +346,11 @@ a:hover {
 		a {
 			display: block;
 			&.rss {
-				@include at2x('/img/rss', png, 100% , auto);
+				@include at2x('/images/rss', png, 100% , auto);
 				width: 28px; height: 28px;
 			}
 			&.weibo {
-				@include at2x('/img/weibo', png, 100% , auto);
+				@include at2x('/images/weibo', png, 100% , auto);
 				width: 35px; height: 28px;
 			}
 		}
