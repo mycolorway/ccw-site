@@ -195,15 +195,135 @@ a:hover {
 		margin: 0 0 30px 0;
 	}
 
-	.map {
+	.earth {
 		@include at2x('/images/earth', png, 100% , auto);
 		background-position: center;
 		width: 100%; height: 937px;
 		position: absolute;
 		left: 0; right: 0;
-	}
 
-	.hire-title { display: none; }
+		.map {
+			position: relative;
+			height: 100%;
+			width: 768px;
+			margin: auto;
+		}
+
+		.member {
+			position: absolute;
+			.avatar {
+				background-repeat: no-repeat;
+				display: block;
+				width: 80px; height: 80px;
+				&.triangle { width: 81px; height: 106px; }
+			}
+		}
+
+		.jack {
+			top: 114px; left: 24px;
+			.avatar {
+				@include at2x('/images/jack', png, 100% , auto);
+			}
+		}
+		.zchar {
+			top: 257px; left: 44px;
+			.avatar {
+				@include at2x('/images/zchar', png, 100% , auto);
+			}
+		}
+		.malu {
+			top: 160px; left: 122px;
+			.avatar {
+				@include at2x('/images/malu', png, 100% , auto);
+			}
+		}
+		.manfred {
+			top: 254px; right: 4px;
+			.avatar {
+				@include at2x('/images/manfred', png, 100% , auto);
+			}
+		}
+		.farthinker {
+			top: 406px; right: 345px;
+			.avatar {
+				@include at2x('/images/farthinker', png, 100% , auto);
+			}
+		}
+		.fish {
+			top: 406px; right: 255px;
+			.avatar {
+				@include at2x('/images/fish', png, 100% , auto);
+			}
+		}
+		.maklu {
+			top: 406px; right: 165px;
+			.avatar {
+				@include at2x('/images/maklu', png, 100% , auto);
+			}
+		}
+		.mybeky {
+			top: 406px; right: 75px;
+			.avatar {
+				@include at2x('/images/mybeky', png, 100% , auto);
+			}
+		}
+		.seandong {
+			top: 406px; right: -15px;
+			.avatar {
+				@include at2x('/images/seandong', png, 100% , auto);
+			}
+		}
+		.tinyfive {
+			top: 406px; right: -105px;
+			.avatar {
+				@include at2x('/images/tinyfive', png, 100% , auto);
+			}
+		}
+		.ruochen {
+			top: 406px; right: -190px;
+			.avatar {
+				@include at2x('/images/ruochen', png, 100% , auto);
+			}
+		}
+		.snow {
+			top: 486px; right: 300px;
+			.avatar {
+				@include at2x('/images/snow', png, 100% , auto);
+			}
+		}
+		.dragon {
+			top: 486px; right: 210px;
+			.avatar {
+				@include at2x('/images/dragon', png, 100% , auto);
+			}
+		}
+		.calf {
+			top: 486px; right: 120px;
+			.avatar {
+				@include at2x('/images/calf', png, 100% , auto);
+			}
+		}
+		.lendice {
+			top: 486px; right: 30px;
+			.avatar {
+				@include at2x('/images/lendice', png, 100% , auto);
+			}
+		}
+		.dongdong {
+			top: 486px; right: -60px;
+			.avatar {
+				@include at2x('/images/dongdong', png, 100% , auto);
+			}
+		}
+		.alfredwu {
+			top: 486px; right: -150px;
+			.avatar {
+				@include at2x('/images/alfredwu', png, 100% , auto);
+			}
+		}
+
+
+	}
 
 	.hire {
 		padding: 0;
@@ -439,14 +559,6 @@ a:hover {
 			line-height: 1.3em;
 		}
 
-		.hire-title {
-			display: block;
-			font-size: 26px;
-			font-weight: normal;
-			margin: .5em 0;
-			color: #7ecfbe;
-		}
-
 		.hire {
 			margin: 0;
 
@@ -497,7 +609,7 @@ a:hover {
 		}
 	}
 
-	.footer-links, #page-team .map {
+	.footer-links {
 		display: none;
 	}
 	.footer .container {
