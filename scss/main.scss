@@ -25,7 +25,7 @@ a:hover {
 	opacity: .8;
 }
 
-header {
+.header {
 	position: relative;
 	min-height: 50px;
 	margin-top: 40px;
@@ -42,7 +42,7 @@ header {
 		text-indent: -999px;
 	}
 
-	nav ul {
+	.nav ul {
 		float: right;
 		margin: 0;
 		li {
@@ -62,7 +62,7 @@ header {
 	}
 }
 
-main#page-index {
+#page-index {
 	text-align: center;
 
 	a.btn {
@@ -180,7 +180,7 @@ main#page-index {
 	}
 }
 
-main#page-team {
+#page-team {
 	text-align: center;
 
 	h2.title {
@@ -304,7 +304,7 @@ main#page-team {
 }
 
 
-footer {
+.footer {
 	margin: 0; padding: 0;
 	background-color: #777;
 
@@ -358,7 +358,7 @@ footer {
 }
 
 @media (max-width: 767px) {
-	main#page-index .container {
+	#page-index .container {
 		margin-top: 40px;
 
 		a.btn {
@@ -428,7 +428,7 @@ footer {
 		}
 	}
 
-	main#page-team .container {
+	#page-team .container {
 		margin-top: 40px;
 		padding-left: 5px;
 		padding-right: 5px;
@@ -488,7 +488,7 @@ footer {
 		}
 	}
 
-	header {
+	.header {
 		margin-top: 20px;
 
 		a.brand {
@@ -497,10 +497,10 @@ footer {
 		}
 	}
 
-	.footer-links, main#page-team .map {
+	.footer-links, #page-team .map {
 		display: none;
 	}
-	footer .container {
+	.footer .container {
 		width: 100%;
 		padding: 25px 0 30px;
 		text-align: center;
@@ -518,7 +518,7 @@ footer {
 	.container {
 		width: 750px;
 	}
-	main#page-index .container {
+	#page-index .container {
 		margin-top: 60px;
 		h2.slogan {
 			font-size: 58px;
@@ -526,7 +526,7 @@ footer {
 		}
 	}
 
-	main#page-team .container {
+	#page-team .container {
 		margin-top: 100px;
 		.hire li {
 			width: 40%;
@@ -539,10 +539,10 @@ footer {
 	.container {
 		width: 970px;
 	}
-	main#page-index .container {
+	#page-index .container {
 		margin-top: 80px;
 	}
-	main#page-team .container {
+	#page-team .container {
 		margin-top: 120px;
 
 	}
@@ -552,10 +552,10 @@ footer {
 	.container {
 		width: 1000px;
 	}
-	main#page-index .container {
+	#page-index .container {
 		margin-top: 100px;
 	}
-	main#page-team .container {
+	#page-team .container {
 		margin-top: 140px;
 	}
 	.tower {
