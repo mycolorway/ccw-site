@@ -103,6 +103,9 @@ a:hover {
     background-size: 100% auto;
   }
 }
+#page-index .hero-onphone {
+  display: none;
+}
 #page-index .stat {
   margin: 48px 0 80px;
 }
@@ -702,57 +705,72 @@ a:hover {
   padding: 50px 0 43px;
 }
 .footer .container p {
-  margin: 36px 0 0;
+  margin: 43px 0 0;
   color: #aaa;
   font-size: 16px;
 }
-
-.footer-links, .social {
+.footer .footer-links, .footer .social {
   list-style: none;
   padding: 0;
   margin: 0;
 }
-
-.footer-links li {
+.footer .footer-links {
   float: left;
+}
+.footer .footer-links li {
+  display: inline-block;
   margin-right: 20px;
   color: #aaa;
 }
-.footer-links li a {
+.footer .footer-links li:last-child {
+  margin: 0;
+}
+.footer .footer-links li a {
   font-size: 16px;
   color: #aaa;
 }
-
-.social {
+.footer .social {
   float: right;
 }
-.social li {
+.footer .social li {
   display: inline-block;
   margin: 0 25px;
 }
-.social li a {
+.footer .social li a {
   display: block;
 }
-.social li a.rss {
+.footer .social li a.rss {
   background-image: url("/images/rss.png");
   background-repeat: no-repeat;
-  width: 28px;
-  height: 28px;
+  width: 60px;
+  height: 60px;
 }
 @media all and (-webkit-min-device-pixel-ratio: 1.5), all and (-o-min-device-pixel-ratio: 3 / 2), all and (min--moz-device-pixel-ratio: 1.5), all and (min-device-pixel-ratio: 1.5) {
-  .social li a.rss {
+  .footer .social li a.rss {
     background-image: url("/images/rss@2x.png");
     background-size: 100% auto;
   }
 }
-.social li a.weibo {
-  background-image: url("/images/weibo.png");
+.footer .social li a.weixin {
+  background-image: url("/images/weixin.png");
   background-repeat: no-repeat;
-  width: 35px;
-  height: 28px;
+  width: 60px;
+  height: 60px;
 }
 @media all and (-webkit-min-device-pixel-ratio: 1.5), all and (-o-min-device-pixel-ratio: 3 / 2), all and (min--moz-device-pixel-ratio: 1.5), all and (min-device-pixel-ratio: 1.5) {
-  .social li a.weibo {
+  .footer .social li a.weixin {
+    background-image: url("/images/weixin@2x.png");
+    background-size: 100% auto;
+  }
+}
+.footer .social li a.weibo {
+  background-image: url("/images/weibo.png");
+  background-repeat: no-repeat;
+  width: 60px;
+  height: 60px;
+}
+@media all and (-webkit-min-device-pixel-ratio: 1.5), all and (-o-min-device-pixel-ratio: 3 / 2), all and (min--moz-device-pixel-ratio: 1.5), all and (min-device-pixel-ratio: 1.5) {
+  .footer .social li a.weibo {
     background-image: url("/images/weibo@2x.png");
     background-size: 100% auto;
   }
@@ -776,13 +794,17 @@ a:hover {
   }
   #page-index .container .tower .subtitle {
     font-size: 26px;
-    margin: 12px 0 20px;
+    margin: 12px 0 30px;
   }
   #page-index .container .hero-image {
-    height: 400px;
+    display: none;
+  }
+  #page-index .container .hero-onphone {
+    display: block;
+    width: 100%;
   }
   #page-index .container .stat {
-    margin: 26px 0 60px;
+    margin: 36px 0 60px;
   }
   #page-index .container .stat h3 {
     font-size: 26px;
@@ -797,7 +819,7 @@ a:hover {
     margin-left: 10px;
   }
   #page-index .container .others {
-    padding: 100px 0 180px;
+    padding: 100px 0 250px;
   }
   #page-index .container .others ul li {
     width: 80%;
@@ -884,12 +906,14 @@ a:hover {
   }
 
   .footer-links {
-    display: none;
+    float: none;
+    text-align: center;
+    margin: 0 auto;
   }
 
   .footer .container {
     width: 100%;
-    padding: 25px 0 30px;
+    padding: 30px 0 30px;
     text-align: center;
   }
   .footer .container p {
@@ -898,11 +922,15 @@ a:hover {
 
   .social {
     float: none;
-    width: 62%;
-    margin: 0 auto;
+    width: 100%;
+    margin: 30px auto 0;
   }
   .social li {
-    margin: 0 4%;
+    margin: 0 15px;
+  }
+
+  .hidden {
+    display: none;
   }
 }
 @media (min-width: 768px) {

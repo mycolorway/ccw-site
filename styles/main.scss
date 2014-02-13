@@ -102,6 +102,7 @@ a:hover {
 		max-width: 839px; height: 505px;
 		margin: 0 auto;
 	}
+	.hero-onphone { display: none; }
 
 	.stat {
 		margin: 48px 0 80px;
@@ -497,49 +498,58 @@ a:hover {
 		padding: 50px 0 43px;
 
 		p {
-			margin: 36px 0 0;
+			margin: 43px 0 0;
 			color: #aaa;
 			font-size: 16px;
 		}
 	}
-}
 
-.footer-links, .social{
-	list-style: none;
-	padding: 0; margin: 0;
-}
-
-.footer-links li {
-	float: left;
-	margin-right: 20px;
-	color: #aaa;
-
-	a {
-		font-size: 16px;
-		color: #aaa;
+	.footer-links, .social{
+		list-style: none;
+		padding: 0; margin: 0;
 	}
-}
 
-.social {
-	float: right;
+	.footer-links {
+		float: left;
+		li {
+			display: inline-block;
+			margin-right: 20px;
+			color: #aaa;
+			&:last-child { margin: 0; }
 
-	li {
-		display: inline-block;
-		margin: 0 25px;
-
-		a {
-			display: block;
-			&.rss {
-				@include at2x('/images/rss', png, 100% , auto);
-				width: 28px; height: 28px;
+			a {
+				font-size: 16px;
+				color: #aaa;
 			}
-			&.weibo {
-				@include at2x('/images/weibo', png, 100% , auto);
-				width: 35px; height: 28px;
+		}
+	}
+
+	.social {
+		float: right;
+
+		li {
+			display: inline-block;
+			margin: 0 25px;
+
+			a {
+				display: block;
+				&.rss {
+					@include at2x('/images/rss', png, 100% , auto);
+					width: 60px; height:60px;
+				}
+				&.weixin {
+					@include at2x('/images/weixin', png, 100% , auto);
+					width: 60px; height: 60px;
+				}
+				&.weibo {
+					@include at2x('/images/weibo', png, 100% , auto);
+					width: 60px; height: 60px;
+				}
 			}
 		}
 	}
 }
+
 
 @media (max-width: 767px) {
 	#page-index .container {
@@ -562,15 +572,17 @@ a:hover {
 
 		.tower .subtitle {
 			font-size: 26px;
-			margin: 12px 0 20px;
+			margin: 12px 0 30px;
 		}
 
-		.hero-image {
-			height: 400px;
+		.hero-image { display: none; }
+		.hero-onphone {
+			display: block;
+			width: 100%;
 		}
 
 		.stat {
-			margin: 26px 0 60px;
+			margin: 36px 0 60px;
 			h3 { font-size: 26px; }
 
 			p.num {
@@ -586,7 +598,7 @@ a:hover {
 		}
 
 		.others {
-			padding: 100px 0 180px;
+			padding: 100px 0 250px;
 
 			ul li {
 				width: 80%;
@@ -674,20 +686,24 @@ a:hover {
 	}
 
 	.footer-links {
-		display: none;
+		float: none;
+		text-align: center;
+		margin: 0 auto;
 	}
 	.footer .container {
 		width: 100%;
-		padding: 25px 0 30px;
+		padding: 30px 0 30px;
 		text-align: center;
 		p { margin: 20px 0 0; }
 	}
 	.social {
 		float: none;
-		width: 62%;
-		margin: 0 auto;
-		li { margin: 0 4%; }
+		width: 100%;
+		margin: 30px auto 0;
+		li { margin: 0 15px; }
 	}
+
+	.hidden { display: none; }
 }
 
 @media (min-width: 768px) {
