@@ -1,22 +1,21 @@
 (function() {
   (function($) {
-    window.mcw = {
-      template: function(id, data) {
-        var template;
-        template = $.trim($("#" + id).html());
-        if (data) {
-          $.each(data, function(key, value) {
-            var re;
-            re = new RegExp("\\{\\{ " + key + " \\}\\}", "g");
-            template = template.replace(re, value);
-          });
-        }
-        return $(template);
+    var template;
+    template = function(id, data) {
+      var target;
+      target = $.trim($("#" + id).html());
+      if (data) {
+        $.each(data, function(key, value) {
+          var re;
+          re = new RegExp("\\{\\{ " + key + " \\}\\}", "g");
+          return target = target.replace(re, value);
+        });
       }
+      return $(target);
     };
     return $.getJSON("/info.json", function(data) {
       return $.each(data.members, function(i, member) {
-        return mcw.template('tpl-member', member).appendTo($('#members'));
+        return template('tpl-member', member).appendTo($('#members'));
       });
     });
   })(jQuery);
