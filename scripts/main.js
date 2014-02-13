@@ -1,23 +1,23 @@
 (function() {
   (function($) {
-    var shadow;
-    shadow = $("#shadow-circle");
-    return $(document).on("mouseenter", "#page-team .earth .member", function(e) {
-      shadow.css({
-        pop: '',
-        opacity: 0,
-        '-moz-transform': 'scale(1)',
-        '-webkit-transform': 'scale(1)',
-        'transform': 'scale(1)',
-        top: $(this).position().top + $(this).height() / 2 - 80,
-        left: $(this).position().left + $(this).width() / 2 - 80
+    window.mcw = {
+      template: function(id, data) {
+        var template;
+        template = $.trim($("#" + id).html());
+        if (data) {
+          $.each(data, function(key, value) {
+            var re;
+            re = new RegExp("\\{\\{ " + key + " \\}\\}", "g");
+            template = template.replace(re, value);
+          });
+        }
+        return $(template);
+      }
+    };
+    return $.getJSON("/info.json", function(data) {
+      return $.each(data.members, function(i, member) {
+        return mcw.template('tpl-member', member).appendTo($('#members'));
       });
-      $('.member-info').stop(true, true);
-      return $(this).next('.member-info').delay(200).fadeIn(500);
-    }).on("mouseleave", "#page-team .earth .member", function(e) {
-      shadow.attr('style', '');
-      $('.member-info').stop(true, true);
-      return $(this).next('.member-info').fadeOut(300);
     });
   })(jQuery);
 

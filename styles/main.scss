@@ -196,198 +196,73 @@ a:hover {
 		margin: 0 0 30px 0;
 	}
 
-	.earth {
-		@include at2x('/images/earth', png, 100% , auto);
-		background-position: center;
-		width: 100%; height: 937px;
-		position: absolute;
-		left: 0; right: 0;
+	.earth-onphone { display: none; }
 
-		.map {
-			position: relative;
-			height: 100%;
-			width: 768px;
-			margin: auto;
+	.member {
+		.avatar {
+			display: block;
+			width: 80px; height: 80px;
+			margin: 0 auto;
 		}
+		p { margin: 0; }
+		.icon-gps {
+			@include at2x('/images/icon-gps', png, 100% , auto);
+			width: 16px; height: 23px;
+			display: inline-block;
+		}
+	}
 
-		#shadow-circle {
-			left: -99999px;
-			position: absolute;
-			opacity: 0.8;
-			width: 160px; height: 160px;
-			background-color: white;
+	.jack .avatar {
+		@include at2x('/images/jack', png, 100% , auto);
+	}
+	.zchar .avatar {
+		@include at2x('/images/zchar', png, 100% , auto);
+	}
+	.malu .avatar {
+		@include at2x('/images/malu', png, 100% , auto);
+	}
+	.manfred .avatar {
+		@include at2x('/images/manfred', png, 100% , auto);
+	}
+	.farthinker .avatar {
+		@include at2x('/images/farthinker', png, 100% , auto);
+	}
+	.fish .avatar {
+		@include at2x('/images/fish', png, 100% , auto);
+	}
+	.maklu .avatar {
+		@include at2x('/images/maklu', png, 100% , auto);
+	}
+	.mybeky .avatar {
+		@include at2x('/images/mybeky', png, 100% , auto);
+	}
+	.seandong .avatar {
+		@include at2x('/images/seandong', png, 100% , auto);
+	}
+	.tinyfive .avatar {
+		@include at2x('/images/tinyfive', png, 100% , auto);
+	}
+	.ruochen .avatar {
+		@include at2x('/images/ruochen', png, 100% , auto);
+	}
+	.snow .avatar {
+		@include at2x('/images/snow', png, 100% , auto);
+	}
+	.dragon .avatar {
+		@include at2x('/images/dragon', png, 100% , auto);
+	}
+	.calf .avatar {
+		@include at2x('/images/calf', png, 100% , auto);
+	}
+	.lendice .avatar {
+		@include at2x('/images/lendice', png, 100% , auto);
+	}
+	.dongdong .avatar {
+		@include at2x('/images/dongdong', png, 100% , auto);
+	}
 
-			-moz-transform: scale(0.4);
-			-webkit-transform: scale(0.4);
-			transform: scale(0.4);
-			-moz-border-radius: 80px;
-			-webkit-border-radius: 80px;
-			border-radius: 80px;
-			-moz-transition: opacity 0.5s ease-in, -moz-transform 0.5s ease-in-out;
-			-webkit-transition: opacity 0.5s ease-in, -webkit-transform 0.5s ease-in-out;
-			transition: opacity 0.5s ease-in, transform 0.5s ease-in-out;
-		}
-
-		.member {
-			position: absolute;
-			.avatar {
-				background-repeat: no-repeat;
-				display: block;
-				width: 80px; height: 80px;
-				&.triangle { width: 81px; height: 106px; }
-			}
-		}
-
-		.member-info {
-			display: none;
-			min-width: 170px;
-			position: absolute;
-			text-align: right;
-			color: #fff;
-			.name {
-				font-size: 24px;
-				line-height: 1.5em;
-				border-bottom: 2px solid rgba(255,255,255,0.5);
-			}
-			.title { font-size: 20px; line-height: 2em; }
-			p { margin: 0; }
-
-			&.left {
-				text-align: left;
-				min-width: 220px;
-				.name {
-					padding-top: 85px;
-					border-right: 2px solid rgba(255,255,255,0.5);
-				}
-			}
-
-			&.right .name {
-				padding-top: 40px;
-				border-left: 2px solid rgba(255,255,255,0.5);
-			}
-		}
-
-		.jack-info { top: 85px; left: 88px; }
-		.zchar-info { top: 292px; left: 108px; }
-		.malu-info { top: 162px; left: 200px; }
-		.manfred-info { top: 262px; right: -164px; }
-		.farthinker-info { top: 486px; right: 385px; }
-		.fish-info { top: 486px; right: 295px; }
-		.maklu-info { top: 486px; right: 205px; }
-		.mybeky-info { top: 486px; right: 115px; }
-		.seandong-info { top: 486px; right: 25px; }
-		.tinyfive-info { top: 486px; right: -65px; }
-		.ruochen-info { top: 486px; right: -155px; }
-		.snow-info { top: 566px; right: 170px; }
-		.dragon-info { top: 566px; right: 80px; }
-		.calf-info { top: 566px; right: -10px; }
-		.lendice-info { top: 566px; right: -100px; }
-		.dongdong-info { top: 566px; right: -190px; }
-		.alfredwu-info { top: 566px; right: -280px; }
-
-
-		.jack {
-			top: 114px; left: 24px;
-			.avatar {
-				@include at2x('/images/jack', png, 100% , auto);
-			}
-		}
-		.zchar {
-			top: 257px; left: 44px;
-			.avatar {
-				@include at2x('/images/zchar', png, 100% , auto);
-			}
-		}
-		.malu {
-			top: 160px; left: 122px;
-			.avatar {
-				@include at2x('/images/malu', png, 100% , auto);
-			}
-		}
-		.manfred {
-			top: 254px; right: 4px;
-			.avatar {
-				@include at2x('/images/manfred', png, 100% , auto);
-			}
-		}
-		.farthinker {
-			top: 406px; right: 345px;
-			.avatar {
-				@include at2x('/images/farthinker', png, 100% , auto);
-			}
-		}
-		.fish {
-			top: 406px; right: 255px;
-			.avatar {
-				@include at2x('/images/fish', png, 100% , auto);
-			}
-		}
-		.maklu {
-			top: 406px; right: 165px;
-			.avatar {
-				@include at2x('/images/maklu', png, 100% , auto);
-			}
-		}
-		.mybeky {
-			top: 406px; right: 75px;
-			.avatar {
-				@include at2x('/images/mybeky', png, 100% , auto);
-			}
-		}
-		.seandong {
-			top: 406px; right: -15px;
-			.avatar {
-				@include at2x('/images/seandong', png, 100% , auto);
-			}
-		}
-		.tinyfive {
-			top: 406px; right: -105px;
-			.avatar {
-				@include at2x('/images/tinyfive', png, 100% , auto);
-			}
-		}
-		.ruochen {
-			top: 406px; right: -190px;
-			.avatar {
-				@include at2x('/images/ruochen', png, 100% , auto);
-			}
-		}
-		.snow {
-			top: 486px; right: 300px;
-			.avatar {
-				@include at2x('/images/snow', png, 100% , auto);
-			}
-		}
-		.dragon {
-			top: 486px; right: 210px;
-			.avatar {
-				@include at2x('/images/dragon', png, 100% , auto);
-			}
-		}
-		.calf {
-			top: 486px; right: 120px;
-			.avatar {
-				@include at2x('/images/calf', png, 100% , auto);
-			}
-		}
-		.lendice {
-			top: 486px; right: 30px;
-			.avatar {
-				@include at2x('/images/lendice', png, 100% , auto);
-			}
-		}
-		.dongdong {
-			top: 486px; right: -60px;
-			.avatar {
-				@include at2x('/images/dongdong', png, 100% , auto);
-			}
-		}
-		.alfredwu {
-			top: 486px; right: -150px;
-			.avatar {
-				@include at2x('/images/alfredwu', png, 100% , auto);
-			}
-		}
+	.alfredwu .avatar {
+		@include at2x('/images/alfredwu', png, 100% , auto);
 	}
 
 	.hire {
@@ -535,15 +410,15 @@ a:hover {
 				display: block;
 				&.rss {
 					@include at2x('/images/rss', png, 100% , auto);
-					width: 60px; height:60px;
+					width: 30px; height:30px;
 				}
 				&.weixin {
 					@include at2x('/images/weixin', png, 100% , auto);
-					width: 60px; height: 60px;
+					width: 30px; height: 30px;
 				}
 				&.weibo {
 					@include at2x('/images/weibo', png, 100% , auto);
-					width: 60px; height: 60px;
+					width: 30px; height: 30px;
 				}
 			}
 		}
@@ -625,52 +500,79 @@ a:hover {
 	}
 
 	#page-team .container {
-		margin-top: 40px;
-		padding-left: 5px;
-		padding-right: 5px;
+		margin-top: 15px;
+		padding-left: 0; padding-right: 0;
 
-		h2.title { font-size: 36px; }
+		h2.title { font-size: 24px; }
 		p.subtitle {
-			font-size: 24px;
-			line-height: 1.3em;
+			font-size: 15px;
+			margin: 0;
+			line-height: 1.8em;
+		}
+
+		.earth { display: none; }
+		.earth-onphone {
+			display: block;
+			width: 100%;
+			margin: 10px auto 20px;
+		}
+
+		.slogan {
+			font-size: 15px;
+			line-height: 24px;
+			margin: 40px 0 25px;
 		}
 
 		.hire {
 			margin: 0;
 
 			li {
-				width: 100%;
+				width: 49%;
 				margin-left: 0;
-				text-align: center;
+				position: relative;
 
-				h4 { font-size: 24px; }
-				p { font-size: 16px; }
+				&.ios { text-align: right; left: -1% }
+				&.android { text-align: left; right: -1%; }
+
+				h4 { font-size: 15px; }
+				p { font-size: 9px; }
 			}
 		}
 
-		.slogan {
-			font-size: 22px;
-			margin: 40px 0 30px;
+		.tips {
+			margin: 25px 0 50px;
+			font-size: 12px;
+			line-height: 1.4em;
 		}
 
-		.tips { margin-bottom: 60px; }
-
 		.contact {
-			margin-bottom: 60px;
+			margin-bottom: 50px;
+
+			.coffee {
+				width: 80px; height: 82px;
+				background-size: 80px 82px;
+			}
 
 			h2 {
-				font-size: 24px;
-				margin: 20px 0;
+				font-size: 20px;
+				margin: 20px 0 16px;
 			}
 
 			.contact-card {
-				width: 100%;
+				width: 200px;
 
-				.avatar { display: none; }
+				.avatar {
+					width: 40px; height: 40px;
+					background-size: 40px 40px;
+					margin: 2px 0;
+				}
+
 				.detail {
-					margin: 0;
-					text-align: center;
-					p { font-size: 18px; }
+					margin: 0 0 0 45px;
+
+					.name { font-size: 13px ;}
+					.position { font-size: 10px; }
+					p { font-size: 9px; line-height: 1.2em; }
 				}
 			}
 		}
@@ -683,24 +585,40 @@ a:hover {
 			background-size: 50%;
 			position: absolute;
 		}
+
+		.nav ul li {
+			&:first-child {
+				margin: 0 25px;
+			}
+			a { font-size: 12px; }
+		}
 	}
 
-	.footer-links {
-		float: none;
-		text-align: center;
-		margin: 0 auto;
-	}
-	.footer .container {
-		width: 100%;
-		padding: 30px 0 30px;
-		text-align: center;
-		p { margin: 20px 0 0; }
-	}
-	.social {
-		float: none;
-		width: 100%;
-		margin: 30px auto 0;
-		li { margin: 0 15px; }
+	.footer {
+		.container {
+			width: 100%;
+			padding: 15px 0;
+			text-align: center;
+			p { margin: 10px 0 0; font-size: 10px; }
+		}
+
+		.footer-links {
+			float: none;
+			text-align: center;
+			margin: 0 auto;
+			li {
+				margin-right: 12px;
+				font-size: 10px;
+				a { font-size: 10px; }
+			}
+		}
+
+		.social {
+			float: none;
+			width: 100%;
+			margin: 15px auto 0;
+			li { margin: 0 8px; }
+		}
 	}
 
 	.hidden { display: none; }

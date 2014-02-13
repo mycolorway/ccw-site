@@ -203,391 +203,197 @@ a:hover {
   color: #7b7b7b;
   margin: 0 0 30px 0;
 }
-#page-team .earth {
-  background-image: url("/images/earth.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 100%;
-  height: 937px;
-  position: absolute;
-  left: 0;
-  right: 0;
+#page-team .earth-onphone {
+  display: none;
 }
-@media all and (-webkit-min-device-pixel-ratio: 1.5), all and (-o-min-device-pixel-ratio: 3 / 2), all and (min--moz-device-pixel-ratio: 1.5), all and (min-device-pixel-ratio: 1.5) {
-  #page-team .earth {
-    background-image: url("/images/earth@2x.png");
-    background-size: 100% auto;
-  }
-}
-#page-team .earth .map {
-  position: relative;
-  height: 100%;
-  width: 768px;
-  margin: auto;
-}
-#page-team .earth #shadow-circle {
-  left: -99999px;
-  position: absolute;
-  opacity: 0.8;
-  width: 160px;
-  height: 160px;
-  background-color: white;
-  -moz-transform: scale(0.4);
-  -webkit-transform: scale(0.4);
-  transform: scale(0.4);
-  -moz-border-radius: 80px;
-  -webkit-border-radius: 80px;
-  border-radius: 80px;
-  -moz-transition: opacity 0.5s ease-in, -moz-transform 0.5s ease-in-out;
-  -webkit-transition: opacity 0.5s ease-in, -webkit-transform 0.5s ease-in-out;
-  transition: opacity 0.5s ease-in, transform 0.5s ease-in-out;
-}
-#page-team .earth .member {
-  position: absolute;
-}
-#page-team .earth .member .avatar {
-  background-repeat: no-repeat;
+#page-team .member .avatar {
   display: block;
   width: 80px;
   height: 80px;
+  margin: 0 auto;
 }
-#page-team .earth .member .avatar.triangle {
-  width: 81px;
-  height: 106px;
-}
-#page-team .earth .member-info {
-  display: none;
-  min-width: 170px;
-  position: absolute;
-  text-align: right;
-  color: #fff;
-}
-#page-team .earth .member-info .name {
-  font-size: 24px;
-  line-height: 1.5em;
-  border-bottom: 2px solid rgba(255, 255, 255, 0.5);
-}
-#page-team .earth .member-info .title {
-  font-size: 20px;
-  line-height: 2em;
-}
-#page-team .earth .member-info p {
+#page-team .member p {
   margin: 0;
 }
-#page-team .earth .member-info.left {
-  text-align: left;
-  min-width: 220px;
+#page-team .member .icon-gps {
+  background-image: url("/images/icon-gps.png");
+  background-repeat: no-repeat;
+  width: 16px;
+  height: 23px;
+  display: inline-block;
 }
-#page-team .earth .member-info.left .name {
-  padding-top: 85px;
-  border-right: 2px solid rgba(255, 255, 255, 0.5);
+@media all and (-webkit-min-device-pixel-ratio: 1.5), all and (-o-min-device-pixel-ratio: 3 / 2), all and (min--moz-device-pixel-ratio: 1.5), all and (min-device-pixel-ratio: 1.5) {
+  #page-team .member .icon-gps {
+    background-image: url("/images/icon-gps@2x.png");
+    background-size: 100% auto;
+  }
 }
-#page-team .earth .member-info.right .name {
-  padding-top: 40px;
-  border-left: 2px solid rgba(255, 255, 255, 0.5);
-}
-#page-team .earth .jack-info {
-  top: 85px;
-  left: 88px;
-}
-#page-team .earth .zchar-info {
-  top: 292px;
-  left: 108px;
-}
-#page-team .earth .malu-info {
-  top: 162px;
-  left: 200px;
-}
-#page-team .earth .manfred-info {
-  top: 262px;
-  right: -164px;
-}
-#page-team .earth .farthinker-info {
-  top: 486px;
-  right: 385px;
-}
-#page-team .earth .fish-info {
-  top: 486px;
-  right: 295px;
-}
-#page-team .earth .maklu-info {
-  top: 486px;
-  right: 205px;
-}
-#page-team .earth .mybeky-info {
-  top: 486px;
-  right: 115px;
-}
-#page-team .earth .seandong-info {
-  top: 486px;
-  right: 25px;
-}
-#page-team .earth .tinyfive-info {
-  top: 486px;
-  right: -65px;
-}
-#page-team .earth .ruochen-info {
-  top: 486px;
-  right: -155px;
-}
-#page-team .earth .snow-info {
-  top: 566px;
-  right: 170px;
-}
-#page-team .earth .dragon-info {
-  top: 566px;
-  right: 80px;
-}
-#page-team .earth .calf-info {
-  top: 566px;
-  right: -10px;
-}
-#page-team .earth .lendice-info {
-  top: 566px;
-  right: -100px;
-}
-#page-team .earth .dongdong-info {
-  top: 566px;
-  right: -190px;
-}
-#page-team .earth .alfredwu-info {
-  top: 566px;
-  right: -280px;
-}
-#page-team .earth .jack {
-  top: 114px;
-  left: 24px;
-}
-#page-team .earth .jack .avatar {
+#page-team .jack .avatar {
   background-image: url("/images/jack.png");
   background-repeat: no-repeat;
 }
 @media all and (-webkit-min-device-pixel-ratio: 1.5), all and (-o-min-device-pixel-ratio: 3 / 2), all and (min--moz-device-pixel-ratio: 1.5), all and (min-device-pixel-ratio: 1.5) {
-  #page-team .earth .jack .avatar {
+  #page-team .jack .avatar {
     background-image: url("/images/jack@2x.png");
     background-size: 100% auto;
   }
 }
-#page-team .earth .zchar {
-  top: 257px;
-  left: 44px;
-}
-#page-team .earth .zchar .avatar {
+#page-team .zchar .avatar {
   background-image: url("/images/zchar.png");
   background-repeat: no-repeat;
 }
 @media all and (-webkit-min-device-pixel-ratio: 1.5), all and (-o-min-device-pixel-ratio: 3 / 2), all and (min--moz-device-pixel-ratio: 1.5), all and (min-device-pixel-ratio: 1.5) {
-  #page-team .earth .zchar .avatar {
+  #page-team .zchar .avatar {
     background-image: url("/images/zchar@2x.png");
     background-size: 100% auto;
   }
 }
-#page-team .earth .malu {
-  top: 160px;
-  left: 122px;
-}
-#page-team .earth .malu .avatar {
+#page-team .malu .avatar {
   background-image: url("/images/malu.png");
   background-repeat: no-repeat;
 }
 @media all and (-webkit-min-device-pixel-ratio: 1.5), all and (-o-min-device-pixel-ratio: 3 / 2), all and (min--moz-device-pixel-ratio: 1.5), all and (min-device-pixel-ratio: 1.5) {
-  #page-team .earth .malu .avatar {
+  #page-team .malu .avatar {
     background-image: url("/images/malu@2x.png");
     background-size: 100% auto;
   }
 }
-#page-team .earth .manfred {
-  top: 254px;
-  right: 4px;
-}
-#page-team .earth .manfred .avatar {
+#page-team .manfred .avatar {
   background-image: url("/images/manfred.png");
   background-repeat: no-repeat;
 }
 @media all and (-webkit-min-device-pixel-ratio: 1.5), all and (-o-min-device-pixel-ratio: 3 / 2), all and (min--moz-device-pixel-ratio: 1.5), all and (min-device-pixel-ratio: 1.5) {
-  #page-team .earth .manfred .avatar {
+  #page-team .manfred .avatar {
     background-image: url("/images/manfred@2x.png");
     background-size: 100% auto;
   }
 }
-#page-team .earth .farthinker {
-  top: 406px;
-  right: 345px;
-}
-#page-team .earth .farthinker .avatar {
+#page-team .farthinker .avatar {
   background-image: url("/images/farthinker.png");
   background-repeat: no-repeat;
 }
 @media all and (-webkit-min-device-pixel-ratio: 1.5), all and (-o-min-device-pixel-ratio: 3 / 2), all and (min--moz-device-pixel-ratio: 1.5), all and (min-device-pixel-ratio: 1.5) {
-  #page-team .earth .farthinker .avatar {
+  #page-team .farthinker .avatar {
     background-image: url("/images/farthinker@2x.png");
     background-size: 100% auto;
   }
 }
-#page-team .earth .fish {
-  top: 406px;
-  right: 255px;
-}
-#page-team .earth .fish .avatar {
+#page-team .fish .avatar {
   background-image: url("/images/fish.png");
   background-repeat: no-repeat;
 }
 @media all and (-webkit-min-device-pixel-ratio: 1.5), all and (-o-min-device-pixel-ratio: 3 / 2), all and (min--moz-device-pixel-ratio: 1.5), all and (min-device-pixel-ratio: 1.5) {
-  #page-team .earth .fish .avatar {
+  #page-team .fish .avatar {
     background-image: url("/images/fish@2x.png");
     background-size: 100% auto;
   }
 }
-#page-team .earth .maklu {
-  top: 406px;
-  right: 165px;
-}
-#page-team .earth .maklu .avatar {
+#page-team .maklu .avatar {
   background-image: url("/images/maklu.png");
   background-repeat: no-repeat;
 }
 @media all and (-webkit-min-device-pixel-ratio: 1.5), all and (-o-min-device-pixel-ratio: 3 / 2), all and (min--moz-device-pixel-ratio: 1.5), all and (min-device-pixel-ratio: 1.5) {
-  #page-team .earth .maklu .avatar {
+  #page-team .maklu .avatar {
     background-image: url("/images/maklu@2x.png");
     background-size: 100% auto;
   }
 }
-#page-team .earth .mybeky {
-  top: 406px;
-  right: 75px;
-}
-#page-team .earth .mybeky .avatar {
+#page-team .mybeky .avatar {
   background-image: url("/images/mybeky.png");
   background-repeat: no-repeat;
 }
 @media all and (-webkit-min-device-pixel-ratio: 1.5), all and (-o-min-device-pixel-ratio: 3 / 2), all and (min--moz-device-pixel-ratio: 1.5), all and (min-device-pixel-ratio: 1.5) {
-  #page-team .earth .mybeky .avatar {
+  #page-team .mybeky .avatar {
     background-image: url("/images/mybeky@2x.png");
     background-size: 100% auto;
   }
 }
-#page-team .earth .seandong {
-  top: 406px;
-  right: -15px;
-}
-#page-team .earth .seandong .avatar {
+#page-team .seandong .avatar {
   background-image: url("/images/seandong.png");
   background-repeat: no-repeat;
 }
 @media all and (-webkit-min-device-pixel-ratio: 1.5), all and (-o-min-device-pixel-ratio: 3 / 2), all and (min--moz-device-pixel-ratio: 1.5), all and (min-device-pixel-ratio: 1.5) {
-  #page-team .earth .seandong .avatar {
+  #page-team .seandong .avatar {
     background-image: url("/images/seandong@2x.png");
     background-size: 100% auto;
   }
 }
-#page-team .earth .tinyfive {
-  top: 406px;
-  right: -105px;
-}
-#page-team .earth .tinyfive .avatar {
+#page-team .tinyfive .avatar {
   background-image: url("/images/tinyfive.png");
   background-repeat: no-repeat;
 }
 @media all and (-webkit-min-device-pixel-ratio: 1.5), all and (-o-min-device-pixel-ratio: 3 / 2), all and (min--moz-device-pixel-ratio: 1.5), all and (min-device-pixel-ratio: 1.5) {
-  #page-team .earth .tinyfive .avatar {
+  #page-team .tinyfive .avatar {
     background-image: url("/images/tinyfive@2x.png");
     background-size: 100% auto;
   }
 }
-#page-team .earth .ruochen {
-  top: 406px;
-  right: -190px;
-}
-#page-team .earth .ruochen .avatar {
+#page-team .ruochen .avatar {
   background-image: url("/images/ruochen.png");
   background-repeat: no-repeat;
 }
 @media all and (-webkit-min-device-pixel-ratio: 1.5), all and (-o-min-device-pixel-ratio: 3 / 2), all and (min--moz-device-pixel-ratio: 1.5), all and (min-device-pixel-ratio: 1.5) {
-  #page-team .earth .ruochen .avatar {
+  #page-team .ruochen .avatar {
     background-image: url("/images/ruochen@2x.png");
     background-size: 100% auto;
   }
 }
-#page-team .earth .snow {
-  top: 486px;
-  right: 300px;
-}
-#page-team .earth .snow .avatar {
+#page-team .snow .avatar {
   background-image: url("/images/snow.png");
   background-repeat: no-repeat;
 }
 @media all and (-webkit-min-device-pixel-ratio: 1.5), all and (-o-min-device-pixel-ratio: 3 / 2), all and (min--moz-device-pixel-ratio: 1.5), all and (min-device-pixel-ratio: 1.5) {
-  #page-team .earth .snow .avatar {
+  #page-team .snow .avatar {
     background-image: url("/images/snow@2x.png");
     background-size: 100% auto;
   }
 }
-#page-team .earth .dragon {
-  top: 486px;
-  right: 210px;
-}
-#page-team .earth .dragon .avatar {
+#page-team .dragon .avatar {
   background-image: url("/images/dragon.png");
   background-repeat: no-repeat;
 }
 @media all and (-webkit-min-device-pixel-ratio: 1.5), all and (-o-min-device-pixel-ratio: 3 / 2), all and (min--moz-device-pixel-ratio: 1.5), all and (min-device-pixel-ratio: 1.5) {
-  #page-team .earth .dragon .avatar {
+  #page-team .dragon .avatar {
     background-image: url("/images/dragon@2x.png");
     background-size: 100% auto;
   }
 }
-#page-team .earth .calf {
-  top: 486px;
-  right: 120px;
-}
-#page-team .earth .calf .avatar {
+#page-team .calf .avatar {
   background-image: url("/images/calf.png");
   background-repeat: no-repeat;
 }
 @media all and (-webkit-min-device-pixel-ratio: 1.5), all and (-o-min-device-pixel-ratio: 3 / 2), all and (min--moz-device-pixel-ratio: 1.5), all and (min-device-pixel-ratio: 1.5) {
-  #page-team .earth .calf .avatar {
+  #page-team .calf .avatar {
     background-image: url("/images/calf@2x.png");
     background-size: 100% auto;
   }
 }
-#page-team .earth .lendice {
-  top: 486px;
-  right: 30px;
-}
-#page-team .earth .lendice .avatar {
+#page-team .lendice .avatar {
   background-image: url("/images/lendice.png");
   background-repeat: no-repeat;
 }
 @media all and (-webkit-min-device-pixel-ratio: 1.5), all and (-o-min-device-pixel-ratio: 3 / 2), all and (min--moz-device-pixel-ratio: 1.5), all and (min-device-pixel-ratio: 1.5) {
-  #page-team .earth .lendice .avatar {
+  #page-team .lendice .avatar {
     background-image: url("/images/lendice@2x.png");
     background-size: 100% auto;
   }
 }
-#page-team .earth .dongdong {
-  top: 486px;
-  right: -60px;
-}
-#page-team .earth .dongdong .avatar {
+#page-team .dongdong .avatar {
   background-image: url("/images/dongdong.png");
   background-repeat: no-repeat;
 }
 @media all and (-webkit-min-device-pixel-ratio: 1.5), all and (-o-min-device-pixel-ratio: 3 / 2), all and (min--moz-device-pixel-ratio: 1.5), all and (min-device-pixel-ratio: 1.5) {
-  #page-team .earth .dongdong .avatar {
+  #page-team .dongdong .avatar {
     background-image: url("/images/dongdong@2x.png");
     background-size: 100% auto;
   }
 }
-#page-team .earth .alfredwu {
-  top: 486px;
-  right: -150px;
-}
-#page-team .earth .alfredwu .avatar {
+#page-team .alfredwu .avatar {
   background-image: url("/images/alfredwu.png");
   background-repeat: no-repeat;
 }
 @media all and (-webkit-min-device-pixel-ratio: 1.5), all and (-o-min-device-pixel-ratio: 3 / 2), all and (min--moz-device-pixel-ratio: 1.5), all and (min-device-pixel-ratio: 1.5) {
-  #page-team .earth .alfredwu .avatar {
+  #page-team .alfredwu .avatar {
     background-image: url("/images/alfredwu@2x.png");
     background-size: 100% auto;
   }
@@ -742,8 +548,8 @@ a:hover {
 .footer .social li a.rss {
   background-image: url("/images/rss.png");
   background-repeat: no-repeat;
-  width: 60px;
-  height: 60px;
+  width: 30px;
+  height: 30px;
 }
 @media all and (-webkit-min-device-pixel-ratio: 1.5), all and (-o-min-device-pixel-ratio: 3 / 2), all and (min--moz-device-pixel-ratio: 1.5), all and (min-device-pixel-ratio: 1.5) {
   .footer .social li a.rss {
@@ -754,8 +560,8 @@ a:hover {
 .footer .social li a.weixin {
   background-image: url("/images/weixin.png");
   background-repeat: no-repeat;
-  width: 60px;
-  height: 60px;
+  width: 30px;
+  height: 30px;
 }
 @media all and (-webkit-min-device-pixel-ratio: 1.5), all and (-o-min-device-pixel-ratio: 3 / 2), all and (min--moz-device-pixel-ratio: 1.5), all and (min-device-pixel-ratio: 1.5) {
   .footer .social li a.weixin {
@@ -766,8 +572,8 @@ a:hover {
 .footer .social li a.weibo {
   background-image: url("/images/weibo.png");
   background-repeat: no-repeat;
-  width: 60px;
-  height: 60px;
+  width: 30px;
+  height: 30px;
 }
 @media all and (-webkit-min-device-pixel-ratio: 1.5), all and (-o-min-device-pixel-ratio: 3 / 2), all and (min--moz-device-pixel-ratio: 1.5), all and (min-device-pixel-ratio: 1.5) {
   .footer .social li a.weibo {
@@ -844,57 +650,91 @@ a:hover {
   }
 
   #page-team .container {
-    margin-top: 40px;
-    padding-left: 5px;
-    padding-right: 5px;
+    margin-top: 15px;
+    padding-left: 0;
+    padding-right: 0;
   }
   #page-team .container h2.title {
-    font-size: 36px;
+    font-size: 24px;
   }
   #page-team .container p.subtitle {
-    font-size: 24px;
-    line-height: 1.3em;
+    font-size: 15px;
+    margin: 0;
+    line-height: 1.8em;
+  }
+  #page-team .container .earth {
+    display: none;
+  }
+  #page-team .container .earth-onphone {
+    display: block;
+    width: 100%;
+    margin: 10px auto 20px;
+  }
+  #page-team .container .slogan {
+    font-size: 15px;
+    line-height: 24px;
+    margin: 40px 0 25px;
   }
   #page-team .container .hire {
     margin: 0;
   }
   #page-team .container .hire li {
-    width: 100%;
+    width: 49%;
     margin-left: 0;
-    text-align: center;
+    position: relative;
+  }
+  #page-team .container .hire li.ios {
+    text-align: right;
+    left: -1%;
+  }
+  #page-team .container .hire li.android {
+    text-align: left;
+    right: -1%;
   }
   #page-team .container .hire li h4 {
-    font-size: 24px;
+    font-size: 15px;
   }
   #page-team .container .hire li p {
-    font-size: 16px;
-  }
-  #page-team .container .slogan {
-    font-size: 22px;
-    margin: 40px 0 30px;
+    font-size: 9px;
   }
   #page-team .container .tips {
-    margin-bottom: 60px;
+    margin: 25px 0 50px;
+    font-size: 12px;
+    line-height: 1.4em;
   }
   #page-team .container .contact {
-    margin-bottom: 60px;
+    margin-bottom: 50px;
+  }
+  #page-team .container .contact .coffee {
+    width: 80px;
+    height: 82px;
+    background-size: 80px 82px;
   }
   #page-team .container .contact h2 {
-    font-size: 24px;
-    margin: 20px 0;
+    font-size: 20px;
+    margin: 20px 0 16px;
   }
   #page-team .container .contact .contact-card {
-    width: 100%;
+    width: 200px;
   }
   #page-team .container .contact .contact-card .avatar {
-    display: none;
+    width: 40px;
+    height: 40px;
+    background-size: 40px 40px;
+    margin: 2px 0;
   }
   #page-team .container .contact .contact-card .detail {
-    margin: 0;
-    text-align: center;
+    margin: 0 0 0 45px;
+  }
+  #page-team .container .contact .contact-card .detail .name {
+    font-size: 13px;
+  }
+  #page-team .container .contact .contact-card .detail .position {
+    font-size: 10px;
   }
   #page-team .container .contact .contact-card .detail p {
-    font-size: 18px;
+    font-size: 9px;
+    line-height: 1.2em;
   }
 
   .header {
@@ -904,29 +744,41 @@ a:hover {
     background-size: 50%;
     position: absolute;
   }
-
-  .footer-links {
-    float: none;
-    text-align: center;
-    margin: 0 auto;
+  .header .nav ul li:first-child {
+    margin: 0 25px;
+  }
+  .header .nav ul li a {
+    font-size: 12px;
   }
 
   .footer .container {
     width: 100%;
-    padding: 30px 0 30px;
+    padding: 15px 0;
     text-align: center;
   }
   .footer .container p {
-    margin: 20px 0 0;
+    margin: 10px 0 0;
+    font-size: 10px;
   }
-
-  .social {
+  .footer .footer-links {
+    float: none;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .footer .footer-links li {
+    margin-right: 12px;
+    font-size: 10px;
+  }
+  .footer .footer-links li a {
+    font-size: 10px;
+  }
+  .footer .social {
     float: none;
     width: 100%;
-    margin: 30px auto 0;
+    margin: 15px auto 0;
   }
-  .social li {
-    margin: 0 15px;
+  .footer .social li {
+    margin: 0 8px;
   }
 
   .hidden {

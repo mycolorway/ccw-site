@@ -1,0 +1,19 @@
+{
+	"members": [{
+		"name": "老沈",
+		"nickname": "manfred",
+		"title": "CEO / 打杂的 & 大王",
+		"location": "苏州"
+	}, {
+		"name": "费西",
+		"nickname": "fish",
+		"title": "UI设计师 / 彩程大厨",
+		"location": "苏州"
+	}, {
+		"name": "多发",
+		"nickname": "farthinker",
+		"title": "前端工程师 & 健身教练",
+		"location": "苏州"
+	}]
+
+}
