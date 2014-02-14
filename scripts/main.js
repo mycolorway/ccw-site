@@ -13,10 +13,14 @@
       }
       return $(target);
     };
-    return $.getJSON("/info.json", function(data) {
+    $.getJSON("/info.json", function(data) {
       return $.each(data.members, function(i, member) {
         return template('tpl-member', member).appendTo($('#members'));
       });
+    });
+    return $(".footer .weixin").on("click", function(e) {
+      e.preventDefault();
+      return $(".weixin-info").fadeToggle();
     });
   })(jQuery);
 

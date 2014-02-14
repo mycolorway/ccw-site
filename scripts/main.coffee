@@ -14,4 +14,9 @@
       template('tpl-member', member)
         .appendTo($('#members'))
 
+  $(".footer .weixin").on "click", (e) ->
+    e.preventDefault()
+    $(".weixin-info").fadeToggle()
+
+
 ) jQuery

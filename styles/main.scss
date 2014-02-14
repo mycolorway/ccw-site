@@ -185,182 +185,154 @@ a:hover {
 	text-align: center;
 
 	h2.title {
-		font-size: 64px;
+		font-size: 80px;
 		font-weight: normal;
 		margin: 0;
 	}
 	p.subtitle {
-		font-size: 44px;
+		font-size: 56px;
 		line-height: 2em;
 		color: #7b7b7b;
-		margin: 0 0 30px 0;
+		margin: 0 0 120px 0;
 	}
 
 	.earth-onphone { display: none; }
 
-	.member {
-		.avatar {
+	#members {
+		&::after {
+			content: '';
+			@include at2x('/images/icon-line', png, 100% , auto);
+			width: 159px; height: 18px;
 			display: block;
-			width: 80px; height: 80px;
-			margin: 0 auto;
+			margin: 35px auto 0;
 		}
-		p { margin: 0; }
-		.icon-gps {
-			@include at2x('/images/icon-gps', png, 100% , auto);
-			width: 16px; height: 23px;
-			display: inline-block;
-		}
-	}
-
-	.jack .avatar {
-		@include at2x('/images/jack', png, 100% , auto);
-	}
-	.zchar .avatar {
-		@include at2x('/images/zchar', png, 100% , auto);
-	}
-	.malu .avatar {
-		@include at2x('/images/malu', png, 100% , auto);
-	}
-	.manfred .avatar {
-		@include at2x('/images/manfred', png, 100% , auto);
-	}
-	.farthinker .avatar {
-		@include at2x('/images/farthinker', png, 100% , auto);
-	}
-	.fish .avatar {
-		@include at2x('/images/fish', png, 100% , auto);
-	}
-	.maklu .avatar {
-		@include at2x('/images/maklu', png, 100% , auto);
-	}
-	.mybeky .avatar {
-		@include at2x('/images/mybeky', png, 100% , auto);
-	}
-	.seandong .avatar {
-		@include at2x('/images/seandong', png, 100% , auto);
-	}
-	.tinyfive .avatar {
-		@include at2x('/images/tinyfive', png, 100% , auto);
-	}
-	.ruochen .avatar {
-		@include at2x('/images/ruochen', png, 100% , auto);
-	}
-	.snow .avatar {
-		@include at2x('/images/snow', png, 100% , auto);
-	}
-	.dragon .avatar {
-		@include at2x('/images/dragon', png, 100% , auto);
-	}
-	.calf .avatar {
-		@include at2x('/images/calf', png, 100% , auto);
-	}
-	.lendice .avatar {
-		@include at2x('/images/lendice', png, 100% , auto);
-	}
-	.dongdong .avatar {
-		@include at2x('/images/dongdong', png, 100% , auto);
-	}
-
-	.alfredwu .avatar {
-		@include at2x('/images/alfredwu', png, 100% , auto);
 	}
 
 	.hire {
-		padding: 0;
-		width: 100%;
-		list-style: none;
-		margin-top: 1010px;
-
-		li {
-			width: 35%;
-			margin-left: 10%;
-			display: inline-block;
-			text-align: left;
-
-			h4 {
-				font-size: 44px;
-				font-weight: normal;
-				line-height: 1.5em;
-				color: #333;
+		text-align: left;
+		p {
+			font-size: 30px;
+			line-height: 48px;
+			margin: 70px 0 0 0;
+			span { font-size: 24px; color: #868686; }
+			&.locations {
 				margin: 0;
+				font-size: 36px;
+				line-height: 60px;
 			}
 
-			p {
-				font-size: 20px;
-				color: #7d7d7d;
-				line-height: 1.5em;
-				margin: 0;
+			&.everywhere {
+				margin: 0 0 25px;
+				text-align: center;
+				font-size: 30px; color: #7ecfbe;
+				&::before {
+					content: '';
+					@include at2x('/images/icon-gps-blue', png, 100% , auto);
+					width: 28px; height: 40px;
+					display: inline-block;
+					margin-right: 12px;
+					position: relative;
+					top: 6px;
+				}
+			}
+			&.email {
+				margin: 0 0 180px;
+				text-align: center;
+				font-size: 30px; line-height: 36px; color: #7ecfbe;
+				a { font-size: 28px; color: #7ecfbe; }
 			}
 		}
-	}
-
-	p.slogan {
-		font-size: 36px;
-		line-height: 1.4em;
-		margin: 120px 0 36px
-	}
-
-	p.tips {
-		font-size: 16px;
-		color: #666;
-		line-height: 1.3em;
-		margin-bottom: 160px;
-		a {
-			color: #43b4dd;
-		}
-	}
-
-	.contact {
-		margin-bottom: 160px;
-
-		.coffee {
-			@include at2x('/images/coffee', png, 100% , auto);
-			background-position: center;
-			width: 122px; height: 117px;
+		.icon-you {
+			@include at2x('/images/icon-you', png, 100% , auto);
+			width: 281px; height: 281px;
 			display: block;
-			margin: 0 auto;
+			margin: 150px auto 40px;
 		}
+	}
 
-		h2 {
-			font-size: 56px;
-			font-weight: normal;
-			margin: 60px 0;
+	.member {
+		display: inline-block;
+		vertical-align: top;
+		width: 33%;
+		margin-bottom: 85px;
+		.avatar {
+			@include at2x('/images/sample', png, 100% , auto);
+			width: 240px; height: 240px;
+			display: block;
+			margin: 0 auto 16px;
 		}
-
-		.contact-card {
-			margin: 0 auto;
-			width: 440px;
-
-			i {
-				@include at2x('/images/manfred-large', png, 100% , auto);
-				background-position: center;
-				width: 104px; height: 108px;
-				display: block;
-				float: left;
+		p { margin: 0; line-height: 48px }
+		.name { font-size: 36px; ;}
+		.title { font-size: 24px; color: #999; }
+		.location {
+			font-size: 20px; color: #333;
+			&::before {
+				content: '';
+				@include at2x('/images/icon-gps', png, 100% , auto);
+				width: 16px; height: 23px;
+				display: inline-block;
+				margin-right: 8px;
 				position: relative;
-			}
-
-			.detail {
-				margin-left: 130px;
-				text-align: left;
-
-				.name {
-					font-size: 36px;
-				}
-				.position {
-					font-size: 24px;
-					color: #666;
-				}
-				p {
-					margin: 0;
-					font-size: 20px;
-					line-height: 1.5em;
-					color: #666;
-					a { color: #666; }
-				}
+				top: 3px;
 			}
 		}
 	}
+
+	// .jack .avatar {
+	// 	@include at2x('/images/jack', png, 100% , auto);
+	// }
+	// .zchar .avatar {
+	// 	@include at2x('/images/zchar', png, 100% , auto);
+	// }
+	// .malu .avatar {
+	// 	@include at2x('/images/malu', png, 100% , auto);
+	// }
+	// .manfred .avatar {
+	// 	@include at2x('/images/manfred', png, 100% , auto);
+	// }
+	// .farthinker .avatar {
+	// 	@include at2x('/images/farthinker', png, 100% , auto);
+	// }
+	// .fish .avatar {
+	// 	@include at2x('/images/fish', png, 100% , auto);
+	// }
+	// .maklu .avatar {
+	// 	@include at2x('/images/maklu', png, 100% , auto);
+	// }
+	// .mybeky .avatar {
+	// 	@include at2x('/images/mybeky', png, 100% , auto);
+	// }
+	// .seandong .avatar {
+	// 	@include at2x('/images/seandong', png, 100% , auto);
+	// }
+	// .tinyfive .avatar {
+	// 	@include at2x('/images/tinyfive', png, 100% , auto);
+	// }
+	// .ruochen .avatar {
+	// 	@include at2x('/images/ruochen', png, 100% , auto);
+	// }
+	// .snow .avatar {
+	// 	@include at2x('/images/snow', png, 100% , auto);
+	// }
+	// .dragon .avatar {
+	// 	@include at2x('/images/dragon', png, 100% , auto);
+	// }
+	// .calf .avatar {
+	// 	@include at2x('/images/calf', png, 100% , auto);
+	// }
+	// .lendice .avatar {
+	// 	@include at2x('/images/lendice', png, 100% , auto);
+	// }
+	// .dongdong .avatar {
+	// 	@include at2x('/images/dongdong', png, 100% , auto);
+	// }
+	// .alfredwu .avatar {
+	// 	@include at2x('/images/alfredwu', png, 100% , auto);
+	// }
+	// .xiaoyan .avatar {
+	// 	@include at2x('/images/xiaoyan', png, 100% , auto);
+	// }
+
 }
 
 
@@ -371,6 +343,7 @@ a:hover {
 	.container {
 		width: 80%;
 		padding: 50px 0 43px;
+		position: relative;
 
 		p {
 			margin: 43px 0 0;
@@ -422,6 +395,14 @@ a:hover {
 				}
 			}
 		}
+	}
+
+	.weixin-info {
+		@include at2x('/images/weixin-info', png, 100% , auto);
+		width: 195px; height: 266px;
+		display: none;
+		position: absolute;
+		top: -218px; right: 24px;
 	}
 }
 
@@ -626,7 +607,7 @@ a:hover {
 
 @media (min-width: 768px) {
 	.container {
-		width: 750px;
+		width: 100%;
 	}
 	#page-index .container {
 		margin-top: 60px;
@@ -647,7 +628,7 @@ a:hover {
 
 @media (min-width: 992px) {
 	.container {
-		width: 970px;
+		width: 100%;
 	}
 	#page-index .container {
 		margin-top: 80px;
