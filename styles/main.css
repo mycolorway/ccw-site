@@ -541,6 +541,9 @@ a:hover {
     height: 9px;
     margin: 10px auto 0;
   }
+  #page-team .container .hire {
+    margin: 0 5%;
+  }
   #page-team .container .hire p {
     font-size: 12px;
     line-height: 20px;
