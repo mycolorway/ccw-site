@@ -4,6 +4,7 @@
 
 	background-image: url("#{$at1x_path}");
 	background-repeat: no-repeat;
+	background-size: $w $h;
 
 	@media all and (-webkit-min-device-pixel-ratio : 1.5),
 				 all and (-o-min-device-pixel-ratio: 3/2),
@@ -64,6 +65,7 @@ a:hover {
 
 #page-index {
 	text-align: center;
+	.container { margin-top: 100px; }
 
 	a.btn {
 		background-color: #8fbbb6;
@@ -183,6 +185,7 @@ a:hover {
 
 #page-team {
 	text-align: center;
+	.container { margin-top: 100px; }
 
 	h2.title {
 		font-size: 80px;
@@ -196,8 +199,6 @@ a:hover {
 		margin: 0 0 120px 0;
 	}
 
-	.earth-onphone { display: none; }
-
 	#members {
 		&::after {
 			content: '';
@@ -210,6 +211,7 @@ a:hover {
 
 	.hire {
 		text-align: left;
+		padding: 0 2%;
 		p {
 			font-size: 30px;
 			line-height: 48px;
@@ -220,6 +222,8 @@ a:hover {
 				font-size: 36px;
 				line-height: 60px;
 			}
+
+			&.slogan-onphone { display: none; }
 
 			&.everywhere {
 				margin: 0 0 25px;
@@ -431,7 +435,6 @@ a:hover {
 			margin: 12px 0 30px;
 		}
 
-		.hero-image { display: none; }
 		.hero-onphone {
 			display: block;
 			width: 100%;
@@ -484,76 +487,84 @@ a:hover {
 		margin-top: 15px;
 		padding-left: 0; padding-right: 0;
 
-		h2.title { font-size: 24px; }
+		h2.title {
+			font-size: 28px;
+			line-height: 44px;
+		}
 		p.subtitle {
 			font-size: 15px;
-			margin: 0;
-			line-height: 1.8em;
+			line-height: 44px;
+			margin: 0 0 24px 0;
 		}
 
-		.earth { display: none; }
-		.earth-onphone {
-			display: block;
-			width: 100%;
-			margin: 10px auto 20px;
-		}
-
-		.slogan {
-			font-size: 15px;
-			line-height: 24px;
-			margin: 40px 0 25px;
+		#members::after {
+			width: 80px; height: 9px;
+			margin: 10px auto 0;
 		}
 
 		.hire {
-			margin: 0;
-
-			li {
-				width: 49%;
-				margin-left: 0;
-				position: relative;
-
-				&.ios { text-align: right; left: -1% }
-				&.android { text-align: left; right: -1%; }
-
-				h4 { font-size: 15px; }
-				p { font-size: 9px; }
-			}
-		}
-
-		.tips {
-			margin: 25px 0 50px;
-			font-size: 12px;
-			line-height: 1.4em;
-		}
-
-		.contact {
-			margin-bottom: 50px;
-
-			.coffee {
-				width: 80px; height: 82px;
-				background-size: 80px 82px;
-			}
-
-			h2 {
-				font-size: 20px;
-				margin: 20px 0 16px;
-			}
-
-			.contact-card {
-				width: 200px;
-
-				.avatar {
-					width: 40px; height: 40px;
-					background-size: 40px 40px;
-					margin: 2px 0;
+			p {
+				font-size: 12px;
+				line-height: 20px;
+				margin: 30px 0 0 0;
+				span { font-size: 9px; }
+				&.locations {
+					margin: 0;
+					font-size: 14px;
+					line-height: 30px;
 				}
 
-				.detail {
-					margin: 0 0 0 45px;
+				&.slogan-onphone {
+					display: block;
+					text-align: center;
+				}
 
-					.name { font-size: 13px ;}
-					.position { font-size: 10px; }
-					p { font-size: 9px; line-height: 1.2em; }
+				&.everywhere {
+					margin: 0 0 12px;
+					font-size: 15px;
+					&::before {
+						content: '';
+						@include at2x('/images/icon-gps-blue', png, 100% , auto);
+						width: 14px; height: 20px;
+						margin-right: 6px;
+						top: 3px;
+					}
+				}
+
+				&.email {
+					margin: 0 0 60px;
+					font-size: 15px; line-height: 18px;
+					a { font-size: 14px; }
+				}
+			}
+
+			.icon-you {
+				@include at2x('/images/icon-you', png, 100% , auto);
+				width: 140px; height: 140px;
+				display: block;
+				margin: 30px auto 20px;
+			}
+		}
+
+		.member {
+			width: 100%;
+			margin-bottom: 20px;
+			.avatar {
+				width: 120px; height: 120px;
+				margin: 0 auto 8px;
+			}
+			p { margin: 0; line-height: 24px }
+			.name { font-size: 18px; }
+			.title { font-size: 12px; }
+			.location {
+				font-size: 10px; color: #333;
+				&::before {
+					content: '';
+					@include at2x('/images/icon-gps', png, 100% , auto);
+					width: 8px; height: 12px;
+					margin-right: 4px;
+					position: relative;
+					top: 1px;
 				}
 			}
 		}
@@ -600,6 +611,12 @@ a:hover {
 			margin: 15px auto 0;
 			li { margin: 0 8px; }
 		}
+
+		.weixin-info {
+			@include at2x('/images/weixin-info-small', png, 100% , auto);
+			width: 98px; height: 68px;
+			top: -20px;
+		}
 	}
 
 	.hidden { display: none; }
@@ -609,45 +626,17 @@ a:hover {
 	.container {
 		width: 100%;
 	}
-	#page-index .container {
-		margin-top: 60px;
-		h2.slogan {
-			font-size: 58px;
-			line-height: 78px;
-		}
-	}
-
-	#page-team .container {
-		margin-top: 100px;
-		.hire li {
-			width: 40%;
-			margin-left: 5%;
-		}
-	}
 }
 
 @media (min-width: 992px) {
 	.container {
 		width: 100%;
 	}
-	#page-index .container {
-		margin-top: 80px;
-	}
-	#page-team .container {
-		margin-top: 120px;
-
-	}
 }
 
 @media (min-width: 1200px) {
 	.container {
 		width: 1000px;
-	}
-	#page-index .container {
-		margin-top: 100px;
-	}
-	#page-team .container {
-		margin-top: 140px;
 	}
 	.tower {
 		margin-top: 50px;

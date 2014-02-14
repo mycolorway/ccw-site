@@ -20,7 +20,13 @@
     });
     return $(".footer .weixin").on("click", function(e) {
       e.preventDefault();
-      return $(".weixin-info").fadeToggle();
+      if ($(document).width() < 768) {
+        return $(".weixin-info").css({
+          left: $(this).offset().left - 32
+        }).fadeToggle();
+      } else {
+        return $(".weixin-info").fadeToggle();
+      }
     });
   })(jQuery);
 

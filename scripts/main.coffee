@@ -16,7 +16,11 @@
 
   $(".footer .weixin").on "click", (e) ->
     e.preventDefault()
-    $(".weixin-info").fadeToggle()
+    if $(document).width() < 768
+      $(".weixin-info").css({ left: $(this).offset().left - 32 })
+        .fadeToggle()
+    else
+      $(".weixin-info").fadeToggle()
 
 
 ) jQuery

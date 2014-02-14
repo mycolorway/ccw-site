@@ -17,6 +17,7 @@ a:hover {
 .header a.brand {
   background-image: url("/images/logo.png");
   background-repeat: no-repeat;
+  background-size: 100% auto;
   display: block;
   float: left;
   overflow: hidden;
@@ -56,6 +57,9 @@ a:hover {
 #page-index {
   text-align: center;
 }
+#page-index .container {
+  margin-top: 100px;
+}
 #page-index a.btn {
   background-color: #8fbbb6;
   padding: 20px 53px;
@@ -72,6 +76,7 @@ a:hover {
 #page-index .tower .tower-logo {
   background-image: url("/images/tower-logo.png");
   background-repeat: no-repeat;
+  background-size: 100% auto;
   background-size: 100%;
   height: 272px;
   width: 200px;
@@ -91,6 +96,7 @@ a:hover {
 #page-index .hero-image {
   background-image: url("/images/hero.jpg");
   background-repeat: no-repeat;
+  background-size: 100% auto;
   background-size: 100%;
   background-position: 50%;
   max-width: 839px;
@@ -158,6 +164,7 @@ a:hover {
 #page-index .others ul li i.designboard {
   background-image: url("/images/designboard.png");
   background-repeat: no-repeat;
+  background-size: 100% auto;
 }
 @media all and (-webkit-min-device-pixel-ratio: 1.5), all and (-o-min-device-pixel-ratio: 3 / 2), all and (min--moz-device-pixel-ratio: 1.5), all and (min-device-pixel-ratio: 1.5) {
   #page-index .others ul li i.designboard {
@@ -168,6 +175,7 @@ a:hover {
 #page-index .others ul li i.teamcola {
   background-image: url("/images/teamcola.png");
   background-repeat: no-repeat;
+  background-size: 100% auto;
 }
 @media all and (-webkit-min-device-pixel-ratio: 1.5), all and (-o-min-device-pixel-ratio: 3 / 2), all and (min--moz-device-pixel-ratio: 1.5), all and (min-device-pixel-ratio: 1.5) {
   #page-index .others ul li i.teamcola {
@@ -192,6 +200,9 @@ a:hover {
 #page-team {
   text-align: center;
 }
+#page-team .container {
+  margin-top: 100px;
+}
 #page-team h2.title {
   font-size: 80px;
   font-weight: normal;
@@ -203,13 +214,11 @@ a:hover {
   color: #7b7b7b;
   margin: 0 0 120px 0;
 }
-#page-team .earth-onphone {
-  display: none;
-}
 #page-team #members::after {
   content: '';
   background-image: url("/images/icon-line.png");
   background-repeat: no-repeat;
+  background-size: 100% auto;
   width: 159px;
   height: 18px;
   display: block;
@@ -223,6 +232,7 @@ a:hover {
 }
 #page-team .hire {
   text-align: left;
+  padding: 0 2%;
 }
 #page-team .hire p {
   font-size: 30px;
@@ -238,6 +248,9 @@ a:hover {
   font-size: 36px;
   line-height: 60px;
 }
+#page-team .hire p.slogan-onphone {
+  display: none;
+}
 #page-team .hire p.everywhere {
   margin: 0 0 25px;
   text-align: center;
@@ -248,6 +261,7 @@ a:hover {
   content: '';
   background-image: url("/images/icon-gps-blue.png");
   background-repeat: no-repeat;
+  background-size: 100% auto;
   width: 28px;
   height: 40px;
   display: inline-block;
@@ -275,6 +289,7 @@ a:hover {
 #page-team .hire .icon-you {
   background-image: url("/images/icon-you.png");
   background-repeat: no-repeat;
+  background-size: 100% auto;
   width: 281px;
   height: 281px;
   display: block;
@@ -295,6 +310,7 @@ a:hover {
 #page-team .member .avatar {
   background-image: url("/images/sample.png");
   background-repeat: no-repeat;
+  background-size: 100% auto;
   width: 240px;
   height: 240px;
   display: block;
@@ -325,6 +341,7 @@ a:hover {
   content: '';
   background-image: url("/images/icon-gps.png");
   background-repeat: no-repeat;
+  background-size: 100% auto;
   width: 16px;
   height: 23px;
   display: inline-block;
@@ -387,6 +404,7 @@ a:hover {
 .footer .social li a.rss {
   background-image: url("/images/rss.png");
   background-repeat: no-repeat;
+  background-size: 100% auto;
   width: 30px;
   height: 30px;
 }
@@ -399,6 +417,7 @@ a:hover {
 .footer .social li a.weixin {
   background-image: url("/images/weixin.png");
   background-repeat: no-repeat;
+  background-size: 100% auto;
   width: 30px;
   height: 30px;
 }
@@ -411,6 +430,7 @@ a:hover {
 .footer .social li a.weibo {
   background-image: url("/images/weibo.png");
   background-repeat: no-repeat;
+  background-size: 100% auto;
   width: 30px;
   height: 30px;
 }
@@ -423,6 +443,7 @@ a:hover {
 .footer .weixin-info {
   background-image: url("/images/weixin-info.png");
   background-repeat: no-repeat;
+  background-size: 100% auto;
   width: 195px;
   height: 266px;
   display: none;
@@ -456,9 +477,6 @@ a:hover {
   #page-index .container .tower .subtitle {
     font-size: 26px;
     margin: 12px 0 30px;
-  }
-  #page-index .container .hero-image {
-    display: none;
   }
   #page-index .container .hero-onphone {
     display: block;
@@ -510,88 +528,101 @@ a:hover {
     padding-right: 0;
   }
   #page-team .container h2.title {
-    font-size: 24px;
+    font-size: 28px;
+    line-height: 44px;
   }
   #page-team .container p.subtitle {
     font-size: 15px;
-    margin: 0;
-    line-height: 1.8em;
+    line-height: 44px;
+    margin: 0 0 24px 0;
   }
-  #page-team .container .earth {
-    display: none;
-  }
-  #page-team .container .earth-onphone {
-    display: block;
-    width: 100%;
-    margin: 10px auto 20px;
-  }
-  #page-team .container .slogan {
-    font-size: 15px;
-    line-height: 24px;
-    margin: 40px 0 25px;
-  }
-  #page-team .container .hire {
-    margin: 0;
-  }
-  #page-team .container .hire li {
-    width: 49%;
-    margin-left: 0;
-    position: relative;
-  }
-  #page-team .container .hire li.ios {
-    text-align: right;
-    left: -1%;
-  }
-  #page-team .container .hire li.android {
-    text-align: left;
-    right: -1%;
-  }
-  #page-team .container .hire li h4 {
-    font-size: 15px;
-  }
-  #page-team .container .hire li p {
-    font-size: 9px;
-  }
-  #page-team .container .tips {
-    margin: 25px 0 50px;
-    font-size: 12px;
-    line-height: 1.4em;
-  }
-  #page-team .container .contact {
-    margin-bottom: 50px;
-  }
-  #page-team .container .contact .coffee {
+  #page-team .container #members::after {
     width: 80px;
-    height: 82px;
-    background-size: 80px 82px;
+    height: 9px;
+    margin: 10px auto 0;
   }
-  #page-team .container .contact h2 {
-    font-size: 20px;
-    margin: 20px 0 16px;
+  #page-team .container .hire p {
+    font-size: 12px;
+    line-height: 20px;
+    margin: 30px 0 0 0;
   }
-  #page-team .container .contact .contact-card {
-    width: 200px;
-  }
-  #page-team .container .contact .contact-card .avatar {
-    width: 40px;
-    height: 40px;
-    background-size: 40px 40px;
-    margin: 2px 0;
-  }
-  #page-team .container .contact .contact-card .detail {
-    margin: 0 0 0 45px;
-  }
-  #page-team .container .contact .contact-card .detail .name {
-    font-size: 13px;
-  }
-  #page-team .container .contact .contact-card .detail .position {
-    font-size: 10px;
-  }
-  #page-team .container .contact .contact-card .detail p {
+  #page-team .container .hire p span {
     font-size: 9px;
-    line-height: 1.2em;
   }
-
+  #page-team .container .hire p.locations {
+    margin: 0;
+    font-size: 14px;
+    line-height: 30px;
+  }
+  #page-team .container .hire p.slogan-onphone {
+    display: block;
+    text-align: center;
+  }
+  #page-team .container .hire p.everywhere {
+    margin: 0 0 12px;
+    font-size: 15px;
+  }
+  #page-team .container .hire p.everywhere::before {
+    content: '';
+    background-image: url("/images/icon-gps-blue.png");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    width: 14px;
+    height: 20px;
+    margin-right: 6px;
+    top: 3px;
+  }
+  #page-team .container .hire p.email {
+    margin: 0 0 60px;
+    font-size: 15px;
+    line-height: 18px;
+  }
+  #page-team .container .hire p.email a {
+    font-size: 14px;
+  }
+  #page-team .container .hire .icon-you {
+    background-image: url("/images/icon-you.png");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    width: 140px;
+    height: 140px;
+    display: block;
+    margin: 30px auto 20px;
+  }
+  #page-team .container .member {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  #page-team .container .member .avatar {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto 8px;
+  }
+  #page-team .container .member p {
+    margin: 0;
+    line-height: 24px;
+  }
+  #page-team .container .member .name {
+    font-size: 18px;
+  }
+  #page-team .container .member .title {
+    font-size: 12px;
+  }
+  #page-team .container .member .location {
+    font-size: 10px;
+    color: #333;
+  }
+  #page-team .container .member .location::before {
+    content: '';
+    background-image: url("/images/icon-gps.png");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    width: 8px;
+    height: 12px;
+    margin-right: 4px;
+    position: relative;
+    top: 1px;
+  }
   .header {
     margin-top: 20px;
   }
@@ -635,56 +666,57 @@ a:hover {
   .footer .social li {
     margin: 0 8px;
   }
-
+  .footer .weixin-info {
+    background-image: url("/images/weixin-info-small.png");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    width: 98px;
+    height: 68px;
+    top: -20px;
+  }
   .hidden {
     display: none;
   }
 }
+@media all and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), all and (max-width: 767px) and (-o-min-device-pixel-ratio: 3 / 2), all and (max-width: 767px) and (min--moz-device-pixel-ratio: 1.5), all and (max-width: 767px) and (min-device-pixel-ratio: 1.5) {
+  #page-team .container .hire p.everywhere::before {
+    background-image: url("/images/icon-gps-blue@2x.png");
+    background-size: 100% auto;
+  }
+}
+@media all and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), all and (max-width: 767px) and (-o-min-device-pixel-ratio: 3 / 2), all and (max-width: 767px) and (min--moz-device-pixel-ratio: 1.5), all and (max-width: 767px) and (min-device-pixel-ratio: 1.5) {
+  #page-team .container .hire .icon-you {
+    background-image: url("/images/icon-you@2x.png");
+    background-size: 100% auto;
+  }
+}
+@media all and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), all and (max-width: 767px) and (-o-min-device-pixel-ratio: 3 / 2), all and (max-width: 767px) and (min--moz-device-pixel-ratio: 1.5), all and (max-width: 767px) and (min-device-pixel-ratio: 1.5) {
+  #page-team .container .member .location::before {
+    background-image: url("/images/icon-gps@2x.png");
+    background-size: 100% auto;
+  }
+}
+
+@media all and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), all and (max-width: 767px) and (-o-min-device-pixel-ratio: 3 / 2), all and (max-width: 767px) and (min--moz-device-pixel-ratio: 1.5), all and (max-width: 767px) and (min-device-pixel-ratio: 1.5) {
+  .footer .weixin-info {
+    background-image: url("/images/weixin-info-small@2x.png");
+    background-size: 100% auto;
+  }
+}
+
 @media (min-width: 768px) {
   .container {
     width: 100%;
-  }
-
-  #page-index .container {
-    margin-top: 60px;
-  }
-  #page-index .container h2.slogan {
-    font-size: 58px;
-    line-height: 78px;
-  }
-
-  #page-team .container {
-    margin-top: 100px;
-  }
-  #page-team .container .hire li {
-    width: 40%;
-    margin-left: 5%;
   }
 }
 @media (min-width: 992px) {
   .container {
     width: 100%;
   }
-
-  #page-index .container {
-    margin-top: 80px;
-  }
-
-  #page-team .container {
-    margin-top: 120px;
-  }
 }
 @media (min-width: 1200px) {
   .container {
     width: 1000px;
-  }
-
-  #page-index .container {
-    margin-top: 100px;
-  }
-
-  #page-team .container {
-    margin-top: 140px;
   }
 
   .tower {
