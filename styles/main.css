@@ -15,7 +15,7 @@ a:hover {
   margin-top: 40px;
 }
 .header a.brand {
-  background-image: url("/images/logo.png");
+  background-image: url("../images/logo.png");
   background-repeat: no-repeat;
   background-size: 100% auto;
   display: block;
@@ -30,7 +30,7 @@ a:hover {
 }
 @media all and (-webkit-min-device-pixel-ratio: 1.5), all and (-o-min-device-pixel-ratio: 3 / 2), all and (min--moz-device-pixel-ratio: 1.5), all and (min-device-pixel-ratio: 1.5) {
   .header a.brand {
-    background-image: url("/images/logo@2x.png");
+    background-image: url("../images/logo@2x.png");
     background-size: 100% auto;
   }
 }
@@ -74,7 +74,7 @@ a:hover {
   font-weight: normal;
 }
 #page-index .tower .tower-logo {
-  background-image: url("/images/tower-logo.png");
+  background-image: url("../images/tower-logo.png");
   background-repeat: no-repeat;
   background-size: 100% auto;
   background-size: 100%;
@@ -84,7 +84,7 @@ a:hover {
 }
 @media all and (-webkit-min-device-pixel-ratio: 1.5), all and (-o-min-device-pixel-ratio: 3 / 2), all and (min--moz-device-pixel-ratio: 1.5), all and (min-device-pixel-ratio: 1.5) {
   #page-index .tower .tower-logo {
-    background-image: url("/images/tower-logo@2x.png");
+    background-image: url("../images/tower-logo@2x.png");
     background-size: 100% auto;
   }
 }
@@ -94,7 +94,7 @@ a:hover {
   margin: 24px 0 30px;
 }
 #page-index .hero-image {
-  background-image: url("/images/hero.jpg");
+  background-image: url("../images/hero.jpg");
   background-repeat: no-repeat;
   background-size: 100% auto;
   background-size: 100%;
@@ -105,7 +105,7 @@ a:hover {
 }
 @media all and (-webkit-min-device-pixel-ratio: 1.5), all and (-o-min-device-pixel-ratio: 3 / 2), all and (min--moz-device-pixel-ratio: 1.5), all and (min-device-pixel-ratio: 1.5) {
   #page-index .hero-image {
-    background-image: url("/images/hero@2x.jpg");
+    background-image: url("../images/hero@2x.jpg");
     background-size: 100% auto;
   }
 }
@@ -162,24 +162,24 @@ a:hover {
   position: relative;
 }
 #page-index .others ul li i.designboard {
-  background-image: url("/images/designboard.png");
+  background-image: url("../images/designboard.png");
   background-repeat: no-repeat;
   background-size: 100% auto;
 }
 @media all and (-webkit-min-device-pixel-ratio: 1.5), all and (-o-min-device-pixel-ratio: 3 / 2), all and (min--moz-device-pixel-ratio: 1.5), all and (min-device-pixel-ratio: 1.5) {
   #page-index .others ul li i.designboard {
-    background-image: url("/images/designboard@2x.png");
+    background-image: url("../images/designboard@2x.png");
     background-size: 100% auto;
   }
 }
 #page-index .others ul li i.teamcola {
-  background-image: url("/images/teamcola.png");
+  background-image: url("../images/teamcola.png");
   background-repeat: no-repeat;
   background-size: 100% auto;
 }
 @media all and (-webkit-min-device-pixel-ratio: 1.5), all and (-o-min-device-pixel-ratio: 3 / 2), all and (min--moz-device-pixel-ratio: 1.5), all and (min-device-pixel-ratio: 1.5) {
   #page-index .others ul li i.teamcola {
-    background-image: url("/images/teamcola@2x.png");
+    background-image: url("../images/teamcola@2x.png");
     background-size: 100% auto;
   }
 }
@@ -216,7 +216,7 @@ a:hover {
 }
 #page-team #members::after {
   content: '';
-  background-image: url("/images/icon-line.png");
+  background-image: url("../images/icon-line.png");
   background-repeat: no-repeat;
   background-size: 100% auto;
   width: 159px;
@@ -226,7 +226,7 @@ a:hover {
 }
 @media all and (-webkit-min-device-pixel-ratio: 1.5), all and (-o-min-device-pixel-ratio: 3 / 2), all and (min--moz-device-pixel-ratio: 1.5), all and (min-device-pixel-ratio: 1.5) {
   #page-team #members::after {
-    background-image: url("/images/icon-line@2x.png");
+    background-image: url("../images/icon-line@2x.png");
     background-size: 100% auto;
   }
 }
@@ -259,7 +259,7 @@ a:hover {
 }
 #page-team .hire p.everywhere::before {
   content: '';
-  background-image: url("/images/icon-gps-blue.png");
+  background-image: url("../images/icon-gps-blue.png");
   background-repeat: no-repeat;
   background-size: 100% auto;
   width: 28px;
@@ -271,7 +271,7 @@ a:hover {
 }
 @media all and (-webkit-min-device-pixel-ratio: 1.5), all and (-o-min-device-pixel-ratio: 3 / 2), all and (min--moz-device-pixel-ratio: 1.5), all and (min-device-pixel-ratio: 1.5) {
   #page-team .hire p.everywhere::before {
-    background-image: url("/images/icon-gps-blue@2x.png");
+    background-image: url("../images/icon-gps-blue@2x.png");
     background-size: 100% auto;
   }
 }
@@ -287,7 +287,7 @@ a:hover {
   color: #7ecfbe;
 }
 #page-team .hire .icon-you {
-  background-image: url("/images/icon-you.png");
+  background-image: url("../images/icon-you.png");
   background-repeat: no-repeat;
   background-size: 100% auto;
   width: 281px;
@@ -297,7 +297,7 @@ a:hover {
 }
 @media all and (-webkit-min-device-pixel-ratio: 1.5), all and (-o-min-device-pixel-ratio: 3 / 2), all and (min--moz-device-pixel-ratio: 1.5), all and (min-device-pixel-ratio: 1.5) {
   #page-team .hire .icon-you {
-    background-image: url("/images/icon-you@2x.png");
+    background-image: url("../images/icon-you@2x.png");
     background-size: 100% auto;
   }
 }
@@ -311,7 +311,7 @@ a:hover {
   *display: inline;
 }
 #page-team .member .avatar {
-  background-image: url("/images/sample.png");
+  background-image: url("../images/sample.png");
   background-repeat: no-repeat;
   background-size: 100% auto;
   width: 240px;
@@ -321,7 +321,7 @@ a:hover {
 }
 @media all and (-webkit-min-device-pixel-ratio: 1.5), all and (-o-min-device-pixel-ratio: 3 / 2), all and (min--moz-device-pixel-ratio: 1.5), all and (min-device-pixel-ratio: 1.5) {
   #page-team .member .avatar {
-    background-image: url("/images/sample@2x.png");
+    background-image: url("../images/sample@2x.png");
     background-size: 100% auto;
   }
 }
@@ -342,7 +342,7 @@ a:hover {
 }
 #page-team .member .location::before {
   content: '';
-  background-image: url("/images/icon-gps.png");
+  background-image: url("../images/icon-gps.png");
   background-repeat: no-repeat;
   background-size: 100% auto;
   width: 16px;
@@ -354,7 +354,7 @@ a:hover {
 }
 @media all and (-webkit-min-device-pixel-ratio: 1.5), all and (-o-min-device-pixel-ratio: 3 / 2), all and (min--moz-device-pixel-ratio: 1.5), all and (min-device-pixel-ratio: 1.5) {
   #page-team .member .location::before {
-    background-image: url("/images/icon-gps@2x.png");
+    background-image: url("../images/icon-gps@2x.png");
     background-size: 100% auto;
   }
 }
@@ -415,7 +415,7 @@ a:hover {
   display: block;
 }
 .footer .social li a.rss {
-  background-image: url("/images/rss.png");
+  background-image: url("../images/rss.png");
   background-repeat: no-repeat;
   background-size: 100% auto;
   width: 30px;
@@ -423,12 +423,12 @@ a:hover {
 }
 @media all and (-webkit-min-device-pixel-ratio: 1.5), all and (-o-min-device-pixel-ratio: 3 / 2), all and (min--moz-device-pixel-ratio: 1.5), all and (min-device-pixel-ratio: 1.5) {
   .footer .social li a.rss {
-    background-image: url("/images/rss@2x.png");
+    background-image: url("../images/rss@2x.png");
     background-size: 100% auto;
   }
 }
 .footer .social li a.weixin {
-  background-image: url("/images/weixin.png");
+  background-image: url("../images/weixin.png");
   background-repeat: no-repeat;
   background-size: 100% auto;
   width: 30px;
@@ -436,12 +436,12 @@ a:hover {
 }
 @media all and (-webkit-min-device-pixel-ratio: 1.5), all and (-o-min-device-pixel-ratio: 3 / 2), all and (min--moz-device-pixel-ratio: 1.5), all and (min-device-pixel-ratio: 1.5) {
   .footer .social li a.weixin {
-    background-image: url("/images/weixin@2x.png");
+    background-image: url("../images/weixin@2x.png");
     background-size: 100% auto;
   }
 }
 .footer .social li a.weibo {
-  background-image: url("/images/weibo.png");
+  background-image: url("../images/weibo.png");
   background-repeat: no-repeat;
   background-size: 100% auto;
   width: 30px;
@@ -449,12 +449,12 @@ a:hover {
 }
 @media all and (-webkit-min-device-pixel-ratio: 1.5), all and (-o-min-device-pixel-ratio: 3 / 2), all and (min--moz-device-pixel-ratio: 1.5), all and (min-device-pixel-ratio: 1.5) {
   .footer .social li a.weibo {
-    background-image: url("/images/weibo@2x.png");
+    background-image: url("../images/weibo@2x.png");
     background-size: 100% auto;
   }
 }
 .footer .weixin-info {
-  background-image: url("/images/weixin-info.png");
+  background-image: url("../images/weixin-info.png");
   background-repeat: no-repeat;
   background-size: 100% auto;
   width: 195px;
@@ -466,7 +466,7 @@ a:hover {
 }
 @media all and (-webkit-min-device-pixel-ratio: 1.5), all and (-o-min-device-pixel-ratio: 3 / 2), all and (min--moz-device-pixel-ratio: 1.5), all and (min-device-pixel-ratio: 1.5) {
   .footer .weixin-info {
-    background-image: url("/images/weixin-info@2x.png");
+    background-image: url("../images/weixin-info@2x.png");
     background-size: 100% auto;
   }
 }
@@ -580,7 +580,7 @@ a:hover {
   }
   #page-team .container .hire p.everywhere::before {
     content: '';
-    background-image: url("/images/icon-gps-blue.png");
+    background-image: url("../images/icon-gps-blue.png");
     background-repeat: no-repeat;
     background-size: 100% auto;
     width: 14px;
@@ -597,7 +597,7 @@ a:hover {
     font-size: 14px;
   }
   #page-team .container .hire .icon-you {
-    background-image: url("/images/icon-you.png");
+    background-image: url("../images/icon-you.png");
     background-repeat: no-repeat;
     background-size: 100% auto;
     width: 140px;
@@ -630,7 +630,7 @@ a:hover {
   }
   #page-team .container .member .location::before {
     content: '';
-    background-image: url("/images/icon-gps.png");
+    background-image: url("../images/icon-gps.png");
     background-repeat: no-repeat;
     background-size: 100% auto;
     width: 8px;
@@ -683,7 +683,7 @@ a:hover {
     margin: 0 8px;
   }
   .footer .weixin-info {
-    background-image: url("/images/weixin-info-small.png");
+    background-image: url("../images/weixin-info-small.png");
     background-repeat: no-repeat;
     background-size: 100% auto;
     width: 98px;
@@ -696,26 +696,26 @@ a:hover {
 }
 @media all and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), all and (max-width: 767px) and (-o-min-device-pixel-ratio: 3 / 2), all and (max-width: 767px) and (min--moz-device-pixel-ratio: 1.5), all and (max-width: 767px) and (min-device-pixel-ratio: 1.5) {
   #page-team .container .hire p.everywhere::before {
-    background-image: url("/images/icon-gps-blue@2x.png");
+    background-image: url("../images/icon-gps-blue@2x.png");
     background-size: 100% auto;
   }
 }
 @media all and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), all and (max-width: 767px) and (-o-min-device-pixel-ratio: 3 / 2), all and (max-width: 767px) and (min--moz-device-pixel-ratio: 1.5), all and (max-width: 767px) and (min-device-pixel-ratio: 1.5) {
   #page-team .container .hire .icon-you {
-    background-image: url("/images/icon-you@2x.png");
+    background-image: url("../images/icon-you@2x.png");
     background-size: 100% auto;
   }
 }
 @media all and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), all and (max-width: 767px) and (-o-min-device-pixel-ratio: 3 / 2), all and (max-width: 767px) and (min--moz-device-pixel-ratio: 1.5), all and (max-width: 767px) and (min-device-pixel-ratio: 1.5) {
   #page-team .container .member .location::before {
-    background-image: url("/images/icon-gps@2x.png");
+    background-image: url("../images/icon-gps@2x.png");
     background-size: 100% auto;
   }
 }
 
 @media all and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), all and (max-width: 767px) and (-o-min-device-pixel-ratio: 3 / 2), all and (max-width: 767px) and (min--moz-device-pixel-ratio: 1.5), all and (max-width: 767px) and (min-device-pixel-ratio: 1.5) {
   .footer .weixin-info {
-    background-image: url("/images/weixin-info-small@2x.png");
+    background-image: url("../images/weixin-info-small@2x.png");
     background-size: 100% auto;
   }
 }

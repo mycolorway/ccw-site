@@ -32,7 +32,7 @@ a:hover {
 	margin-top: 40px;
 
 	a.brand {
-		@include at2x('/images/logo', png, 100% , auto);
+		@include at2x('../images/logo', png, 100% , auto);
 		display: block;
 		float: left;
 		overflow: hidden;
@@ -84,7 +84,7 @@ a:hover {
 
 	.tower {
 		.tower-logo {
-			@include at2x('/images/tower-logo', png, 100% , auto);
+			@include at2x('../images/tower-logo', png, 100% , auto);
 			background-size: 100%;
 			height: 272px; width: 200px;
 			margin: 0 auto;
@@ -98,7 +98,7 @@ a:hover {
 	}
 
 	.hero-image {
-		@include at2x('/images/hero', jpg, 100% , auto);
+		@include at2x('../images/hero', jpg, 100% , auto);
 		background-size: 100%;
 		background-position: 50%;
 		max-width: 839px; height: 505px;
@@ -159,10 +159,10 @@ a:hover {
 					float: left;
 					position: relative;
 					&.designboard {
-						@include at2x('/images/designboard', png, 100% , auto);
+						@include at2x('../images/designboard', png, 100% , auto);
 					}
 					&.teamcola {
-						@include at2x('/images/teamcola', png, 100% , auto);
+						@include at2x('../images/teamcola', png, 100% , auto);
 					}
 				}
 
@@ -202,7 +202,7 @@ a:hover {
 	#members {
 		&::after {
 			content: '';
-			@include at2x('/images/icon-line', png, 100% , auto);
+			@include at2x('../images/icon-line', png, 100% , auto);
 			width: 159px; height: 18px;
 			display: block;
 			margin: 35px auto 0;
@@ -231,7 +231,7 @@ a:hover {
 				font-size: 30px; color: #7ecfbe;
 				&::before {
 					content: '';
-					@include at2x('/images/icon-gps-blue', png, 100% , auto);
+					@include at2x('../images/icon-gps-blue', png, 100% , auto);
 					width: 28px; height: 40px;
 					display: inline-block;
 					margin-right: 12px;
@@ -247,7 +247,7 @@ a:hover {
 			}
 		}
 		.icon-you {
-			@include at2x('/images/icon-you', png, 100% , auto);
+			@include at2x('../images/icon-you', png, 100% , auto);
 			width: 281px; height: 281px;
 			display: block;
 			margin: 150px auto 40px;
@@ -264,7 +264,7 @@ a:hover {
     zoom: 1;
     *display: inline;
 		.avatar {
-			@include at2x('/images/sample', png, 100% , auto);
+			@include at2x('../images/sample', png, 100% , auto);
 			width: 240px; height: 240px;
 			display: block;
 			margin: 0 auto 16px;
@@ -276,7 +276,7 @@ a:hover {
 			font-size: 20px; color: #333;
 			&::before {
 				content: '';
-				@include at2x('/images/icon-gps', png, 100% , auto);
+				@include at2x('../images/icon-gps', png, 100% , auto);
 				width: 16px; height: 23px;
 				display: inline-block;
 				margin-right: 8px;
@@ -287,58 +287,58 @@ a:hover {
 	}
 
 	// .jack .avatar {
-	// 	@include at2x('/images/jack', png, 100% , auto);
+	// 	@include at2x('../images/jack', png, 100% , auto);
 	// }
 	// .zchar .avatar {
-	// 	@include at2x('/images/zchar', png, 100% , auto);
+	// 	@include at2x('../images/zchar', png, 100% , auto);
 	// }
 	// .malu .avatar {
-	// 	@include at2x('/images/malu', png, 100% , auto);
+	// 	@include at2x('../images/malu', png, 100% , auto);
 	// }
 	// .manfred .avatar {
-	// 	@include at2x('/images/manfred', png, 100% , auto);
+	// 	@include at2x('../images/manfred', png, 100% , auto);
 	// }
 	// .farthinker .avatar {
-	// 	@include at2x('/images/farthinker', png, 100% , auto);
+	// 	@include at2x('../images/farthinker', png, 100% , auto);
 	// }
 	// .fish .avatar {
-	// 	@include at2x('/images/fish', png, 100% , auto);
+	// 	@include at2x('../images/fish', png, 100% , auto);
 	// }
 	// .maklu .avatar {
-	// 	@include at2x('/images/maklu', png, 100% , auto);
+	// 	@include at2x('../images/maklu', png, 100% , auto);
 	// }
 	// .mybeky .avatar {
-	// 	@include at2x('/images/mybeky', png, 100% , auto);
+	// 	@include at2x('../images/mybeky', png, 100% , auto);
 	// }
 	// .seandong .avatar {
-	// 	@include at2x('/images/seandong', png, 100% , auto);
+	// 	@include at2x('../images/seandong', png, 100% , auto);
 	// }
 	// .tinyfive .avatar {
-	// 	@include at2x('/images/tinyfive', png, 100% , auto);
+	// 	@include at2x('../images/tinyfive', png, 100% , auto);
 	// }
 	// .ruochen .avatar {
-	// 	@include at2x('/images/ruochen', png, 100% , auto);
+	// 	@include at2x('../images/ruochen', png, 100% , auto);
 	// }
 	// .snow .avatar {
-	// 	@include at2x('/images/snow', png, 100% , auto);
+	// 	@include at2x('../images/snow', png, 100% , auto);
 	// }
 	// .dragon .avatar {
-	// 	@include at2x('/images/dragon', png, 100% , auto);
+	// 	@include at2x('../images/dragon', png, 100% , auto);
 	// }
 	// .calf .avatar {
-	// 	@include at2x('/images/calf', png, 100% , auto);
+	// 	@include at2x('../images/calf', png, 100% , auto);
 	// }
 	// .lendice .avatar {
-	// 	@include at2x('/images/lendice', png, 100% , auto);
+	// 	@include at2x('../images/lendice', png, 100% , auto);
 	// }
 	// .dongdong .avatar {
-	// 	@include at2x('/images/dongdong', png, 100% , auto);
+	// 	@include at2x('../images/dongdong', png, 100% , auto);
 	// }
 	// .alfredwu .avatar {
-	// 	@include at2x('/images/alfredwu', png, 100% , auto);
+	// 	@include at2x('../images/alfredwu', png, 100% , auto);
 	// }
 	// .xiaoyan .avatar {
-	// 	@include at2x('/images/xiaoyan', png, 100% , auto);
+	// 	@include at2x('../images/xiaoyan', png, 100% , auto);
 	// }
 
 }
@@ -401,15 +401,15 @@ a:hover {
 			a {
 				display: block;
 				&.rss {
-					@include at2x('/images/rss', png, 100% , auto);
+					@include at2x('../images/rss', png, 100% , auto);
 					width: 30px; height:30px;
 				}
 				&.weixin {
-					@include at2x('/images/weixin', png, 100% , auto);
+					@include at2x('../images/weixin', png, 100% , auto);
 					width: 30px; height: 30px;
 				}
 				&.weibo {
-					@include at2x('/images/weibo', png, 100% , auto);
+					@include at2x('../images/weibo', png, 100% , auto);
 					width: 30px; height: 30px;
 				}
 			}
@@ -417,7 +417,7 @@ a:hover {
 	}
 
 	.weixin-info {
-		@include at2x('/images/weixin-info', png, 100% , auto);
+		@include at2x('../images/weixin-info', png, 100% , auto);
 		width: 195px; height: 266px;
 		display: none;
 		position: absolute;
@@ -540,7 +540,7 @@ a:hover {
 					font-size: 15px;
 					&::before {
 						content: '';
-						@include at2x('/images/icon-gps-blue', png, 100% , auto);
+						@include at2x('../images/icon-gps-blue', png, 100% , auto);
 						width: 14px; height: 20px;
 						margin-right: 6px;
 						top: 3px;
@@ -555,7 +555,7 @@ a:hover {
 			}
 
 			.icon-you {
-				@include at2x('/images/icon-you', png, 100% , auto);
+				@include at2x('../images/icon-you', png, 100% , auto);
 				width: 140px; height: 140px;
 				display: block;
 				margin: 30px auto 20px;
@@ -576,7 +576,7 @@ a:hover {
 				font-size: 10px; color: #333;
 				&::before {
 					content: '';
-					@include at2x('/images/icon-gps', png, 100% , auto);
+					@include at2x('../images/icon-gps', png, 100% , auto);
 					width: 8px; height: 12px;
 					margin-right: 4px;
 					position: relative;
@@ -629,7 +629,7 @@ a:hover {
 		}
 
 		.weixin-info {
-			@include at2x('/images/weixin-info-small', png, 100% , auto);
+			@include at2x('../images/weixin-info-small', png, 100% , auto);
 			width: 98px; height: 68px;
 			top: -20px;
 		}
