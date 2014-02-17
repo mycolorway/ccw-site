@@ -52,7 +52,6 @@ a:hover {
 		margin: 0;
 		li {
 			float: left;
-			position: relative;
 			display: block;
 			&:first-child {
 				margin: 0 35px;
@@ -262,12 +261,14 @@ a:hover {
 	.member {
 		width: 33%;
 		margin-bottom: 85px;
+
 		// IE7 & FF2 hack
 		display: -moz-inline-stack;
     display: inline-block;
     vertical-align: top;
     zoom: 1;
     *display: inline;
+
 		.avatar {
 			width: 240px; height: 240px;
 			display: block;
@@ -376,6 +377,8 @@ a:hover {
 			display: inline-block;
 			margin-right: 20px;
 			color: #aaa;
+
+			// IE7 & FF2 hack
 	    display: -moz-inline-stack;
 	    display: inline-block;
 	    vertical-align: top;
@@ -395,6 +398,7 @@ a:hover {
 
 		li {
 			margin: 0 25px;
+
 			// IE7 & FF2 hack
 			display: -moz-inline-stack;
 	    display: inline-block;

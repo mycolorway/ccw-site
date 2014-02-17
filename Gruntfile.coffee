@@ -8,6 +8,7 @@ module.exports = (grunt) ->
 					style: 'expanded'
 				files:
 					'styles/main.css': 'styles/main.scss'
+					'styles/ie6.css': 'styles/ie6.scss'
 		coffee:
 			scripts:
 				options:
