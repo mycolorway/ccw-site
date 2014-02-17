@@ -15,6 +15,10 @@
 	}
 }
 
+body, button, input, select, textarea {
+	font-family: "Helvetica Neue", "Hiragino Sans GB","冬青黑体", Helvetica, Arial, sans-serif;
+}
+
 .container {
 	margin-right: auto;
 	margin-left: auto;
@@ -200,6 +204,7 @@ a:hover {
 	}
 
 	#members {
+		padding: 0;
 		&::after {
 			content: '';
 			@include at2x('../images/icon-line', png, 100% , auto);
@@ -264,7 +269,6 @@ a:hover {
     zoom: 1;
     *display: inline;
 		.avatar {
-			@include at2x('../images/sample', png, 100% , auto);
 			width: 240px; height: 240px;
 			display: block;
 			margin: 0 auto 16px;
@@ -286,60 +290,60 @@ a:hover {
 		}
 	}
 
-	// .jack .avatar {
-	// 	@include at2x('../images/jack', png, 100% , auto);
-	// }
-	// .zchar .avatar {
-	// 	@include at2x('../images/zchar', png, 100% , auto);
-	// }
-	// .malu .avatar {
-	// 	@include at2x('../images/malu', png, 100% , auto);
-	// }
-	// .manfred .avatar {
-	// 	@include at2x('../images/manfred', png, 100% , auto);
-	// }
-	// .farthinker .avatar {
-	// 	@include at2x('../images/farthinker', png, 100% , auto);
-	// }
-	// .fish .avatar {
-	// 	@include at2x('../images/fish', png, 100% , auto);
-	// }
-	// .maklu .avatar {
-	// 	@include at2x('../images/maklu', png, 100% , auto);
-	// }
-	// .mybeky .avatar {
-	// 	@include at2x('../images/mybeky', png, 100% , auto);
-	// }
-	// .seandong .avatar {
-	// 	@include at2x('../images/seandong', png, 100% , auto);
-	// }
-	// .tinyfive .avatar {
-	// 	@include at2x('../images/tinyfive', png, 100% , auto);
-	// }
-	// .ruochen .avatar {
-	// 	@include at2x('../images/ruochen', png, 100% , auto);
-	// }
-	// .snow .avatar {
-	// 	@include at2x('../images/snow', png, 100% , auto);
-	// }
-	// .dragon .avatar {
-	// 	@include at2x('../images/dragon', png, 100% , auto);
-	// }
-	// .calf .avatar {
-	// 	@include at2x('../images/calf', png, 100% , auto);
-	// }
-	// .lendice .avatar {
-	// 	@include at2x('../images/lendice', png, 100% , auto);
-	// }
-	// .dongdong .avatar {
-	// 	@include at2x('../images/dongdong', png, 100% , auto);
-	// }
-	// .alfredwu .avatar {
-	// 	@include at2x('../images/alfredwu', png, 100% , auto);
-	// }
-	// .xiaoyan .avatar {
-	// 	@include at2x('../images/xiaoyan', png, 100% , auto);
-	// }
+	.jack .avatar {
+		@include at2x('../images/jack', png, 100% , auto);
+	}
+	.zchar .avatar {
+		@include at2x('../images/zchar', png, 100% , auto);
+	}
+	.malu .avatar {
+		@include at2x('../images/malu', png, 100% , auto);
+	}
+	.manfred .avatar {
+		@include at2x('../images/manfred', png, 100% , auto);
+	}
+	.farthinker .avatar {
+		@include at2x('../images/farthinker', png, 100% , auto);
+	}
+	.fish .avatar {
+		@include at2x('../images/fish', png, 100% , auto);
+	}
+	.maklu .avatar {
+		@include at2x('../images/maklu', png, 100% , auto);
+	}
+	.mybeky .avatar {
+		@include at2x('../images/mybeky', png, 100% , auto);
+	}
+	.seandong .avatar {
+		@include at2x('../images/seandong', png, 100% , auto);
+	}
+	.tinyfive .avatar {
+		@include at2x('../images/tinyfive', png, 100% , auto);
+	}
+	.ruochen .avatar {
+		@include at2x('../images/ruochen', png, 100% , auto);
+	}
+	.snow .avatar {
+		@include at2x('../images/snow', png, 100% , auto);
+	}
+	.dragon .avatar {
+		@include at2x('../images/dragon', png, 100% , auto);
+	}
+	.calf .avatar {
+		@include at2x('../images/calf', png, 100% , auto);
+	}
+	.lendice .avatar {
+		@include at2x('../images/lendice', png, 100% , auto);
+	}
+	.dongdong .avatar {
+		@include at2x('../images/dongdong', png, 100% , auto);
+	}
+	.alfredwu .avatar {
+		@include at2x('../images/alfredwu', png, 100% , auto);
+	}
+	.xiaoyan .avatar {
+		@include at2x('../images/xiaoyan', png, 100% , auto);
+	}
 
 }
 
