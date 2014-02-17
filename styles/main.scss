@@ -144,7 +144,7 @@ a:hover {
 			margin: 0;
 
 			li {
-				width: 42%;
+				width: 40%;
 				margin-left: 8%;
 				float: left;
 				text-align: left;
@@ -255,10 +255,14 @@ a:hover {
 	}
 
 	.member {
-		display: inline-block;
-		vertical-align: top;
 		width: 33%;
 		margin-bottom: 85px;
+		// IE7 & FF2 hack
+		display: -moz-inline-stack;
+    display: inline-block;
+    vertical-align: top;
+    zoom: 1;
+    *display: inline;
 		.avatar {
 			@include at2x('/images/sample', png, 100% , auto);
 			width: 240px; height: 240px;
@@ -346,13 +350,14 @@ a:hover {
 
 	.container {
 		width: 80%;
-		padding: 50px 0 43px;
+		padding: 50px 0 30px;
 		position: relative;
 
 		p {
-			margin: 43px 0 0;
+			margin: 20px 0 0;
 			color: #aaa;
 			font-size: 16px;
+			clear: both;
 		}
 	}
 
@@ -367,6 +372,11 @@ a:hover {
 			display: inline-block;
 			margin-right: 20px;
 			color: #aaa;
+	    display: -moz-inline-stack;
+	    display: inline-block;
+	    vertical-align: top;
+	    zoom: 1;
+	    *display: inline;
 			&:last-child { margin: 0; }
 
 			a {
@@ -380,8 +390,13 @@ a:hover {
 		float: right;
 
 		li {
-			display: inline-block;
 			margin: 0 25px;
+			// IE7 & FF2 hack
+			display: -moz-inline-stack;
+	    display: inline-block;
+	    vertical-align: top;
+	    zoom: 1;
+	    *display: inline;
 
 			a {
 				display: block;

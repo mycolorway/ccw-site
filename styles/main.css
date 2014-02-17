@@ -146,7 +146,7 @@ a:hover {
   margin: 0;
 }
 #page-index .others ul li {
-  width: 42%;
+  width: 40%;
   margin-left: 8%;
   float: left;
   text-align: left;
@@ -302,10 +302,13 @@ a:hover {
   }
 }
 #page-team .member {
-  display: inline-block;
-  vertical-align: top;
   width: 33%;
   margin-bottom: 85px;
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: top;
+  zoom: 1;
+  *display: inline;
 }
 #page-team .member .avatar {
   background-image: url("/images/sample.png");
@@ -363,13 +366,14 @@ a:hover {
 }
 .footer .container {
   width: 80%;
-  padding: 50px 0 43px;
+  padding: 50px 0 30px;
   position: relative;
 }
 .footer .container p {
-  margin: 43px 0 0;
+  margin: 20px 0 0;
   color: #aaa;
   font-size: 16px;
+  clear: both;
 }
 .footer .footer-links, .footer .social {
   list-style: none;
@@ -383,6 +387,11 @@ a:hover {
   display: inline-block;
   margin-right: 20px;
   color: #aaa;
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: top;
+  zoom: 1;
+  *display: inline;
 }
 .footer .footer-links li:last-child {
   margin: 0;
@@ -395,8 +404,12 @@ a:hover {
   float: right;
 }
 .footer .social li {
-  display: inline-block;
   margin: 0 25px;
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: top;
+  zoom: 1;
+  *display: inline;
 }
 .footer .social li a {
   display: block;

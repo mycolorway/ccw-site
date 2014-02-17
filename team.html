@@ -29,7 +29,7 @@
 				<h2 class="title">梦想<span> · </span>信任</h2>
 				<p class="subtitle">因梦想而相遇，依信任而远行</p>
 
-				<div id="members"></div>
+				<ul id="members"></ul>
 
 				<div class="hire">
 					<p>我们没有固定办公室，通过 Tower 远程沟通和协作，每个人自己决定工作地点，可以陪着父母孩子，也可以跟相爱的人到海角天边，有网就行。</p>
@@ -65,7 +65,7 @@
 					<li><a href="javascript:;" class="weixin"></a></li>
 					<li><a href="http://blog.mycolorway.com/feed/" class="rss" target="_blank"></a></li>
 				</ul>
-
+				<br>
 				<p>© Mycolorway Design co., Ltd.<span class="hidden"> | 备案号：苏ICP备11051531号</span></p>
 
 				<i class="weixin-info"></i>
@@ -73,12 +73,12 @@
 		</div>
 
 		<script type="text/html" id="tpl-member">
-			<div class="{{ nickname }} member">
+			<li class="{{ nickname }} member">
 				<i class="avatar"></i>
 				<p class="name">{{ name }}</p>
 				<p class="title">{{ title }}</p>
 				<p class="location">{{ location }}</p>
-			</div>
+			</li>
 		</script>
 
 		<script src="//cdn.staticfile.org/jquery/1.11.0/jquery.min.js"></script>
