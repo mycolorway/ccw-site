@@ -12,10 +12,16 @@ $.getJSON "../info.json", (data) ->
     template('tpl-member', member)
       .appendTo($('#members'))
 
+weixinInfo = $(".weixin-info")
 $(".footer .weixin").on "click", (e) ->
   e.preventDefault()
   if $(document).width() < 768
-    $(".weixin-info").css({ left: $(this).offset().left - 32 })
+    weixinInfo.css({ left: $(this).offset().left - 32 })
       .fadeToggle()
   else
-    $(".weixin-info").fadeToggle()
+    weixinInfo.fadeToggle()
+
+$(document).on "click", (e) ->
+  if weixinInfo.is(':visible') && !$(e.target).hasClass('weixin')
+    weixinInfo.fadeOut()
+

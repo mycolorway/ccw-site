@@ -44,7 +44,7 @@ a:hover {
 		line-height: 1;
 		font-size: 48px;
 		font-weight: bold;
-		text-indent: -999px;
+		text-indent: -9909px;
 	}
 
 	.nav ul {
@@ -96,7 +96,7 @@ a:hover {
 		.subtitle {
 			font-size: 38px;
 			color: #666;
-			margin: 24px 0 30px;
+			margin: 24px 0 60px;
 		}
 	}
 
@@ -114,6 +114,7 @@ a:hover {
 
 		h3 {
 			font-size: 48px;
+			margin-bottom: 16px;
 			color: #666;
 			font-weight: normal;
 			margin: 0;
@@ -123,22 +124,23 @@ a:hover {
 			font-size: 220px;
 			font-weight: bold;
 			color: #000;
-			margin: 0;
-			line-height: 1;
+			overflow: hidden;
+			text-indent: -9999px;
+			@include at2x('../images/number', png, 100% , auto);
+			background-size: 95% auto;
+			background-position: 36px;
+			width: 826px; height: 180px;
+			margin: 25px auto 10px;
 		}
-
-		.plus {
-			font-size: 160px;
-			font-weight: normal;
-			color: #666;
-			line-height: 200px;
-			margin-left: 20px;
-			vertical-align: top;
+		.num-onphone {
+			display: none;
+			width: 40%;
+			margin: 16px auto 0;
 		}
 	}
 
 	.others {
-		padding: 240px 0 180px;
+		padding: 160px 0 180px;
 
 		ul {
 			width: 100%;
@@ -286,7 +288,7 @@ a:hover {
 				display: inline-block;
 				margin-right: 8px;
 				position: relative;
-				top: 3px;
+				top: 4px;
 			}
 		}
 	}
@@ -455,7 +457,7 @@ a:hover {
 
 		.tower .subtitle {
 			font-size: 26px;
-			margin: 12px 0 30px;
+			margin: 12px 0 60px;
 		}
 
 		.hero-onphone {
@@ -464,7 +466,7 @@ a:hover {
 		}
 
 		.stat {
-			margin: 36px 0 60px;
+			margin: 36px 0 40px;
 			h3 { font-size: 26px; }
 
 			p.num {
@@ -472,10 +474,8 @@ a:hover {
 				margin-top: 10px;
 			}
 
-			.plus {
-				font-size: 40px;
-				line-height: 50px;
-				margin-left: 10px;
+			.num-onphone {
+				display: block;
 			}
 		}
 

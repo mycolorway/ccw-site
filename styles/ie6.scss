@@ -18,6 +18,9 @@
 	.tower .tower-logo {
 		@include ie6png('../images/tower-logo', png, 100% , auto);
 	}
+	.stat p.num {
+		@include ie6png('../images/number', png, 100% , auto);
+	}
 	.others ul li {
 		width: 35%;
 		i.designboard {
@@ -32,60 +35,6 @@
 #page-team {
 	.hire .icon-you {
 		@include ie6png('../images/icon-you', png, 100% , auto);
-	}
-	.jack .avatar {
-		@include ie6png('../images/jack', png, 100% , auto);
-	}
-	.zchar .avatar {
-		@include ie6png('../images/zchar', png, 100% , auto);
-	}
-	.malu .avatar {
-		@include ie6png('../images/malu', png, 100% , auto);
-	}
-	.manfred .avatar {
-		@include ie6png('../images/manfred', png, 100% , auto);
-	}
-	.farthinker .avatar {
-		@include ie6png('../images/farthinker', png, 100% , auto);
-	}
-	.fish .avatar {
-		@include ie6png('../images/fish', png, 100% , auto);
-	}
-	.maklu .avatar {
-		@include ie6png('../images/maklu', png, 100% , auto);
-	}
-	.mybeky .avatar {
-		@include ie6png('../images/mybeky', png, 100% , auto);
-	}
-	.seandong .avatar {
-		@include ie6png('../images/seandong', png, 100% , auto);
-	}
-	.tinyfive .avatar {
-		@include ie6png('../images/tinyfive', png, 100% , auto);
-	}
-	.ruochen .avatar {
-		@include ie6png('../images/ruochen', png, 100% , auto);
-	}
-	.snow .avatar {
-		@include ie6png('../images/snow', png, 100% , auto);
-	}
-	.dragon .avatar {
-		@include ie6png('../images/dragon', png, 100% , auto);
-	}
-	.calf .avatar {
-		@include ie6png('../images/calf', png, 100% , auto);
-	}
-	.lendice .avatar {
-		@include ie6png('../images/lendice', png, 100% , auto);
-	}
-	.dongdong .avatar {
-		@include ie6png('../images/dongdong', png, 100% , auto);
-	}
-	.alfredwu .avatar {
-		@include ie6png('../images/alfredwu', png, 100% , auto);
-	}
-	.xiaoyan .avatar {
-		@include ie6png('../images/xiaoyan', png, 100% , auto);
 	}
 }
 

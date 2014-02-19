@@ -1,5 +1,5 @@
 (function() {
-  var template;
+  var template, weixinInfo;
 
   template = function(id, data) {
     var target;
@@ -20,14 +20,22 @@
     });
   });
 
+  weixinInfo = $(".weixin-info");
+
   $(".footer .weixin").on("click", function(e) {
     e.preventDefault();
     if ($(document).width() < 768) {
-      return $(".weixin-info").css({
+      return weixinInfo.css({
         left: $(this).offset().left - 32
       }).fadeToggle();
     } else {
-      return $(".weixin-info").fadeToggle();
+      return weixinInfo.fadeToggle();
+    }
+  });
+
+  $(document).on("click", function(e) {
+    if (weixinInfo.is(':visible') && !$(e.target).hasClass('weixin')) {
+      return weixinInfo.fadeOut();
     }
   });
 

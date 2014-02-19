@@ -30,7 +30,7 @@ a:hover {
   line-height: 1;
   font-size: 48px;
   font-weight: bold;
-  text-indent: -999px;
+  text-indent: -9909px;
 }
 @media all and (-webkit-min-device-pixel-ratio: 1.5), all and (-o-min-device-pixel-ratio: 3 / 2), all and (min--moz-device-pixel-ratio: 1.5), all and (min-device-pixel-ratio: 1.5) {
   .header a.brand {
@@ -94,7 +94,7 @@ a:hover {
 #page-index .tower .subtitle {
   font-size: 38px;
   color: #666;
-  margin: 24px 0 30px;
+  margin: 24px 0 60px;
 }
 #page-index .hero-image {
   background-image: url("../images/hero.jpg");
@@ -120,6 +120,7 @@ a:hover {
 }
 #page-index .stat h3 {
   font-size: 48px;
+  margin-bottom: 16px;
   color: #666;
   font-weight: normal;
   margin: 0;
@@ -128,19 +129,30 @@ a:hover {
   font-size: 220px;
   font-weight: bold;
   color: #000;
-  margin: 0;
-  line-height: 1;
+  overflow: hidden;
+  text-indent: -9999px;
+  background-image: url("../images/number.png");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-size: 95% auto;
+  background-position: 36px;
+  width: 826px;
+  height: 180px;
+  margin: 25px auto 10px;
 }
-#page-index .stat .plus {
-  font-size: 160px;
-  font-weight: normal;
-  color: #666;
-  line-height: 200px;
-  margin-left: 20px;
-  vertical-align: top;
+@media all and (-webkit-min-device-pixel-ratio: 1.5), all and (-o-min-device-pixel-ratio: 3 / 2), all and (min--moz-device-pixel-ratio: 1.5), all and (min-device-pixel-ratio: 1.5) {
+  #page-index .stat p.num {
+    background-image: url("../images/number@2x.png");
+    background-size: 100% auto;
+  }
+}
+#page-index .stat .num-onphone {
+  display: none;
+  width: 40%;
+  margin: 16px auto 0;
 }
 #page-index .others {
-  padding: 240px 0 180px;
+  padding: 160px 0 180px;
 }
 #page-index .others ul {
   width: 100%;
@@ -347,7 +359,7 @@ a:hover {
   display: inline-block;
   margin-right: 8px;
   position: relative;
-  top: 3px;
+  top: 4px;
 }
 @media all and (-webkit-min-device-pixel-ratio: 1.5), all and (-o-min-device-pixel-ratio: 3 / 2), all and (min--moz-device-pixel-ratio: 1.5), all and (min-device-pixel-ratio: 1.5) {
   #page-team .member .location::before {
@@ -684,14 +696,14 @@ a:hover {
   }
   #page-index .container .tower .subtitle {
     font-size: 26px;
-    margin: 12px 0 30px;
+    margin: 12px 0 60px;
   }
   #page-index .container .hero-onphone {
     display: block;
     width: 100%;
   }
   #page-index .container .stat {
-    margin: 36px 0 60px;
+    margin: 36px 0 40px;
   }
   #page-index .container .stat h3 {
     font-size: 26px;
@@ -700,10 +712,8 @@ a:hover {
     font-size: 60px;
     margin-top: 10px;
   }
-  #page-index .container .stat .plus {
-    font-size: 40px;
-    line-height: 50px;
-    margin-left: 10px;
+  #page-index .container .stat .num-onphone {
+    display: block;
   }
   #page-index .container .others {
     padding: 100px 0 250px;
