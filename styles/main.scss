@@ -1,0 +1,699 @@
+@mixin at2x($path, $ext: "jpg", $w: auto, $h: auto) {
+	$at1x_path: "#{$path}.#{$ext}";
+	$at2x_path: "#{$path}@2x.#{$ext}";
+
+	background-image: url("#{$at1x_path}");
+	background-repeat: no-repeat;
+	background-size: $w $h;
+
+	@media all and (-webkit-min-device-pixel-ratio : 1.5),
+				 all and (-o-min-device-pixel-ratio: 3/2),
+				 all and (min--moz-device-pixel-ratio: 1.5),
+				 all and (min-device-pixel-ratio: 1.5) {
+					 background-image: url("#{$at2x_path}");
+					 background-size: $w $h;
+	}
+}
+
+body, button, input, select, textarea {
+	font-family: "Helvetica Neue", Helvetica, Arial,"Microsoft Yahei","SimHei",Sans-serif;
+}
+
+.container {
+	margin-right: auto;
+	margin-left: auto;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+a:hover {
+	opacity: .8;
+}
+
+.header {
+	position: relative;
+	min-height: 50px;
+	margin-top: 40px;
+
+	a.brand {
+		@include at2x('../images/logo', png, 100% , auto);
+		display: block;
+		float: left;
+		overflow: hidden;
+		width: 241px; height: 51px;
+		line-height: 1;
+		font-size: 48px;
+		font-weight: bold;
+		text-indent: -9909px;
+	}
+
+	.nav ul {
+		float: right;
+		margin: 0;
+		li {
+			float: left;
+			display: block;
+			&:first-child {
+				margin: 0 35px;
+			}
+
+			a {
+				font-size: 18px;
+				color: #999;
+				&.selected { color: #000; }
+			}
+		}
+	}
+}
+
+#page-index {
+	text-align: center;
+	.container { margin-top: 100px; }
+
+	a.btn {
+		background-color: #8fbbb6;
+		padding: 20px 53px;
+		border-radius: 6px;
+		color: #fff;
+		font-size: 40px;
+		display: block;
+		width: 300px;
+		margin: 0 auto;
+	}
+
+	h2.slogan {
+		font-size: 68px;
+		color: #000;
+		line-height: 88px;
+		font-weight: normal;
+	}
+
+	.tower {
+		.tower-logo {
+			@include at2x('../images/tower-logo', png, 100% , auto);
+			background-size: 100%;
+			height: 272px; width: 200px;
+			margin: 0 auto;
+		}
+
+		.subtitle {
+			font-size: 38px;
+			color: #666;
+			margin: 24px 0 60px;
+		}
+	}
+
+	.hero-image {
+		@include at2x('../images/hero', jpg, 100% , auto);
+		background-size: 100%;
+		background-position: 50%;
+		max-width: 839px; height: 505px;
+		margin: 0 auto;
+	}
+	.hero-onphone { display: none; }
+
+	.stat {
+		margin: 48px 0 80px;
+
+		h3 {
+			font-size: 48px;
+			margin-bottom: 16px;
+			color: #666;
+			font-weight: normal;
+			margin: 0;
+		}
+
+		p.num {
+			font-size: 220px;
+			font-weight: bold;
+			color: #000;
+			overflow: hidden;
+			text-indent: -9999px;
+			@include at2x('../images/number', png, 100% , auto);
+			width: 826px; height: 180px;
+			margin: 50px auto 10px;
+			position: relative;
+			left: 28px;
+		}
+		.num-onphone {
+			display: none;
+			width: 40%;
+			margin: 16px auto 0;
+		}
+	}
+
+	.others {
+		padding: 160px 0 180px;
+
+		ul {
+			width: 100%;
+			list-style: none;
+			padding: 0;
+			margin: 0;
+
+			li {
+				width: 40%;
+				margin-left: 8%;
+				float: left;
+				text-align: left;
+
+				a {
+					display: block;
+					cursor: pointer;
+				}
+
+				i {
+					width: 85px; height: 85px;
+					float: left;
+					position: relative;
+					&.designboard {
+						@include at2x('../images/designboard', png, 100% , auto);
+					}
+					&.teamcola {
+						@include at2x('../images/teamcola', png, 100% , auto);
+					}
+				}
+
+				.detail {
+					margin-left: 110px;
+					padding: 10px 0;
+
+					h4 { letter-spacing: 4px; }
+					h4, p {
+						margin: 0;
+						font-size: 28px;
+						font-weight: lighter;
+						color: #000;
+					}
+				}
+			}
+		}
+	}
+}
+
+#page-team {
+	text-align: center;
+	.container { margin-top: 100px; }
+
+	h2.title {
+		font-size: 80px;
+		font-weight: normal;
+		margin: 0;
+	}
+	p.subtitle {
+		font-size: 56px;
+		line-height: 2em;
+		color: #7b7b7b;
+		margin: 0 0 120px 0;
+	}
+
+	#members {
+		padding: 0;
+		&::after {
+			content: '';
+			@include at2x('../images/icon-line', png, 100% , auto);
+			width: 159px; height: 18px;
+			display: block;
+			margin: 35px auto 0;
+		}
+		.mybeky .cat {
+			@include at2x('../images/cat', png, 100% , auto);
+			background-size: 100% auto;
+			width: 28px;
+			height: 25px;
+			display: inline-block;
+		}
+	}
+
+	.hire {
+		text-align: left;
+		padding: 0 2%;
+		p {
+			font-size: 30px;
+			line-height: 48px;
+			margin: 70px 0 0 0;
+			span { font-size: 24px; color: #868686; }
+			&.locations {
+				margin: 0;
+				font-size: 36px;
+				line-height: 60px;
+			}
+
+			&.slogan-onphone { display: none; }
+
+			&.everywhere {
+				margin: 0 0 25px;
+				text-align: center;
+				font-size: 30px; color: #7ecfbe;
+				&::before {
+					content: '';
+					@include at2x('../images/icon-gps-blue', png, 100% , auto);
+					width: 28px; height: 40px;
+					display: inline-block;
+					margin-right: 12px;
+					position: relative;
+					top: 6px;
+				}
+			}
+			&.email {
+				margin: 0 0 180px;
+				text-align: center;
+				font-size: 30px; line-height: 36px; color: #7ecfbe;
+				a { font-size: 28px; color: #7ecfbe; }
+			}
+		}
+		.icon-you {
+			@include at2x('../images/icon-you', png, 100% , auto);
+			width: 281px; height: 281px;
+			display: block;
+			margin: 150px auto 40px;
+		}
+	}
+
+	.member {
+		width: 33%;
+		margin-bottom: 85px;
+
+		// IE7 & FF2 hack
+		display: -moz-inline-stack;
+		display: inline-block;
+		vertical-align: top;
+		zoom: 1;
+		*display: inline;
+
+		.avatar {
+			width: 240px; height: 240px;
+			display: block;
+			margin: 0 auto 16px;
+		}
+		p { margin: 0; line-height: 48px }
+		.name { font-size: 36px; ;}
+		.title { font-size: 24px; color: #999; }
+		.location {
+			font-size: 20px; color: #333;
+			&::before {
+				content: '';
+				@include at2x('../images/icon-gps', png, 100% , auto);
+				width: 16px; height: 23px;
+				display: inline-block;
+				margin-right: 8px;
+				position: relative;
+				top: 4px;
+			}
+		}
+	}
+
+	.jack .avatar {
+		@include at2x('../images/jack', jpg, 100% , auto);
+	}
+	.zchar .avatar {
+		@include at2x('../images/zchar', jpg, 100% , auto);
+	}
+	.malu .avatar {
+		@include at2x('../images/malu', jpg, 100% , auto);
+	}
+	.manfred .avatar {
+		@include at2x('../images/manfred', jpg, 100% , auto);
+	}
+	.farthinker .avatar {
+		@include at2x('../images/farthinker', jpg, 100% , auto);
+	}
+	.fish .avatar {
+		@include at2x('../images/fish', jpg, 100% , auto);
+	}
+	.maklu .avatar {
+		@include at2x('../images/maklu', jpg, 100% , auto);
+	}
+	.mybeky .avatar {
+		@include at2x('../images/mybeky', jpg, 100% , auto);
+	}
+	.seandong .avatar {
+		@include at2x('../images/seandong', jpg, 100% , auto);
+	}
+	.tinyfive .avatar {
+		@include at2x('../images/tinyfive', jpg, 100% , auto);
+	}
+	.ruochen .avatar {
+		@include at2x('../images/ruochen', jpg, 100% , auto);
+	}
+	.snow .avatar {
+		@include at2x('../images/snow', jpg, 100% , auto);
+	}
+	.dragon .avatar {
+		@include at2x('../images/dragon', jpg, 100% , auto);
+	}
+	.calf .avatar {
+		@include at2x('../images/calf', jpg, 100% , auto);
+	}
+	.lendice .avatar {
+		@include at2x('../images/lendice', jpg, 100% , auto);
+	}
+	.dongdong .avatar {
+		@include at2x('../images/dongdong', jpg, 100% , auto);
+	}
+	.alfredwu .avatar {
+		@include at2x('../images/alfredwu', jpg, 100% , auto);
+	}
+	.xiaoyan .avatar {
+		@include at2x('../images/xiaoyan', jpg, 100% , auto);
+	}
+
+}
+
+
+.footer {
+	margin: 0; padding: 0;
+	background-color: #777;
+
+	.container {
+		width: 80%;
+		padding: 50px 0 30px;
+		position: relative;
+
+		p {
+			margin: 20px 0 0;
+			color: #aaa;
+			font-size: 16px;
+			clear: both;
+		}
+	}
+
+	.footer-links, .social{
+		list-style: none;
+		padding: 0; margin: 0;
+	}
+
+	.footer-links {
+		float: left;
+		li {
+			display: inline-block;
+			margin-right: 20px;
+			color: #aaa;
+
+			// IE7 & FF2 hack
+			display: -moz-inline-stack;
+			display: inline-block;
+			vertical-align: top;
+			zoom: 1;
+			*display: inline;
+			&:last-child { margin: 0; }
+
+			a {
+				font-size: 16px;
+				color: #aaa;
+			}
+		}
+	}
+
+	.social {
+		float: right;
+
+		li {
+			margin: 0 25px;
+
+			// IE7 & FF2 hack
+			display: -moz-inline-stack;
+			display: inline-block;
+			vertical-align: top;
+			zoom: 1;
+			*display: inline;
+
+			a {
+				display: block;
+				&.rss {
+					@include at2x('../images/rss-large', png, 100% , auto);
+					width: 28px; height:28px;
+				}
+				&.weixin {
+					@include at2x('../images/weixin-large', png, 100% , auto);
+					width: 36px; height: 36px;
+				}
+				&.weibo {
+					@include at2x('../images/weibo-large', png, 100% , auto);
+					width: 36px; height: 36px;
+				}
+			}
+		}
+	}
+
+	.weixin-info {
+		@include at2x('../images/weixin-info', png, 100% , auto);
+		width: 195px; height: 266px;
+		display: none;
+		position: absolute;
+		top: -218px; right: 28px;
+	}
+}
+
+
+@media (max-width: 767px) {
+	#page-index .container {
+		margin-top: 40px;
+
+		a.btn {
+			font-size: 20px;
+			padding: 14px 40px;
+			width: 150px;
+		}
+
+		h2.slogan {
+			font-size: 26px;
+			line-height: 38px;
+		}
+
+		.tower-logo {
+			max-width: 120px;
+			max-height: 180px;
+		}
+
+		.tower .subtitle {
+			font-size: 26px;
+			margin: 12px 0 60px;
+		}
+
+		.hero-onphone {
+			display: block;
+			width: 100%;
+		}
+
+		.stat {
+			margin: 36px 0 40px;
+			h3 { font-size: 26px; }
+
+			p.num {
+				font-size: 60px;
+				margin-top: 10px;
+			}
+
+			.num-onphone {
+				display: block;
+			}
+		}
+
+		.others {
+			padding: 100px 0 250px;
+
+			ul li {
+				width: 80%;
+				text-align: center;
+				min-height: 80px;
+
+				i {
+					max-width: 60px;
+					background-size: 60px;
+					background-position: center;
+					display: inline-block;
+					vertical-align: middle;
+					float: none;
+				}
+
+				.detail {
+					margin-left: 20px;
+					display: inline-block;
+					vertical-align: middle;
+					h4, p { font-size: 16px; }
+				}
+			}
+		}
+	}
+
+	#page-team .container {
+		margin-top: 15px;
+		padding-left: 0; padding-right: 0;
+
+		h2.title {
+			font-size: 28px;
+			line-height: 44px;
+		}
+		p.subtitle {
+			font-size: 15px;
+			line-height: 44px;
+			margin: 0 0 24px 0;
+		}
+
+		#members {
+			.mybeky .cat {
+				width: 14px;
+				height: 12px;
+			}
+			&::after {
+				width: 80px; height: 9px;
+				margin: 10px auto 0;
+			}
+		}
+
+		.hire {
+			margin: 0 5%;
+			p {
+				font-size: 12px;
+				line-height: 20px;
+				margin: 30px 0 0 0;
+				span { font-size: 9px; }
+				&.locations {
+					margin: 0;
+					font-size: 14px;
+					line-height: 30px;
+				}
+
+				&.slogan-onphone {
+					display: block;
+					text-align: center;
+				}
+
+				&.everywhere {
+					margin: 0 0 12px;
+					font-size: 15px;
+					&::before {
+						content: '';
+						@include at2x('../images/icon-gps-blue', png, 100% , auto);
+						width: 14px; height: 20px;
+						margin-right: 6px;
+						top: 3px;
+					}
+				}
+
+				&.email {
+					margin: 0 0 60px;
+					font-size: 15px; line-height: 18px;
+					a { font-size: 14px; }
+				}
+			}
+
+			.icon-you {
+				@include at2x('../images/icon-you', png, 100% , auto);
+				width: 140px; height: 140px;
+				display: block;
+				margin: 30px auto 20px;
+			}
+		}
+
+		.member {
+			width: 100%;
+			margin-bottom: 20px;
+			.avatar {
+				width: 120px; height: 120px;
+				margin: 0 auto 8px;
+			}
+			p { margin: 0; line-height: 24px }
+			.name { font-size: 18px; }
+			.title { font-size: 12px; }
+			.location {
+				font-size: 10px; color: #333;
+				&::before {
+					content: '';
+					@include at2x('../images/icon-gps', png, 100% , auto);
+					width: 8px; height: 12px;
+					margin-right: 4px;
+					position: relative;
+					top: 1px;
+				}
+			}
+		}
+	}
+
+	.header {
+		margin-top: 20px;
+
+		a.brand {
+			background-size: 50%;
+			position: absolute;
+		}
+
+		.nav ul li {
+			&:first-child {
+				margin: 0 25px;
+			}
+			a { font-size: 12px; }
+		}
+	}
+
+	.footer {
+		.container {
+			width: 100%;
+			padding: 15px 0;
+			text-align: center;
+			p { margin: 10px 0 0; font-size: 10px; }
+		}
+
+		.footer-links {
+			float: none;
+			text-align: center;
+			margin: 0 auto;
+			li {
+				margin-right: 12px;
+				font-size: 10px;
+				a { font-size: 10px; }
+			}
+		}
+
+		.social {
+			float: none;
+			width: 100%;
+			margin: 15px auto 0;
+			li {
+				margin: 0 8px;
+				a.rss {
+					@include at2x('../images/rss', png, 100% , auto);
+					width: 30px; height: 30px;
+				}
+				a.weixin {
+					@include at2x('../images/weixin', png, 100% , auto);
+					width: 30px; height: 30px;
+				}
+				a.weibo {
+					@include at2x('../images/weibo', png, 100% , auto);
+					width: 30px; height: 30px;
+				}
+			}
+		}
+
+		.weixin-info {
+			@include at2x('../images/weixin-info-small', png, 100% , auto);
+			width: 98px; height: 68px;
+			top: -20px;
+		}
+	}
+
+	.hidden { display: none; }
+}
+
+@media (min-width: 768px) {
+	.container {
+		width: 100%;
+	}
+}
+
+@media (min-width: 992px) {
+	.container {
+		width: 100%;
+	}
+}
+
+@media (min-width: 1200px) {
+	.container {
+		width: 1000px;
+	}
+	.tower {
+		margin-top: 50px;
+	}
+}
