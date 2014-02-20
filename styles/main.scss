@@ -76,6 +76,9 @@ a:hover {
 		border-radius: 6px;
 		color: #fff;
 		font-size: 40px;
+		display: block;
+		width: 300px;
+		margin: 0 auto;
 	}
 
 	h2.slogan {
@@ -127,10 +130,10 @@ a:hover {
 			overflow: hidden;
 			text-indent: -9999px;
 			@include at2x('../images/number', png, 100% , auto);
-			background-size: 95% auto;
-			background-position: 36px;
 			width: 826px; height: 180px;
-			margin: 25px auto 10px;
+			margin: 50px auto 10px;
+			position: relative;
+			left: 28px;
 		}
 		.num-onphone {
 			display: none;
@@ -449,7 +452,8 @@ a:hover {
 
 		a.btn {
 			font-size: 20px;
-			padding: 14px 40px
+			padding: 14px 40px;
+			width: 150px;
 		}
 
 		h2.slogan {

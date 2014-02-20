@@ -1,24 +1,18 @@
 (function() {
-  var template, weixinInfo;
+  var weixinInfo;
 
-  template = function(id, data) {
-    var target;
-    target = $.trim($("#" + id).html());
-    if (data) {
-      $.each(data, function(key, value) {
-        var re;
-        re = new RegExp("\\{\\{ " + key + " \\}\\}", "g");
-        return target = target.replace(re, value);
+  if ($('#page-team').length) {
+    $.getJSON("../info.json", function(data) {
+      return $.each(data.members, function(i, member) {
+        return $('<li class="' + member.nickname + ' member">\
+        <i class="avatar"></i>\
+        <p class="name">' + member.name + '</p>\
+        <p class="title">' + member.title + '</p>\
+        <p class="location">' + member.location + '</p>\
+      </li>').appendTo($('#members'));
       });
-    }
-    return $(target);
-  };
-
-  $.getJSON("../info.json", function(data) {
-    return $.each(data.members, function(i, member) {
-      return template('tpl-member', member).appendTo($('#members'));
     });
-  });
+  }
 
   weixinInfo = $(".weixin-info");
 

@@ -69,6 +69,9 @@ a:hover {
   border-radius: 6px;
   color: #fff;
   font-size: 40px;
+  display: block;
+  width: 300px;
+  margin: 0 auto;
 }
 #page-index h2.slogan {
   font-size: 68px;
@@ -134,11 +137,11 @@ a:hover {
   background-image: url("../images/number.png");
   background-repeat: no-repeat;
   background-size: 100% auto;
-  background-size: 95% auto;
-  background-position: 36px;
   width: 826px;
   height: 180px;
-  margin: 25px auto 10px;
+  margin: 50px auto 10px;
+  position: relative;
+  left: 28px;
 }
 @media all and (-webkit-min-device-pixel-ratio: 1.5), all and (-o-min-device-pixel-ratio: 3 / 2), all and (min--moz-device-pixel-ratio: 1.5), all and (min-device-pixel-ratio: 1.5) {
   #page-index .stat p.num {
@@ -700,6 +703,7 @@ a:hover {
   #page-index .container a.btn {
     font-size: 20px;
     padding: 14px 40px;
+    width: 150px;
   }
   #page-index .container h2.slogan {
     font-size: 26px;

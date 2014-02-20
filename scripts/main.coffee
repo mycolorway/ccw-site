@@ -1,16 +1,12 @@
-template = (id, data) ->
-  target = $.trim($("#" + id).html())
-  if data
-    $.each data, (key, value) ->
-      re = new RegExp("\\{\\{ " + key + " \\}\\}", "g")
-      target = target.replace(re, value)
-
-  return $ target
-
-$.getJSON "../info.json", (data) ->
-  $.each data.members, (i, member) ->
-    template('tpl-member', member)
-      .appendTo($('#members'))
+if $('#page-team').length
+  $.getJSON "../info.json", (data) ->
+    $.each data.members, (i, member) ->
+      $('<li class="' + member.nickname + ' member">
+        <i class="avatar"></i>
+        <p class="name">' + member.name + '</p>
+        <p class="title">' + member.title + '</p>
+        <p class="location">' + member.location + '</p>
+      </li>').appendTo($('#members'))
 
 weixinInfo = $(".weixin-info")
 $(".footer .weixin").on "click", (e) ->
