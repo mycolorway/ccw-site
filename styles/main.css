@@ -248,6 +248,21 @@ a:hover {
     background-size: 100% auto;
   }
 }
+#page-team #members .mybeky .cat {
+  background-image: url("../images/cat.png");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-size: 100% auto;
+  width: 28px;
+  height: 25px;
+  display: inline-block;
+}
+@media all and (-webkit-min-device-pixel-ratio: 1.5), all and (-o-min-device-pixel-ratio: 3 / 2), all and (min--moz-device-pixel-ratio: 1.5), all and (min-device-pixel-ratio: 1.5) {
+  #page-team #members .mybeky .cat {
+    background-image: url("../images/cat@2x.png");
+    background-size: 100% auto;
+  }
+}
 #page-team .hire {
   text-align: left;
   padding: 0 2%;
@@ -622,41 +637,41 @@ a:hover {
   display: block;
 }
 .footer .social li a.rss {
-  background-image: url("../images/rss.png");
+  background-image: url("../images/rss-large.png");
   background-repeat: no-repeat;
   background-size: 100% auto;
-  width: 30px;
-  height: 30px;
+  width: 28px;
+  height: 28px;
 }
 @media all and (-webkit-min-device-pixel-ratio: 1.5), all and (-o-min-device-pixel-ratio: 3 / 2), all and (min--moz-device-pixel-ratio: 1.5), all and (min-device-pixel-ratio: 1.5) {
   .footer .social li a.rss {
-    background-image: url("../images/rss@2x.png");
+    background-image: url("../images/rss-large@2x.png");
     background-size: 100% auto;
   }
 }
 .footer .social li a.weixin {
-  background-image: url("../images/weixin.png");
+  background-image: url("../images/weixin-large.png");
   background-repeat: no-repeat;
   background-size: 100% auto;
-  width: 30px;
-  height: 30px;
+  width: 36px;
+  height: 36px;
 }
 @media all and (-webkit-min-device-pixel-ratio: 1.5), all and (-o-min-device-pixel-ratio: 3 / 2), all and (min--moz-device-pixel-ratio: 1.5), all and (min-device-pixel-ratio: 1.5) {
   .footer .social li a.weixin {
-    background-image: url("../images/weixin@2x.png");
+    background-image: url("../images/weixin-large@2x.png");
     background-size: 100% auto;
   }
 }
 .footer .social li a.weibo {
-  background-image: url("../images/weibo.png");
+  background-image: url("../images/weibo-large.png");
   background-repeat: no-repeat;
   background-size: 100% auto;
-  width: 30px;
-  height: 30px;
+  width: 36px;
+  height: 36px;
 }
 @media all and (-webkit-min-device-pixel-ratio: 1.5), all and (-o-min-device-pixel-ratio: 3 / 2), all and (min--moz-device-pixel-ratio: 1.5), all and (min-device-pixel-ratio: 1.5) {
   .footer .social li a.weibo {
-    background-image: url("../images/weibo@2x.png");
+    background-image: url("../images/weibo-large@2x.png");
     background-size: 100% auto;
   }
 }
@@ -669,7 +684,7 @@ a:hover {
   display: none;
   position: absolute;
   top: -218px;
-  right: 24px;
+  right: 28px;
 }
 @media all and (-webkit-min-device-pixel-ratio: 1.5), all and (-o-min-device-pixel-ratio: 3 / 2), all and (min--moz-device-pixel-ratio: 1.5), all and (min-device-pixel-ratio: 1.5) {
   .footer .weixin-info {
@@ -753,6 +768,10 @@ a:hover {
     font-size: 15px;
     line-height: 44px;
     margin: 0 0 24px 0;
+  }
+  #page-team .container #members .mybeky .cat {
+    width: 14px;
+    height: 12px;
   }
   #page-team .container #members::after {
     width: 80px;
@@ -887,6 +906,27 @@ a:hover {
   .footer .social li {
     margin: 0 8px;
   }
+  .footer .social li a.rss {
+    background-image: url("../images/rss.png");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    width: 30px;
+    height: 30px;
+  }
+  .footer .social li a.weixin {
+    background-image: url("../images/weixin.png");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    width: 30px;
+    height: 30px;
+  }
+  .footer .social li a.weibo {
+    background-image: url("../images/weibo.png");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    width: 30px;
+    height: 30px;
+  }
   .footer .weixin-info {
     background-image: url("../images/weixin-info-small.png");
     background-repeat: no-repeat;
@@ -918,6 +958,24 @@ a:hover {
   }
 }
 
+@media all and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), all and (max-width: 767px) and (-o-min-device-pixel-ratio: 3 / 2), all and (max-width: 767px) and (min--moz-device-pixel-ratio: 1.5), all and (max-width: 767px) and (min-device-pixel-ratio: 1.5) {
+  .footer .social li a.rss {
+    background-image: url("../images/rss@2x.png");
+    background-size: 100% auto;
+  }
+}
+@media all and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), all and (max-width: 767px) and (-o-min-device-pixel-ratio: 3 / 2), all and (max-width: 767px) and (min--moz-device-pixel-ratio: 1.5), all and (max-width: 767px) and (min-device-pixel-ratio: 1.5) {
+  .footer .social li a.weixin {
+    background-image: url("../images/weixin@2x.png");
+    background-size: 100% auto;
+  }
+}
+@media all and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), all and (max-width: 767px) and (-o-min-device-pixel-ratio: 3 / 2), all and (max-width: 767px) and (min--moz-device-pixel-ratio: 1.5), all and (max-width: 767px) and (min-device-pixel-ratio: 1.5) {
+  .footer .social li a.weibo {
+    background-image: url("../images/weibo@2x.png");
+    background-size: 100% auto;
+  }
+}
 @media all and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), all and (max-width: 767px) and (-o-min-device-pixel-ratio: 3 / 2), all and (max-width: 767px) and (min--moz-device-pixel-ratio: 1.5), all and (max-width: 767px) and (min-device-pixel-ratio: 1.5) {
   .footer .weixin-info {
     background-image: url("../images/weixin-info-small@2x.png");
