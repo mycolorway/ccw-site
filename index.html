@@ -21,53 +21,33 @@
 				<div class="nav">
 					<ul>
 						<li><a href="http://blog.mycolorway.com">博客</a></li>
-						<li><a href="./team/">团队</a></li>
+						<li><a href="https://tower.im" target="_blank">Tower</a></li>
 					</ul>
 				</div>
 			</div>
 		</div>
 
-		<div id="page-index">
+		<div id="page-team">
 			<div class="container">
-				<h2 class="slogan">为小团队设计<br />简洁实用的在线协作软件</h2>
+				<h2 class="title">梦想<span> · </span>信任</h2>
+				<p class="subtitle">因梦想而相遇，依信任而远行</p>
 
-				<div class="tower">
-					<div class="tower-logo"></div>
-					<p class="subtitle">团队协作软件</p>
+				<ul id="members"></ul>
 
-					<div class="hero-image hidden"></div>
-					<img src="images/hero.jpg" class="hero-onphone">
-				</div>
+				<div class="hire">
+					<p>我们没有固定办公室，通过 Tower 远程沟通和协作，每个人自己决定工作地点，可以陪着父母孩子，也可以跟相爱的人到海角天边，有网就行。</p>
+					<p>以下是我们曾经工作过的城市 <span>[地点持续更新]</span></p>
+					<p class="locations">
+						成都，苏州，武汉，厦门，杭州，丽江，大连，南宁，上海，北京，南安普顿，慕尼黑，爱丁堡……
+					</p>
+					<p class="hidden">无论你身处何地，只要同样向往自由，心怀梦想，欢迎和我们并肩前行！</p>
+					<p class="slogan-onphone">无论你身处何地，只要同样向往自由，心怀梦想<br>欢迎和我们并肩前行！</p>
 
-				<div class="stat">
-					<h3>入驻团队</h3>
-					<p class="num hidden">40,000+</p>
-					<img src="images/number.png" class="num-onphone">
-				</div>
-
-				<a href="https://tower.im/" class="btn" target="_blank">了解 Tower</a>
-
-				<div class="others">
-					<ul>
-						<li>
-							<a href="http://designboard.cc" target="_blank">
-								<i class="designboard"></i>
-								<div class="detail">
-									<h4>设计讨论软件</h4>
-									<p>designboard.cc</p>
-								</div>
-							</a>
-						</li>
-						<li>
-							<a href="https://teamcola.com" target="_blank">
-								<i class="teamcola"></i>
-								<div class="detail">
-									<h4>项目日志软件</h4>
-									<p>teamcola.com</p>
-								</div>
-							</a>
-						</li>
-					</ul>
+					<i class="icon-you"></i>
+					<p class="everywhere">世界任何地方</p>
+					<p class="email">欢迎发送邮件加入我们<br>
+						<a href="mailto:join@mycolorway.com" target="_blank">join@mycolorway.com</a>
+					</p>
 				</div>
 
 			</div>
@@ -80,7 +60,7 @@
 					<li>/</li>
 					<li><a href="http://blog.mycolorway.com">博客</a></li>
 					<li>/</li>
-					<li><a href="./team/">团队</a></li>
+					<li><a href="https://tower.im" target＝"_blank">Tower</a></li>
 				</ul>
 
 				<ul class="social">
@@ -89,11 +69,20 @@
 					<li><a href="http://blog.mycolorway.com/feed/" class="rss" target="_blank"></a></li>
 				</ul>
 				<br>
-				<p>© Mycolorway Design co., Ltd.<span class="hidden"> | 备案号：苏ICP备11051531号</span></p>
+				<p>© Mycolorway Design co., Ltd.<span class="hidden"> | 备案号：蜀ICP备12019256号</span></p>
 
 				<i class="weixin-info"></i>
 			</div>
 		</div>
+
+		<script type="text/html" id="tpl-member">
+			<li class="member">
+				<i class="avatar"></i>
+				<p class="name"></p>
+				<p class="title"></p>
+				<p class="location"></p>
+			</li>
+		</script>
 
 		<script src="scripts/jquery-1.11.0.min.js"></script>
 		<script src="scripts/main.js"></script>

@@ -14,24 +14,6 @@
 	}
 }
 
-#page-index {
-	.tower .tower-logo {
-		@include ie6png('../images/tower-logo', png, 100% , auto);
-	}
-	.stat p.num {
-		@include ie6png('../images/number', png, 100% , auto);
-	}
-	.others ul li {
-		width: 35%;
-		i.designboard {
-			@include ie6png('../images/designboard', png, 100% , auto);
-		}
-		i.teamcola {
-			@include ie6png('../images/teamcola', png, 100% , auto);
-		}
-	}
-}
-
 #page-team {
 	.hire .icon-you {
 		@include ie6png('../images/icon-you', png, 100% , auto);
