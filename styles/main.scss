@@ -53,10 +53,10 @@ a:hover {
 		li {
 			float: left;
 			display: block;
-			margin-left: 20px;
+			margin-left: 40px;
 
 			a {
-				font-size: 18px;
+				font-size: 16px;
 				color: #999;
 				&.selected { color: #000; }
 			}
@@ -69,12 +69,12 @@ a:hover {
 	.container { margin-top: 100px; }
 
 	h2.title {
-		font-size: 80px;
+		font-size: 64px;
 		font-weight: normal;
 		margin: 0;
 	}
 	p.subtitle {
-		font-size: 56px;
+		font-size: 40px;
 		line-height: 2em;
 		color: #7b7b7b;
 		margin: 0 0 120px 0;
