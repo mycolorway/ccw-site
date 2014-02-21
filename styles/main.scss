@@ -131,7 +131,7 @@ a:hover {
 			&.email {
 				margin: 0 0 150px;
 				text-align: center;
-				font-size: 30px; line-height: 36px; color: #7ecfbe;
+				font-size: 28px; line-height: 36px; color: #7ecfbe;
 				a { font-size: 28px; color: #7ecfbe; }
 			}
 		}
@@ -413,6 +413,7 @@ a:hover {
 		}
 
 		.nav ul li {
+			margin-left: 20px;
 			a { font-size: 12px; }
 		}
 	}
