@@ -1,4 +1,4 @@
-$.getJSON "info.json", (data) ->
+$.getJSON "./info.json", (data) ->
   $.each data.members, (i, m) ->
     $($('#tpl-member').html())
       .addClass(m.nickname)

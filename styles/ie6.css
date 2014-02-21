@@ -6,38 +6,6 @@
   _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="../images/logo.png");
 }
 
-#page-index .tower .tower-logo {
-  background-image: url("../images/tower-logo.png");
-  background-repeat: no-repeat;
-  background-size: 100% auto;
-  _background: none;
-  _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="../images/tower-logo.png");
-}
-#page-index .stat p.num {
-  background-image: url("../images/number.png");
-  background-repeat: no-repeat;
-  background-size: 100% auto;
-  _background: none;
-  _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="../images/number.png");
-}
-#page-index .others ul li {
-  width: 35%;
-}
-#page-index .others ul li i.designboard {
-  background-image: url("../images/designboard.png");
-  background-repeat: no-repeat;
-  background-size: 100% auto;
-  _background: none;
-  _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="../images/designboard.png");
-}
-#page-index .others ul li i.teamcola {
-  background-image: url("../images/teamcola.png");
-  background-repeat: no-repeat;
-  background-size: 100% auto;
-  _background: none;
-  _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="../images/teamcola.png");
-}
-
 #page-team .hire .icon-you {
   background-image: url("../images/icon-you.png");
   background-repeat: no-repeat;
