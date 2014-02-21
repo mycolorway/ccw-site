@@ -101,18 +101,18 @@ a:hover {
 	.hire {
 		text-align: left;
 		padding: 0 2%;
+		max-width: 740px;
+		margin: 0 auto;
 		p {
-			font-size: 30px;
-			line-height: 48px;
-			margin: 70px 0 0 0;
-			span { font-size: 24px; color: #868686; }
-			&.locations {
-				margin: 0;
-				font-size: 36px;
-				line-height: 60px;
+			font-size: 24px;
+			line-height: 36px;
+			margin: 40px 0 0 0;
+			span {
+				font-size: 18px;
+				color: #868686;
+				float: right;
+				line-height: 36px;
 			}
-
-			&.slogan-onphone { display: none; }
 
 			&.everywhere {
 				margin: 0 0 25px;
@@ -129,7 +129,7 @@ a:hover {
 				}
 			}
 			&.email {
-				margin: 0 0 180px;
+				margin: 0 0 150px;
 				text-align: center;
 				font-size: 30px; line-height: 36px; color: #7ecfbe;
 				a { font-size: 28px; color: #7ecfbe; }
@@ -139,7 +139,7 @@ a:hover {
 			@include at2x('../images/icon-you', png, 100% , auto);
 			width: 281px; height: 281px;
 			display: block;
-			margin: 150px auto 40px;
+			margin: 120px auto 40px;
 		}
 	}
 
@@ -155,19 +155,19 @@ a:hover {
 		*display: inline;
 
 		.avatar {
-			width: 240px; height: 240px;
+			width: 200px; height: 200px;
 			display: block;
 			margin: 0 auto 16px;
 		}
-		p { margin: 0; line-height: 48px }
-		.name { font-size: 36px; ;}
-		.title { font-size: 24px; color: #999; }
+		p { margin: 0; line-height: 36px }
+		.name { font-size: 24px; ;}
+		.title { font-size: 16px; color: #999; }
 		.location {
-			font-size: 20px; color: #333;
+			font-size: 14px; color: #333;
 			&::before {
 				content: '';
 				@include at2x('../images/icon-gps', png, 100% , auto);
-				width: 16px; height: 23px;
+				width: 14px; height: 20px;
 				display: inline-block;
 				margin-right: 8px;
 				position: relative;
@@ -341,7 +341,7 @@ a:hover {
 				font-size: 12px;
 				line-height: 20px;
 				margin: 30px 0 0 0;
-				span { font-size: 9px; }
+				span { font-size: 9px; float: none; }
 				&.locations {
 					margin: 0;
 					font-size: 14px;

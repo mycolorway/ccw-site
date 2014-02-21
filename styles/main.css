@@ -110,23 +110,19 @@ a:hover {
 #page-team .hire {
   text-align: left;
   padding: 0 2%;
+  max-width: 740px;
+  margin: 0 auto;
 }
 #page-team .hire p {
-  font-size: 30px;
-  line-height: 48px;
-  margin: 70px 0 0 0;
+  font-size: 24px;
+  line-height: 36px;
+  margin: 40px 0 0 0;
 }
 #page-team .hire p span {
-  font-size: 24px;
+  font-size: 18px;
   color: #868686;
-}
-#page-team .hire p.locations {
-  margin: 0;
-  font-size: 36px;
-  line-height: 60px;
-}
-#page-team .hire p.slogan-onphone {
-  display: none;
+  float: right;
+  line-height: 36px;
 }
 #page-team .hire p.everywhere {
   margin: 0 0 25px;
@@ -153,7 +149,7 @@ a:hover {
   }
 }
 #page-team .hire p.email {
-  margin: 0 0 180px;
+  margin: 0 0 150px;
   text-align: center;
   font-size: 30px;
   line-height: 36px;
@@ -170,7 +166,7 @@ a:hover {
   width: 281px;
   height: 281px;
   display: block;
-  margin: 150px auto 40px;
+  margin: 120px auto 40px;
 }
 @media all and (-webkit-min-device-pixel-ratio: 1.5), all and (-o-min-device-pixel-ratio: 3 / 2), all and (min--moz-device-pixel-ratio: 1.5), all and (min-device-pixel-ratio: 1.5) {
   #page-team .hire .icon-you {
@@ -188,24 +184,24 @@ a:hover {
   *display: inline;
 }
 #page-team .member .avatar {
-  width: 240px;
-  height: 240px;
+  width: 200px;
+  height: 200px;
   display: block;
   margin: 0 auto 16px;
 }
 #page-team .member p {
   margin: 0;
-  line-height: 48px;
+  line-height: 36px;
 }
 #page-team .member .name {
-  font-size: 36px;
+  font-size: 24px;
 }
 #page-team .member .title {
-  font-size: 24px;
+  font-size: 16px;
   color: #999;
 }
 #page-team .member .location {
-  font-size: 20px;
+  font-size: 14px;
   color: #333;
 }
 #page-team .member .location::before {
@@ -213,8 +209,8 @@ a:hover {
   background-image: url("../images/icon-gps.png");
   background-repeat: no-repeat;
   background-size: 100% auto;
-  width: 16px;
-  height: 23px;
+  width: 14px;
+  height: 20px;
   display: inline-block;
   margin-right: 8px;
   position: relative;
@@ -545,6 +541,7 @@ a:hover {
   }
   #page-team .container .hire p span {
     font-size: 9px;
+    float: none;
   }
   #page-team .container .hire p.locations {
     margin: 0;
