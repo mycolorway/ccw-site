@@ -537,16 +537,12 @@ a:hover {
   #page-team .container .hire p {
     font-size: 12px;
     line-height: 20px;
-    margin: 30px 0 0 0;
+    margin: 15px 0 0 0;
   }
   #page-team .container .hire p span {
     font-size: 9px;
     float: none;
-  }
-  #page-team .container .hire p.locations {
-    margin: 0;
-    font-size: 14px;
-    line-height: 30px;
+    line-height: 18px;
   }
   #page-team .container .hire p.slogan-onphone {
     display: block;
