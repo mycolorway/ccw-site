@@ -151,7 +151,7 @@ a:hover {
 #page-team .hire p.email {
   margin: 0 0 150px;
   text-align: center;
-  font-size: 30px;
+  font-size: 28px;
   line-height: 36px;
   color: #7ecfbe;
 }
@@ -619,6 +619,9 @@ a:hover {
   .header a.brand {
     background-size: 50%;
     position: absolute;
+  }
+  .header .nav ul li {
+    margin-left: 20px;
   }
   .header .nav ul li a {
     font-size: 12px;
