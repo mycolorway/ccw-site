@@ -32,17 +32,3 @@ body, button, input, select, textarea {
   _background: none;
   _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="../images/rss.png");
 }
-.footer .social li a.weixin {
-  background-image: url("../images/weixin.png");
-  background-repeat: no-repeat;
-  background-size: 100% auto;
-  _background: none;
-  _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="../images/weixin.png");
-}
-.footer .weixin-info {
-  background-image: url("../images/weixin-info.png");
-  background-repeat: no-repeat;
-  background-size: 100% auto;
-  _background: none;
-  _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="../images/weixin-info.png");
-}

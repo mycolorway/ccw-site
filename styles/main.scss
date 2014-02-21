@@ -53,9 +53,7 @@ a:hover {
 		li {
 			float: left;
 			display: block;
-			&:first-child {
-				margin: 0 35px;
-			}
+			margin-left: 20px;
 
 			a {
 				font-size: 18px;
@@ -246,10 +244,11 @@ a:hover {
 		position: relative;
 
 		p {
-			margin: 20px 0 0;
+			margin: 5px 0 0;
 			color: #aaa;
 			font-size: 16px;
 			clear: both;
+			a { color: #aaa; }
 		}
 	}
 
@@ -260,6 +259,7 @@ a:hover {
 
 	.footer-links {
 		float: left;
+		margin-bottom: 35px;
 		li {
 			display: inline-block;
 			margin-right: 20px;
@@ -299,24 +299,12 @@ a:hover {
 					@include at2x('../images/rss-large', png, 100% , auto);
 					width: 28px; height:28px;
 				}
-				&.weixin {
-					@include at2x('../images/weixin-large', png, 100% , auto);
-					width: 36px; height: 36px;
-				}
 				&.weibo {
 					@include at2x('../images/weibo-large', png, 100% , auto);
 					width: 36px; height: 36px;
 				}
 			}
 		}
-	}
-
-	.weixin-info {
-		@include at2x('../images/weixin-info', png, 100% , auto);
-		width: 195px; height: 266px;
-		display: none;
-		position: absolute;
-		top: -218px; right: 28px;
 	}
 }
 
@@ -425,9 +413,6 @@ a:hover {
 		}
 
 		.nav ul li {
-			&:first-child {
-				margin: 0 25px;
-			}
 			a { font-size: 12px; }
 		}
 	}
@@ -461,21 +446,11 @@ a:hover {
 					@include at2x('../images/rss', png, 100% , auto);
 					width: 30px; height: 30px;
 				}
-				a.weixin {
-					@include at2x('../images/weixin', png, 100% , auto);
-					width: 30px; height: 30px;
-				}
 				a.weibo {
 					@include at2x('../images/weibo', png, 100% , auto);
 					width: 30px; height: 30px;
 				}
 			}
-		}
-
-		.weixin-info {
-			@include at2x('../images/weixin-info-small', png, 100% , auto);
-			width: 98px; height: 68px;
-			top: -20px;
 		}
 	}
 

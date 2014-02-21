@@ -32,12 +32,5 @@ body, button, input, select, textarea {
 		a.rss {
 			@include ie6png('../images/rss', png, 100% , auto);
 		}
-		a.weixin {
-			@include ie6png('../images/weixin', png, 100% , auto);
-		}
-	}
-
-	.weixin-info {
-		@include ie6png('../images/weixin-info', png, 100% , auto);
 	}
 }
